@@ -1,0 +1,71 @@
+<h1><%= @location.name %></h1>
+
+<div id="loc_details">
+	<div id="loc_address">
+		<%= link_to @location.email, "mailto:"+@location.email %><br>
+		<%= @location.phone %>
+		<p><%= @location.add1+',<br>' if !@location.add1.empty? %>
+		<%= @location.add2+',<br>' if !@location.add2.empty? %>
+		<%= @location.city+',<br>' if !@location.city.empty? %>
+		<%= @location.postcode+'&nbsp;' if !@location.postcode.empty? %></p>
+	</div>
+	<div id="loc_desc">
+		<%= @location.description %>
+	</div>
+</div>
+
+<% s = Date.today
+e = s+7 %>
+
+<div id="booking_area">
+
+	<% if @location.desks %>
+		<h2>Desks</h2>
+		<% @location.desks.each do |d| %>
+			<p><strong><%= d.name %></strong>: <%= number_to_currency(d.member_price, :unit => "&pound;") %>/<%= number_to_currency(d.non_member_price, :unit => "&pound;") %></p>
+			<table width="100%"><tr>
+			<% s.upto(e) do |date| %>
+				<td class="day_box">
+					<%= date.strftime('%a %d %b') %>
+					<% if d.dates.include?(DateTime.new(date.year,date.month,date.day,9)) %>
+						<br><strong>BOOKED</strong>
+					<% elsif [0,6].include? date.wday %>
+						<br><strong>CLOSED</strong>
+					<% else %>
+						<% form_for :booking, :url => {:controller => 'bookings',:action => 'create'} do |f| %>
+							<%= hidden_field :desk, :id, :value => d.id %>
+							<%= hidden_field :date, :chosen, :value => date %>
+							<%= f.submit "Book & Pay" %>
+						<% end %>
+					<% end %>
+				</td>
+			<% end %>
+			</tr></table>
+		<% end %>
+	<% end %>
+
+	<% if @location.meeting_rooms %>
+		<h2>Meeting Spaces</h2>
+		<% @location.meeting_rooms.each do |m| %>
+			<p><strong><%= m.name %></strong>: <%= number_to_currency(m.member_price, :unit => "&pound;") %>/<%= number_to_currency(m.non_member_price, :unit => "&pound;") %></p>
+			<table width="100%"><tr>
+			<% s.upto(e) do |date| %>
+				<td class="day_box">
+					<%= date.strftime('%a %d %b') %>
+					<% if m.dates.include?(DateTime.new(date.year,date.month,date.day,9)) %>
+						<br><strong>BOOKED</strong>
+					<% elsif [0,6].include? date.wday %>
+						<br><strong>CLOSED</strong>
+					<% else %>
+						<% form_for :booking, :url => {:controller => 'bookings',:action => 'create'} do |f| %>
+							<%= hidden_field :meeting_room, :id, :value => m.id %>
+							<%= hidden_field :date, :chosen, :value => date %>
+							<%= f.submit "Book & Pay" %>
+						<% end %>
+					<% end %>
+				</td>
+			<% end %>
+			</tr></table>
+		<% end %>
+	<% end %>
+</div>

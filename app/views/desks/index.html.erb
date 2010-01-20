@@ -1,0 +1,28 @@
+<h1>Listing desks</h1>
+
+<table>
+  <tr>
+    <th>Location</th>
+    <th>Name</th>
+    <th>Description</th>
+    <th>Member price</th>
+    <th>Non member price</th>
+  </tr>
+
+<% @desks.each do |desk| %>
+  <tr>
+    <td><%=h desk.location_id %></td>
+    <td><%=h desk.name %></td>
+    <td><%=h desk.description %></td>
+    <td><%=h desk.member_price %></td>
+    <td><%=h desk.non_member_price %></td>
+    <td><%= link_to 'Show', desk %></td>
+    <td><%= link_to 'Edit', edit_desk_path(desk) %></td>
+    <td><%= link_to 'Destroy', desk, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New desk', new_desk_path %>

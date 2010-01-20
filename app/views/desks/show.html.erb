@@ -1,0 +1,28 @@
+<p>
+  <b>Location:</b>
+  <%=h @desk.location_id %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%=h @desk.name %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%=h @desk.description %>
+</p>
+
+<p>
+  <b>Member price:</b>
+  <%=h @desk.member_price %>
+</p>
+
+<p>
+  <b>Non member price:</b>
+  <%=h @desk.non_member_price %>
+</p>
+
+
+<%= link_to 'Edit', edit_desk_path(@desk) %> |
+<%= link_to 'Back', desks_path %>

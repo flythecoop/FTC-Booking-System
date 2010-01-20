@@ -1,0 +1,32 @@
+<h1>Editing desk</h1>
+
+<% form_for(@desk) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :location_id %><br />
+    <%= f.text_field :location_id %>
+  </p>
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :description %><br />
+    <%= f.text_area :description %>
+  </p>
+  <p>
+    <%= f.label :member_price %><br />
+    <%= f.text_field :member_price %>
+  </p>
+  <p>
+    <%= f.label :non_member_price %><br />
+    <%= f.text_field :non_member_price %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @desk %> |
+<%= link_to 'Back', desks_path %>

@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  location_id: 1
+  name: MyString
+  description: MyText
+  member_price: 9.99
+  non_member_price: 9.99
+
+two:
+  location_id: 1
+  name: MyString
+  description: MyText
+  member_price: 9.99
+  non_member_price: 9.99

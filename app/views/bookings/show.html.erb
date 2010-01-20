@@ -1,0 +1,33 @@
+<p>
+  <b>User:</b>
+  <%=h @booking.user_id %>
+</p>
+
+<p>
+  <b>Bookable type:</b>
+  <%=h @booking.bookable_type %>
+</p>
+
+<p>
+  <b>Bookable:</b>
+  <%=h @booking.bookable_id %>
+</p>
+
+<p>
+  <b>Start at:</b>
+  <%=h @booking.start_at %>
+</p>
+
+<p>
+  <b>End at:</b>
+  <%=h @booking.end_at %>
+</p>
+
+<p>
+  <b>Paid:</b>
+  <%=h @booking.paid %>
+</p>
+
+
+<%= link_to 'Edit', edit_booking_path(@booking) %> |
+<%= link_to 'Back', bookings_path %>

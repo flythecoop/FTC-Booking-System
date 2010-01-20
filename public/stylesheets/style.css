@@ -1,0 +1,44 @@
+#content {
+	margin:0 auto;
+	width:960px;
+	background-color:white;
+	padding:20px;
+	position:static;
+}
+
+h1, h2, h3 {
+	color:#039;
+}
+
+#loc_details {
+	width:940px;
+	background-color: #eee;
+	padding:5px;
+	display:inline-block;
+}
+#loc_details #loc_address {
+	float:right;
+	text-align:right;
+	display:block;
+}
+#loc_details #loc_desc {
+	float:left;
+	display:block;
+	width:700px;
+}
+
+#booking_area {
+	display:inline-block;
+}
+.day_box {
+	width:112px;
+	height:50px;
+	margin:2px;
+	text-align:center;
+	float:left;
+	display:block;
+	background-color:#eee;
+}
+.booked {
+	background-color:#900;
+}

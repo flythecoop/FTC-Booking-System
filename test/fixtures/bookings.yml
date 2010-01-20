@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  user_id: 1
+  bookable_type: MyString
+  bookable_id: 1
+  start_at: 2010-01-09 19:54:51
+  end_at: 2010-01-09 19:54:51
+  paid: 2010-01-09 19:54:51
+
+two:
+  user_id: 1
+  bookable_type: MyString
+  bookable_id: 1
+  start_at: 2010-01-09 19:54:51
+  end_at: 2010-01-09 19:54:51
+  paid: 2010-01-09 19:54:51

@@ -1,0 +1,28 @@
+<p>
+  <b>Location:</b>
+  <%=h @meeting_room.location_id %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%=h @meeting_room.name %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%=h @meeting_room.description %>
+</p>
+
+<p>
+  <b>Member price:</b>
+  <%=h @meeting_room.member_price %>
+</p>
+
+<p>
+  <b>Non member price:</b>
+  <%=h @meeting_room.non_member_price %>
+</p>
+
+
+<%= link_to 'Edit', edit_meeting_room_path(@meeting_room) %> |
+<%= link_to 'Back', meeting_rooms_path %>
