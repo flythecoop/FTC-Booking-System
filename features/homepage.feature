@@ -8,3 +8,5 @@ Feature: Being on the Homepage
 		Then  I should see "FlyThe.Coop"
 		 And  I should see "ben@flythe.coop"
 		 And  I should see "012345678"
+		
+	
