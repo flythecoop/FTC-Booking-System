@@ -3967,3 +3967,390 @@ Rendering locations/show
   [4;35;1mMeetingRoom Columns (2.3ms)[0m   [0mSHOW FIELDS FROM `meeting_rooms`[0m
   [4;36;1mBooking Load (0.4ms)[0m   [0;1mSELECT * FROM `bookings` WHERE (`bookings`.bookable_id = 1 AND `bookings`.bookable_type = 'MeetingRoom') [0m
 Completed in 101ms (View: 83, DB: 10) | 200 OK [http://localhost/]
+  [4;36;1mSQL (38.9ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 12:07:33) [GET]
+  Parameters: {"id"=>1}
+  [4;35;1mLocation Columns (104.4ms)[0m   [0mSHOW FIELDS FROM `locations`[0m
+  [4;36;1mLocation Load (0.8ms)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;35;1mDesk Load (2.8ms)[0m   [0mSELECT * FROM `desks` WHERE (`desks`.location_id = 1) [0m
+  [4;36;1mDesk Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `desks`[0m
+  [4;35;1mBooking Load (15.2ms)[0m   [0mSELECT * FROM `bookings` WHERE (`bookings`.bookable_id = 1 AND `bookings`.bookable_type = 'Desk') [0m
+  [4;36;1mBooking Load (0.5ms)[0m   [0;1mSELECT * FROM `bookings` WHERE (`bookings`.bookable_id = 2 AND `bookings`.bookable_type = 'Desk') [0m
+  [4;35;1mMeetingRoom Load (34.1ms)[0m   [0mSELECT * FROM `meeting_rooms` WHERE (`meeting_rooms`.location_id = 1) [0m
+  [4;36;1mMeetingRoom Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `meeting_rooms`[0m
+  [4;35;1mBooking Load (0.5ms)[0m   [0mSELECT * FROM `bookings` WHERE (`bookings`.bookable_id = 1 AND `bookings`.bookable_type = 'MeetingRoom') [0m
+Completed in 623ms (View: 326, DB: 201) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BookingsController#create (for 127.0.0.1 at 2010-02-03 12:08:14) [POST]
+  Parameters: {"commit"=>"Book & Pay", "desk"=>{"id"=>"1"}, "date"=>{"chosen"=>"2010-02-09"}, "authenticity_token"=>"wPBIVNwBqVgNWufK5wPAyDtINx2EImtDu71waA5kVNo="}
+  [4;35;1mBooking Columns (2.4ms)[0m   [0mSHOW FIELDS FROM `bookings`[0m
+
+RuntimeError (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id):
+  app/controllers/bookings_controller.rb:44:in `create'
+
+Rendered rescues/_trace (40.6ms)
+Rendered rescues/_request_and_response (2.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BookingsController#create (for 127.0.0.1 at 2010-02-03 12:08:23) [POST]
+  Parameters: {"commit"=>"Book & Pay", "desk"=>{"id"=>"1"}, "date"=>{"chosen"=>"2010-02-09"}, "authenticity_token"=>"wPBIVNwBqVgNWufK5wPAyDtINx2EImtDu71waA5kVNo="}
+  [4;35;1mBooking Columns (2.4ms)[0m   [0mSHOW FIELDS FROM `bookings`[0m
+
+RuntimeError (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id):
+  app/controllers/bookings_controller.rb:44:in `create'
+
+Rendered rescues/_trace (37.7ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 12:08:28) [GET]
+  Parameters: {"id"=>1}
+  [4;35;1mLocation Columns (2.7ms)[0m   [0mSHOW FIELDS FROM `locations`[0m
+  [4;36;1mLocation Load (0.5ms)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;35;1mDesk Load (0.5ms)[0m   [0mSELECT * FROM `desks` WHERE (`desks`.location_id = 1) [0m
+  [4;36;1mDesk Columns (2.3ms)[0m   [0;1mSHOW FIELDS FROM `desks`[0m
+  [4;35;1mBooking Load (0.5ms)[0m   [0mSELECT * FROM `bookings` WHERE (`bookings`.bookable_id = 1 AND `bookings`.bookable_type = 'Desk') [0m
+  [4;36;1mBooking Load (0.6ms)[0m   [0;1mSELECT * FROM `bookings` WHERE (`bookings`.bookable_id = 2 AND `bookings`.bookable_type = 'Desk') [0m
+  [4;35;1mMeetingRoom Load (0.5ms)[0m   [0mSELECT * FROM `meeting_rooms` WHERE (`meeting_rooms`.location_id = 1) [0m
+  [4;36;1mMeetingRoom Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `meeting_rooms`[0m
+  [4;35;1mBooking Load (0.5ms)[0m   [0mSELECT * FROM `bookings` WHERE (`bookings`.bookable_id = 1 AND `bookings`.bookable_type = 'MeetingRoom') [0m
+Completed in 95ms (View: 77, DB: 10) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BookingsController#create (for 127.0.0.1 at 2010-02-03 12:09:41) [POST]
+  Parameters: {"commit"=>"Book & Pay", "desk"=>{"id"=>"1"}, "date"=>{"chosen"=>"2010-02-09"}, "authenticity_token"=>"wPBIVNwBqVgNWufK5wPAyDtINx2EImtDu71waA5kVNo="}
+  [4;35;1mBooking Columns (263.4ms)[0m   [0mSHOW FIELDS FROM `bookings`[0m
+
+RuntimeError (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id):
+  app/controllers/bookings_controller.rb:44:in `create'
+
+Rendered rescues/_trace (136.7ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BookingsController#create (for 127.0.0.1 at 2010-02-03 12:11:06) [POST]
+  Parameters: {"commit"=>"Book & Pay", "desk"=>{"id"=>"1"}, "date"=>{"chosen"=>"2010-02-08"}, "authenticity_token"=>"wPBIVNwBqVgNWufK5wPAyDtINx2EImtDu71waA5kVNo="}
+  [4;35;1mBooking Columns (271.9ms)[0m   [0mSHOW FIELDS FROM `bookings`[0m
+
+RuntimeError (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id):
+  app/controllers/bookings_controller.rb:44:in `create'
+
+Rendered rescues/_trace (44.0ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-02-03 12:12:12) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 427ms (View: 425, DB: 0) | 200 OK [http://localhost/login]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 12:13:50) [GET]
+  Parameters: {"id"=>1}
+  [4;36;1mLocation Columns (2.6ms)[0m   [0;1mSHOW FIELDS FROM `locations`[0m
+  [4;35;1mLocation Load (0.5ms)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;36;1mDesk Load (0.5ms)[0m   [0;1mSELECT * FROM `desks` WHERE (`desks`.location_id = 1) [0m
+  [4;35;1mDesk Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `desks`[0m
+  [4;36;1mBooking Load (0.6ms)[0m   [0;1mSELECT * FROM `bookings` WHERE (`bookings`.bookable_id = 1 AND `bookings`.bookable_type = 'Desk') [0m
+  [4;35;1mBooking Load (0.5ms)[0m   [0mSELECT * FROM `bookings` WHERE (`bookings`.bookable_id = 2 AND `bookings`.bookable_type = 'Desk') [0m
+  [4;36;1mMeetingRoom Load (0.5ms)[0m   [0;1mSELECT * FROM `meeting_rooms` WHERE (`meeting_rooms`.location_id = 1) [0m
+  [4;35;1mMeetingRoom Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `meeting_rooms`[0m
+  [4;36;1mBooking Load (0.5ms)[0m   [0;1mSELECT * FROM `bookings` WHERE (`bookings`.bookable_id = 1 AND `bookings`.bookable_type = 'MeetingRoom') [0m
+Completed in 184ms (View: 165, DB: 11) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BookingsController#create (for 127.0.0.1 at 2010-02-03 12:13:52) [POST]
+  Parameters: {"commit"=>"Book & Pay", "desk"=>{"id"=>"1"}, "date"=>{"chosen"=>"2010-02-08"}, "authenticity_token"=>"wPBIVNwBqVgNWufK5wPAyDtINx2EImtDu71waA5kVNo="}
+Redirected to http://localhost:3000/session/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/bookings]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-02-03 12:13:52) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/session/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-02-03 12:14:31) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"wPBIVNwBqVgNWufK5wPAyDtINx2EImtDu71waA5kVNo=", "login"=>"ben@bobop.co.uk", "password"=>"benben"}
+  [4;36;1mUser Load (125.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`login` = 'ben@bobop.co.uk') AND (users.state = 'active') LIMIT 1[0m
+  [4;35;1mUser Columns (3.1ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/bookings
+Completed in 142ms (DB: 129) | 302 Found [http://localhost/session]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BookingsController#index (for 127.0.0.1 at 2010-02-03 12:14:31) [GET]
+  [4;35;1mUser Columns (2.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mBooking Load (0.4ms)[0m   [0mSELECT * FROM `bookings` [0m
+Rendering template within layouts/application
+Rendering bookings/index
+Completed in 48ms (View: 35, DB: 4) | 200 OK [http://localhost/bookings]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-02-03 12:19:01) [GET]
+Redirected to http://localhost:3000/
+Completed in 3ms (DB: 0) | 302 Found [http://localhost/logout]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 12:19:01) [GET]
+  Parameters: {"id"=>1}
+  [4;36;1mLocation Columns (73.4ms)[0m   [0;1mSHOW FIELDS FROM `locations`[0m
+  [4;35;1mLocation Load (0.6ms)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;36;1mDesk Load (0.5ms)[0m   [0;1mSELECT * FROM `desks` WHERE (`desks`.location_id = 1) [0m
+  [4;35;1mDesk Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `desks`[0m
+  [4;36;1mBooking Load (0.5ms)[0m   [0;1mSELECT * FROM `bookings` WHERE (`bookings`.bookable_id = 1 AND `bookings`.bookable_type = 'Desk') [0m
+  [4;35;1mBooking Load (0.5ms)[0m   [0mSELECT * FROM `bookings` WHERE (`bookings`.bookable_id = 2 AND `bookings`.bookable_type = 'Desk') [0m
+  [4;36;1mMeetingRoom Load (0.5ms)[0m   [0;1mSELECT * FROM `meeting_rooms` WHERE (`meeting_rooms`.location_id = 1) [0m
+  [4;35;1mMeetingRoom Columns (2.4ms)[0m   [0mSHOW FIELDS FROM `meeting_rooms`[0m
+  [4;36;1mBooking Load (0.5ms)[0m   [0;1mSELECT * FROM `bookings` WHERE (`bookings`.bookable_id = 1 AND `bookings`.bookable_type = 'MeetingRoom') [0m
+Completed in 172ms (View: 81, DB: 81) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BookingsController#create (for 127.0.0.1 at 2010-02-03 12:19:14) [POST]
+  Parameters: {"commit"=>"Book & Pay", "desk"=>{"id"=>"1"}, "date"=>{"chosen"=>"2010-02-08"}, "authenticity_token"=>"DTv0ry7vfMrBlWQp9vpourk4bR6zGUyxg/w9H3Yy8Hg="}
+Redirected to http://localhost:3000/session/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/bookings]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-02-03 12:19:14) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/session/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 12:22:27) [GET]
+  Parameters: {"id"=>1}
+  [4;36;1mLocation Columns (2.8ms)[0m   [0;1mSHOW FIELDS FROM `locations`[0m
+  [4;35;1mLocation Load (0.5ms)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;36;1mDesk Load (0.5ms)[0m   [0;1mSELECT * FROM `desks` WHERE (`desks`.location_id = 1) [0m
+  [4;35;1mDesk Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `desks`[0m
+  [4;36;1mBooking Load (0.5ms)[0m   [0;1mSELECT * FROM `bookings` WHERE (`bookings`.bookable_id = 1 AND `bookings`.bookable_type = 'Desk') [0m
+  [4;35;1mBooking Load (0.4ms)[0m   [0mSELECT * FROM `bookings` WHERE (`bookings`.bookable_id = 2 AND `bookings`.bookable_type = 'Desk') [0m
+  [4;36;1mMeetingRoom Load (0.5ms)[0m   [0;1mSELECT * FROM `meeting_rooms` WHERE (`meeting_rooms`.location_id = 1) [0m
+  [4;35;1mMeetingRoom Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `meeting_rooms`[0m
+  [4;36;1mBooking Load (0.5ms)[0m   [0;1mSELECT * FROM `bookings` WHERE (`bookings`.bookable_id = 1 AND `bookings`.bookable_type = 'MeetingRoom') [0m
+Completed in 89ms (View: 71, DB: 10) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 12:22:57) [GET]
+  Parameters: {"id"=>1}
+  [4;36;1mLocation Columns (2.8ms)[0m   [0;1mSHOW FIELDS FROM `locations`[0m
+  [4;35;1mLocation Load (0.5ms)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;36;1mDesk Load (0.5ms)[0m   [0;1mSELECT * FROM `desks` WHERE (`desks`.location_id = 1) [0m
+  [4;35;1mDesk Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `desks`[0m
+  [4;36;1mBooking Load (1.2ms)[0m   [0;1mSELECT * FROM `bookings` WHERE (`bookings`.bookable_id = 1 AND `bookings`.bookable_type = 'Desk') [0m
+  [4;35;1mBooking Load (0.5ms)[0m   [0mSELECT * FROM `bookings` WHERE (`bookings`.bookable_id = 2 AND `bookings`.bookable_type = 'Desk') [0m
+  [4;36;1mMeetingRoom Load (0.5ms)[0m   [0;1mSELECT * FROM `meeting_rooms` WHERE (`meeting_rooms`.location_id = 1) [0m
+  [4;35;1mMeetingRoom Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `meeting_rooms`[0m
+  [4;36;1mBooking Load (0.5ms)[0m   [0;1mSELECT * FROM `bookings` WHERE (`bookings`.bookable_id = 1 AND `bookings`.bookable_type = 'MeetingRoom') [0m
+Completed in 83ms (View: 64, DB: 11) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 12:23:06) [GET]
+  Parameters: {"id"=>1}
+  [4;36;1mLocation Columns (2.5ms)[0m   [0;1mSHOW FIELDS FROM `locations`[0m
+  [4;35;1mLocation Load (0.5ms)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;36;1mDesk Load (0.5ms)[0m   [0;1mSELECT * FROM `desks` WHERE (`desks`.location_id = 1) [0m
+  [4;35;1mDesk Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `desks`[0m
+  [4;36;1mBooking Load (0.6ms)[0m   [0;1mSELECT * FROM `bookings` WHERE (`bookings`.bookable_id = 1 AND `bookings`.bookable_type = 'Desk') [0m
+  [4;35;1mBooking Load (0.5ms)[0m   [0mSELECT * FROM `bookings` WHERE (`bookings`.bookable_id = 2 AND `bookings`.bookable_type = 'Desk') [0m
+  [4;36;1mMeetingRoom Load (0.5ms)[0m   [0;1mSELECT * FROM `meeting_rooms` WHERE (`meeting_rooms`.location_id = 1) [0m
+  [4;35;1mMeetingRoom Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `meeting_rooms`[0m
+  [4;36;1mBooking Load (0.5ms)[0m   [0;1mSELECT * FROM `bookings` WHERE (`bookings`.bookable_id = 1 AND `bookings`.bookable_type = 'MeetingRoom') [0m
+Completed in 173ms (View: 155, DB: 10) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-02-03 12:23:09) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/login]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-02-03 12:23:20) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"DTv0ry7vfMrBlWQp9vpourk4bR6zGUyxg/w9H3Yy8Hg=", "login"=>"ben@bobop.co.uk", "password"=>"benben"}
+  [4;35;1mUser Load (0.8ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`login` = 'ben@bobop.co.uk') AND (users.state = 'active') LIMIT 1[0m
+  [4;36;1mUser Columns (47.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/bookings
+Completed in 59ms (DB: 49) | 302 Found [http://localhost/session]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BookingsController#index (for 127.0.0.1 at 2010-02-03 12:23:20) [GET]
+  [4;36;1mUser Columns (2.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mBooking Load (0.7ms)[0m   [0;1mSELECT * FROM `bookings` [0m
+Rendering template within layouts/application
+Rendering bookings/index
+Completed in 15ms (View: 2, DB: 4) | 200 OK [http://localhost/bookings]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-02-03 12:24:19) [GET]
+Redirected to http://localhost:3000/
+Completed in 3ms (DB: 0) | 302 Found [http://localhost/logout]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 12:24:19) [GET]
+  Parameters: {"id"=>1}
+  [4;35;1mLocation Columns (265.7ms)[0m   [0mSHOW FIELDS FROM `locations`[0m
+  [4;36;1mLocation Load (0.6ms)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;35;1mDesk Load (0.5ms)[0m   [0mSELECT * FROM `desks` WHERE (`desks`.location_id = 1) [0m
+  [4;36;1mDesk Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `desks`[0m
+  [4;35;1mBooking Load (0.5ms)[0m   [0mSELECT * FROM `bookings` WHERE (`bookings`.bookable_id = 1 AND `bookings`.bookable_type = 'Desk') [0m
+  [4;36;1mBooking Load (0.5ms)[0m   [0;1mSELECT * FROM `bookings` WHERE (`bookings`.bookable_id = 2 AND `bookings`.bookable_type = 'Desk') [0m
+  [4;35;1mMeetingRoom Load (0.5ms)[0m   [0mSELECT * FROM `meeting_rooms` WHERE (`meeting_rooms`.location_id = 1) [0m
+  [4;36;1mMeetingRoom Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `meeting_rooms`[0m
+  [4;35;1mBooking Load (0.5ms)[0m   [0mSELECT * FROM `bookings` WHERE (`bookings`.bookable_id = 1 AND `bookings`.bookable_type = 'MeetingRoom') [0m
+Completed in 430ms (View: 60, DB: 273) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-02-03 12:24:21) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/login]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-02-03 12:24:34) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"5F+XEgNuXZFGuYJL47WwkEaSX482G5kZ/V2StBx0QFQ=", "login"=>"ben@bobop.co.uk", "password"=>"benben"}
+  [4;36;1mUser Load (0.7ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`login` = 'ben@bobop.co.uk') AND (users.state = 'active') LIMIT 1[0m
+  [4;35;1mUser Columns (2.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed in 13ms (DB: 4) | 302 Found [http://localhost/session]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 12:24:34) [GET]
+  Parameters: {"id"=>1}
+  [4;35;1mLocation Columns (2.5ms)[0m   [0mSHOW FIELDS FROM `locations`[0m
+  [4;36;1mLocation Load (0.4ms)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;35;1mDesk Load (0.5ms)[0m   [0mSELECT * FROM `desks` WHERE (`desks`.location_id = 1) [0m
+  [4;36;1mDesk Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `desks`[0m
+  [4;35;1mBooking Load (0.5ms)[0m   [0mSELECT * FROM `bookings` WHERE (`bookings`.bookable_id = 1 AND `bookings`.bookable_type = 'Desk') [0m
+  [4;36;1mUser Columns (2.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mBooking Load (0.5ms)[0m   [0;1mSELECT * FROM `bookings` WHERE (`bookings`.bookable_id = 2 AND `bookings`.bookable_type = 'Desk') [0m
+  [4;35;1mMeetingRoom Load (0.5ms)[0m   [0mSELECT * FROM `meeting_rooms` WHERE (`meeting_rooms`.location_id = 1) [0m
+  [4;36;1mMeetingRoom Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `meeting_rooms`[0m
+  [4;35;1mBooking Load (0.6ms)[0m   [0mSELECT * FROM `bookings` WHERE (`bookings`.bookable_id = 1 AND `bookings`.bookable_type = 'MeetingRoom') [0m
+Completed in 101ms (View: 81, DB: 13) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BookingsController#create (for 127.0.0.1 at 2010-02-03 12:24:40) [POST]
+  Parameters: {"commit"=>"Book & Pay", "desk"=>{"id"=>"1"}, "date"=>{"chosen"=>"2010-02-08"}, "authenticity_token"=>"5F+XEgNuXZFGuYJL47WwkEaSX482G5kZ/V2StBx0QFQ="}
+  [4;35;1mUser Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mBooking Columns (2.3ms)[0m   [0mSHOW FIELDS FROM `bookings`[0m
+  [4;36;1mDesk Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `desks`[0m
+  [4;35;1mDesk Load (0.4ms)[0m   [0mSELECT * FROM `desks` WHERE (`desks`.`id` = 1) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mBooking Create (0.6ms)[0m   [0mINSERT INTO `bookings` (`end_at`, `updated_at`, `bookable_type`, `bookable_id`, `start_at`, `paid`, `user_id`, `created_at`) VALUES('2010-02-08 17:00:00', '2010-02-03 12:24:41', 'Desk', 1, '2010-02-08 09:00:00', NULL, 2, '2010-02-03 12:24:41')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/bookings/1
+Completed in 271ms (DB: 10) | 302 Found [http://localhost/bookings]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BookingsController#show (for 127.0.0.1 at 2010-02-03 12:24:41) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Columns (2.9ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.8ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mBooking Columns (4.1ms)[0m   [0;1mSHOW FIELDS FROM `bookings`[0m
+  [4;35;1mBooking Load (3.5ms)[0m   [0mSELECT * FROM `bookings` WHERE (`bookings`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering bookings/show
+Completed in 61ms (View: 40, DB: 11) | 200 OK [http://localhost/bookings/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 12:25:28) [GET]
+  Parameters: {"id"=>1}
+  [4;35;1mLocation Columns (2.7ms)[0m   [0mSHOW FIELDS FROM `locations`[0m
+  [4;36;1mLocation Load (0.5ms)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;35;1mDesk Load (0.5ms)[0m   [0mSELECT * FROM `desks` WHERE (`desks`.location_id = 1) [0m
+  [4;36;1mDesk Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `desks`[0m
+  [4;35;1mBooking Load (0.5ms)[0m   [0mSELECT * FROM `bookings` WHERE (`bookings`.bookable_id = 1 AND `bookings`.bookable_type = 'Desk') [0m
+  [4;36;1mBooking Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `bookings`[0m
+  [4;35;1mUser Columns (2.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mBooking Load (0.5ms)[0m   [0mSELECT * FROM `bookings` WHERE (`bookings`.bookable_id = 2 AND `bookings`.bookable_type = 'Desk') [0m
+  [4;36;1mMeetingRoom Load (0.5ms)[0m   [0;1mSELECT * FROM `meeting_rooms` WHERE (`meeting_rooms`.location_id = 1) [0m
+  [4;35;1mMeetingRoom Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `meeting_rooms`[0m
+  [4;36;1mBooking Load (0.5ms)[0m   [0;1mSELECT * FROM `bookings` WHERE (`bookings`.bookable_id = 1 AND `bookings`.bookable_type = 'MeetingRoom') [0m
+Completed in 192ms (View: 170, DB: 15) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 12:30:50) [GET]
+  Parameters: {"id"=>1}
+  [4;36;1mLocation Columns (2.4ms)[0m   [0;1mSHOW FIELDS FROM `locations`[0m
+  [4;35;1mLocation Load (0.5ms)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;36;1mDesk Load (0.6ms)[0m   [0;1mSELECT * FROM `desks` WHERE (`desks`.location_id = 1) [0m
+  [4;35;1mDesk Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `desks`[0m
+  [4;36;1mBooking Load (0.5ms)[0m   [0;1mSELECT * FROM `bookings` WHERE (`bookings`.bookable_id = 1 AND `bookings`.bookable_type = 'Desk') [0m
+  [4;35;1mBooking Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `bookings`[0m
+  [4;36;1mUser Columns (2.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mBooking Load (0.5ms)[0m   [0;1mSELECT * FROM `bookings` WHERE (`bookings`.bookable_id = 2 AND `bookings`.bookable_type = 'Desk') [0m
+Completed in 86ms (View: 67, DB: 12) | 200 OK [http://localhost/]
