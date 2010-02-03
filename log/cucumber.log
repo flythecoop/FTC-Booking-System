@@ -1226,3 +1226,27 @@ Rendering template within layouts/application
 Rendering locations/show
   [4;35;1mDesk Load (0.2ms)[0m   [0mSELECT * FROM "desks" WHERE ("desks".location_id = 1) [0m
 Completed in 102ms (View: 97, DB: 3) | 200 OK [http://www.example.com/]
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-02-03 13:45:24) [GET]
+Redirected to http://www.example.com/
+Completed in 79ms (DB: 2) | 302 Found [http://www.example.com/sessions/destroy]
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 13:45:24) [GET]
+  Parameters: {"id"=>1}
+  [4;36;1mLocation Load (0.5ms)[0m   [0;1mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;35;1mDesk Load (0.2ms)[0m   [0mSELECT * FROM "desks" WHERE ("desks".location_id = 1) [0m
+Completed in 17ms (View: 12, DB: 1) | 200 OK [http://www.example.com/]
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 13:45:24) [GET]
+  Parameters: {"id"=>1}
+  [4;36;1mLocation Load (0.5ms)[0m   [0;1mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;35;1mDesk Load (0.2ms)[0m   [0mSELECT * FROM "desks" WHERE ("desks".location_id = 1) [0m
+Completed in 4ms (View: 2, DB: 1) | 200 OK [http://www.example.com/]
