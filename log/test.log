@@ -1,0 +1,232 @@
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "bookings" [0m
+
+
+Processing BookingsController#create (for 0.0.0.0 at 2010-02-03 12:47:26) [POST]
+  Parameters: {"booking"=>{}}
+Redirected to http://test.host/session/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 1ms (DB: 3) | 302 Found [http://test.host/bookings?]
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "bookings" [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "bookings" [0m
+  [4;35;1mBooking Load (0.3ms)[0m   [0mSELECT * FROM "bookings" WHERE ("bookings"."id" = 2053932785) [0m
+
+
+Processing BookingsController#destroy (for 0.0.0.0 at 2010-02-03 12:47:26) [DELETE]
+  Parameters: {"id"=>"2053932785"}
+Redirected to http://test.host/session/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 1ms (DB: 1) | 302 Found [http://test.host/bookings/2053932785]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "bookings" [0m
+  [4;35;1mBooking Load (0.4ms)[0m   [0mSELECT * FROM "bookings" WHERE ("bookings"."id" = 2053932785) [0m
+
+
+Processing BookingsController#edit (for 0.0.0.0 at 2010-02-03 12:47:26) [GET]
+  Parameters: {"id"=>"2053932785"}
+Redirected to http://test.host/session/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 1ms (DB: 1) | 302 Found [http://test.host/bookings/2053932785/edit]
+
+
+Processing BookingsController#index (for 0.0.0.0 at 2010-02-03 12:47:26) [GET]
+Redirected to http://test.host/session/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/bookings]
+
+
+Processing BookingsController#new (for 0.0.0.0 at 2010-02-03 12:47:26) [GET]
+Redirected to http://test.host/session/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/bookings/new]
+  [4;36;1mBooking Load (0.4ms)[0m   [0;1mSELECT * FROM "bookings" WHERE ("bookings"."id" = 2053932785) [0m
+
+
+Processing BookingsController#show (for 0.0.0.0 at 2010-02-03 12:47:26) [GET]
+  Parameters: {"id"=>"2053932785"}
+Redirected to http://test.host/session/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/bookings/2053932785]
+  [4;35;1mBooking Load (0.4ms)[0m   [0mSELECT * FROM "bookings" WHERE ("bookings"."id" = 2053932785) [0m
+
+
+Processing BookingsController#update (for 0.0.0.0 at 2010-02-03 12:47:26) [PUT]
+  Parameters: {"id"=>"2053932785", "booking"=>{}}
+Redirected to http://test.host/session/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/bookings/2053932785?]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "desks" [0m
+
+
+Processing DesksController#create (for 0.0.0.0 at 2010-02-03 12:47:26) [POST]
+  Parameters: {"desk"=>{}}
+  [4;35;1mDesk Create (0.5ms)[0m   [0mINSERT INTO "desks" ("name", "updated_at", "non_member_price", "location_id", "description", "member_price", "created_at") VALUES(NULL, '2010-02-03 12:47:26', NULL, NULL, NULL, NULL, '2010-02-03 12:47:26')[0m
+Redirected to http://test.host/desks/2053932786
+Completed in 8ms (DB: 1) | 302 Found [http://test.host/desks?]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "desks" [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "desks" [0m
+  [4;36;1mDesk Load (0.2ms)[0m   [0;1mSELECT * FROM "desks" WHERE ("desks"."id" = 2053932785) [0m
+
+
+Processing DesksController#destroy (for 0.0.0.0 at 2010-02-03 12:47:26) [DELETE]
+  Parameters: {"id"=>"2053932785"}
+  [4;35;1mDesk Load (0.3ms)[0m   [0mSELECT * FROM "desks" WHERE ("desks"."id" = 2053932785) [0m
+  [4;36;1mDesk Destroy (0.3ms)[0m   [0;1mDELETE FROM "desks" WHERE "id" = 2053932785[0m
+Redirected to http://test.host/desks
+Completed in 2ms (DB: 1) | 302 Found [http://test.host/desks/2053932785]
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "desks" [0m
+  [4;36;1mDesk Load (0.4ms)[0m   [0;1mSELECT * FROM "desks" WHERE ("desks"."id" = 2053932785) [0m
+
+
+Processing DesksController#edit (for 0.0.0.0 at 2010-02-03 12:47:26) [GET]
+  Parameters: {"id"=>"2053932785"}
+  [4;35;1mDesk Load (0.3ms)[0m   [0mSELECT * FROM "desks" WHERE ("desks"."id" = 2053932785) [0m
+Rendering template within layouts/application
+Rendering desks/edit
+Completed in 40ms (View: 39, DB: 1) | 200 OK [http://test.host/desks/2053932785/edit]
+
+
+Processing DesksController#index (for 0.0.0.0 at 2010-02-03 12:47:26) [GET]
+  [4;36;1mDesk Load (0.5ms)[0m   [0;1mSELECT * FROM "desks" [0m
+Rendering template within layouts/application
+Rendering desks/index
+Completed in 11ms (View: 9, DB: 0) | 200 OK [http://test.host/desks]
+
+
+Processing DesksController#new (for 0.0.0.0 at 2010-02-03 12:47:26) [GET]
+Rendering template within layouts/application
+Rendering desks/new
+  [4;35;1mLocation Load (0.6ms)[0m   [0mSELECT * FROM "locations" [0m
+Completed in 10ms (View: 9, DB: 1) | 200 OK [http://test.host/desks/new]
+  [4;36;1mDesk Load (0.4ms)[0m   [0;1mSELECT * FROM "desks" WHERE ("desks"."id" = 2053932785) [0m
+
+
+Processing DesksController#show (for 0.0.0.0 at 2010-02-03 12:47:26) [GET]
+  Parameters: {"id"=>"2053932785"}
+  [4;35;1mDesk Load (0.3ms)[0m   [0mSELECT * FROM "desks" WHERE ("desks"."id" = 2053932785) [0m
+Rendering template within layouts/application
+Rendering desks/show
+Completed in 4ms (View: 2, DB: 1) | 200 OK [http://test.host/desks/2053932785]
+  [4;36;1mDesk Load (0.4ms)[0m   [0;1mSELECT * FROM "desks" WHERE ("desks"."id" = 2053932785) [0m
+
+
+Processing DesksController#update (for 0.0.0.0 at 2010-02-03 12:47:26) [PUT]
+  Parameters: {"desk"=>{}, "id"=>"2053932785"}
+  [4;35;1mDesk Load (0.3ms)[0m   [0mSELECT * FROM "desks" WHERE ("desks"."id" = 2053932785) [0m
+Redirected to http://test.host/desks/2053932785
+Completed in 3ms (DB: 1) | 302 Found [http://test.host/desks/2053932785?]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "locations" [0m
+
+
+Processing LocationsController#create (for 0.0.0.0 at 2010-02-03 12:47:26) [POST]
+  Parameters: {"location"=>{}}
+  [4;35;1mLocation Create (0.5ms)[0m   [0mINSERT INTO "locations" ("name", "city", "lon", "updated_at", "postcode", "description", "phone", "add1", "lat", "email", "add2", "created_at") VALUES(NULL, NULL, NULL, '2010-02-03 12:47:26', NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2010-02-03 12:47:26')[0m
+Redirected to http://test.host/locations/2053932786
+Completed in 5ms (DB: 1) | 302 Found [http://test.host/locations?]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "locations" [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "locations" [0m
+  [4;36;1mLocation Load (0.3ms)[0m   [0;1mSELECT * FROM "locations" WHERE ("locations"."id" = 2053932785) [0m
+
+
+Processing LocationsController#destroy (for 0.0.0.0 at 2010-02-03 12:47:26) [DELETE]
+  Parameters: {"id"=>"2053932785"}
+  [4;35;1mLocation Load (0.4ms)[0m   [0mSELECT * FROM "locations" WHERE ("locations"."id" = 2053932785) [0m
+  [4;36;1mLocation Destroy (0.3ms)[0m   [0;1mDELETE FROM "locations" WHERE "id" = 2053932785[0m
+Redirected to http://test.host/locations
+Completed in 2ms (DB: 1) | 302 Found [http://test.host/locations/2053932785]
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT count(*) AS count_all FROM "locations" [0m
+  [4;36;1mLocation Load (0.6ms)[0m   [0;1mSELECT * FROM "locations" WHERE ("locations"."id" = 2053932785) [0m
+
+
+Processing LocationsController#edit (for 0.0.0.0 at 2010-02-03 12:47:26) [GET]
+  Parameters: {"id"=>"2053932785"}
+  [4;35;1mLocation Load (0.4ms)[0m   [0mSELECT * FROM "locations" WHERE ("locations"."id" = 2053932785) [0m
+Rendering template within layouts/application
+Rendering locations/edit
+Completed in 14ms (View: 13, DB: 2) | 200 OK [http://test.host/locations/2053932785/edit]
+
+
+Processing LocationsController#index (for 0.0.0.0 at 2010-02-03 12:47:26) [GET]
+  [4;36;1mLocation Load (0.2ms)[0m   [0;1mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+
+
+Processing LocationsController#new (for 0.0.0.0 at 2010-02-03 12:47:26) [GET]
+Rendering template within layouts/application
+Rendering locations/new
+Completed in 10ms (View: 10, DB: 0) | 200 OK [http://test.host/locations/new]
+  [4;35;1mLocation Load (0.4ms)[0m   [0mSELECT * FROM "locations" WHERE ("locations"."id" = 2053932785) [0m
+
+
+Processing LocationsController#show (for 0.0.0.0 at 2010-02-03 12:47:26) [GET]
+  Parameters: {"id"=>"2053932785"}
+  [4;36;1mLocation Load (0.4ms)[0m   [0;1mSELECT * FROM "locations" WHERE ("locations"."id" = 2053932785) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;35;1mDesk Load (0.2ms)[0m   [0mSELECT * FROM "desks" WHERE ("desks".location_id = 2053932785) [0m
+Completed in 6ms (View: 4, DB: 1) | 200 OK [http://test.host/locations/2053932785]
+  [4;36;1mLocation Load (0.4ms)[0m   [0;1mSELECT * FROM "locations" WHERE ("locations"."id" = 2053932785) [0m
+
+
+Processing LocationsController#update (for 0.0.0.0 at 2010-02-03 12:47:26) [PUT]
+  Parameters: {"id"=>"2053932785", "location"=>{}}
+  [4;35;1mLocation Load (0.4ms)[0m   [0mSELECT * FROM "locations" WHERE ("locations"."id" = 2053932785) [0m
+Redirected to http://test.host/locations/2053932785
+Completed in 3ms (DB: 1) | 302 Found [http://test.host/locations/2053932785?]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "meeting_rooms" [0m
+
+
+Processing MeetingRoomsController#create (for 0.0.0.0 at 2010-02-03 12:47:26) [POST]
+  Parameters: {"meeting_room"=>{}}
+  [4;35;1mMeetingRoom Create (0.5ms)[0m   [0mINSERT INTO "meeting_rooms" ("name", "updated_at", "non_member_price", "location_id", "description", "member_price", "created_at") VALUES(NULL, '2010-02-03 12:47:26', NULL, NULL, NULL, NULL, '2010-02-03 12:47:26')[0m
+Redirected to http://test.host/meeting_rooms/2053932786
+Completed in 7ms (DB: 1) | 302 Found [http://test.host/meeting_rooms?]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "meeting_rooms" [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "meeting_rooms" [0m
+  [4;36;1mMeetingRoom Load (0.2ms)[0m   [0;1mSELECT * FROM "meeting_rooms" WHERE ("meeting_rooms"."id" = 2053932785) [0m
+
+
+Processing MeetingRoomsController#destroy (for 0.0.0.0 at 2010-02-03 12:47:26) [DELETE]
+  Parameters: {"id"=>"2053932785"}
+  [4;35;1mMeetingRoom Load (0.3ms)[0m   [0mSELECT * FROM "meeting_rooms" WHERE ("meeting_rooms"."id" = 2053932785) [0m
+  [4;36;1mMeetingRoom Destroy (0.3ms)[0m   [0;1mDELETE FROM "meeting_rooms" WHERE "id" = 2053932785[0m
+Redirected to http://test.host/meeting_rooms
+Completed in 2ms (DB: 1) | 302 Found [http://test.host/meeting_rooms/2053932785]
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "meeting_rooms" [0m
+  [4;36;1mMeetingRoom Load (0.4ms)[0m   [0;1mSELECT * FROM "meeting_rooms" WHERE ("meeting_rooms"."id" = 2053932785) [0m
+
+
+Processing MeetingRoomsController#edit (for 0.0.0.0 at 2010-02-03 12:47:26) [GET]
+  Parameters: {"id"=>"2053932785"}
+  [4;35;1mMeetingRoom Load (0.3ms)[0m   [0mSELECT * FROM "meeting_rooms" WHERE ("meeting_rooms"."id" = 2053932785) [0m
+Rendering template within layouts/application
+Rendering meeting_rooms/edit
+Completed in 10ms (View: 9, DB: 1) | 200 OK [http://test.host/meeting_rooms/2053932785/edit]
+
+
+Processing MeetingRoomsController#index (for 0.0.0.0 at 2010-02-03 12:47:26) [GET]
+  [4;36;1mMeetingRoom Load (0.5ms)[0m   [0;1mSELECT * FROM "meeting_rooms" [0m
+Rendering template within layouts/application
+Rendering meeting_rooms/index
+Completed in 11ms (View: 10, DB: 1) | 200 OK [http://test.host/meeting_rooms]
+
+
+Processing MeetingRoomsController#new (for 0.0.0.0 at 2010-02-03 12:47:26) [GET]
+Rendering template within layouts/application
+Rendering meeting_rooms/new
+  [4;35;1mLocation Load (0.6ms)[0m   [0mSELECT * FROM "locations" [0m
+Completed in 9ms (View: 8, DB: 1) | 200 OK [http://test.host/meeting_rooms/new]
+  [4;36;1mMeetingRoom Load (0.4ms)[0m   [0;1mSELECT * FROM "meeting_rooms" WHERE ("meeting_rooms"."id" = 2053932785) [0m
+
+
+Processing MeetingRoomsController#show (for 0.0.0.0 at 2010-02-03 12:47:26) [GET]
+  Parameters: {"id"=>"2053932785"}
+  [4;35;1mMeetingRoom Load (0.3ms)[0m   [0mSELECT * FROM "meeting_rooms" WHERE ("meeting_rooms"."id" = 2053932785) [0m
+Rendering template within layouts/application
+Rendering meeting_rooms/show
+Completed in 4ms (View: 3, DB: 1) | 200 OK [http://test.host/meeting_rooms/2053932785]
+  [4;36;1mMeetingRoom Load (0.4ms)[0m   [0;1mSELECT * FROM "meeting_rooms" WHERE ("meeting_rooms"."id" = 2053932785) [0m
+
+
+Processing MeetingRoomsController#update (for 0.0.0.0 at 2010-02-03 12:47:26) [PUT]
+  Parameters: {"meeting_room"=>{}, "id"=>"2053932785"}
+  [4;35;1mMeetingRoom Load (0.4ms)[0m   [0mSELECT * FROM "meeting_rooms" WHERE ("meeting_rooms"."id" = 2053932785) [0m
+Redirected to http://test.host/meeting_rooms/2053932785
+Completed in 3ms (DB: 1) | 302 Found [http://test.host/meeting_rooms/2053932785?]

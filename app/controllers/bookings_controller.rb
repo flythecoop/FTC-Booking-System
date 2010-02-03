@@ -52,13 +52,6 @@ class BookingsController < ApplicationController
       @desk = Desk.find(params[:desk][:id])
       @booking.bookable = @desk
     end
-    if params[:meeting_room]
-      date = DateTime.parse(params[:date][:chosen])
-      @booking.start_at = DateTime.new(date.year,date.month,date.day,9)
-      @booking.end_at = DateTime.new(date.year,date.month,date.day,17)
-      @meeting_room = MeetingRoom.find(params[:meeting_room][:id])
-      @booking.bookable = @meeting_room
-    end
     
 
     respond_to do |format|

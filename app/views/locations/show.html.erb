@@ -4,10 +4,10 @@
 	<div id="loc_address">
 		<%= link_to @location.email, "mailto:"+@location.email %><br>
 		<%= @location.phone %>
-		<p><%= @location.add1+',<br>' if !@location.add1.empty? %>
-		<%= @location.add2+',<br>' if !@location.add2.empty? %>
-		<%= @location.city+',<br>' if !@location.city.empty? %>
-		<%= @location.postcode+'&nbsp;' if !@location.postcode.empty? %></p>
+		<p><%= @location.add1+'<br>' if @location.add1 %>
+		<%= @location.add2+'<br>' if @location.add2 %>
+		<%= @location.city+'<br>' if @location.city %>
+		<%= @location.postcode+'&nbsp;' if @location.postcode %></p>
 	</div>
 	<div id="loc_desc">
 		<%= @location.description %>

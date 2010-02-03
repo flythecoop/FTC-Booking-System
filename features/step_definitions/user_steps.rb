@@ -26,12 +26,6 @@ Given "$actor is logged in" do |_, login|
   log_in_user! @user_params || named_user(login)
 end
 
-Given "there is no $user_type user named '$login'" do |_, login|
-  @user = User.find_by_login(login)
-  @user.destroy! if @user
-  @user.should be_nil
-end
-
 #
 # Actions
 #
