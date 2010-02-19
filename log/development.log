@@ -1,0 +1,1549 @@
+# Logfile created on Thu Feb 18 20:09:29 +0000 2010  [4;36;1mSQL (94.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-18 20:09:42) [GET]
+  Parameters: {"id"=>1}
+  [4;35;1mLocation Columns (271.1ms)[0m   [0mSHOW FIELDS FROM `locations`[0m
+  [4;36;1mLocation Load (0.9ms)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;35;1mDesk Load (100.3ms)[0m   [0mSELECT * FROM `desks` WHERE (`desks`.location_id = 1) [0m
+  [4;36;1mDesk Columns (23.9ms)[0m   [0;1mSHOW FIELDS FROM `desks`[0m
+  [4;35;1mBooking Load (75.0ms)[0m   [0mSELECT * FROM `bookings` WHERE (`bookings`.bookable_id = 1 AND `bookings`.bookable_type = 'Desk') [0m
+  [4;36;1mBooking Columns (12.7ms)[0m   [0;1mSHOW FIELDS FROM `bookings`[0m
+  [4;35;1mBooking Load (0.5ms)[0m   [0mSELECT * FROM `bookings` WHERE (`bookings`.bookable_id = 2 AND `bookings`.bookable_type = 'Desk') [0m
+Completed in 1422ms (View: 784, DB: 578) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-02-18 20:36:50) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 296ms (View: 294, DB: 0) | 200 OK [http://localhost/login]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-02-18 20:36:56) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"9wD0ntjrMY2Dj+vNh+yGeqRwVwUcU1NtIAXrS+zcFB0=", "login"=>"ben", "password"=>"benben"}
+  [4;36;1mUser Load (111.1ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`login` = 'ben') AND (users.state = 'active') LIMIT 1[0m
+Failed login for 'ben' from 127.0.0.1 at Thu Feb 18 20:36:56 UTC 2010
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 120ms (View: 5, DB: 111) | 200 OK [http://localhost/session]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-18 20:37:02) [GET]
+  Parameters: {"id"=>1}
+  [4;36;1mLocation Columns (2.6ms)[0m   [0;1mSHOW FIELDS FROM `locations`[0m
+  [4;35;1mLocation Load (13.7ms)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;36;1mDesk Load (0.8ms)[0m   [0;1mSELECT * FROM `desks` WHERE (`desks`.location_id = 1) [0m
+  [4;35;1mDesk Columns (7.5ms)[0m   [0mSHOW FIELDS FROM `desks`[0m
+  [4;36;1mBooking Load (4.5ms)[0m   [0;1mSELECT * FROM `bookings` WHERE (`bookings`.bookable_id = 1 AND `bookings`.bookable_type = 'Desk') [0m
+  [4;35;1mBooking Columns (8.5ms)[0m   [0mSHOW FIELDS FROM `bookings`[0m
+  [4;36;1mBooking Load (51.0ms)[0m   [0;1mSELECT * FROM `bookings` WHERE (`bookings`.bookable_id = 2 AND `bookings`.bookable_type = 'Desk') [0m
+Completed in 138ms (View: 42, DB: 89) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-19 15:02:41) [GET]
+  Parameters: {"id"=>1}
+  [4;35;1mLocation Columns (106.8ms)[0m   [0mSHOW FIELDS FROM `locations`[0m
+  [4;36;1mLocation Load (0.6ms)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;35;1mDesk Load (0.5ms)[0m   [0mSELECT * FROM `desks` WHERE (`desks`.location_id = 1) [0m
+  [4;36;1mDesk Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `desks`[0m
+  [4;35;1mBooking Load (12.3ms)[0m   [0mSELECT * FROM `bookings` WHERE (`bookings`.bookable_id = 1 AND `bookings`.bookable_type = 'Desk') [0m
+  [4;36;1mBooking Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `bookings`[0m
+  [4;35;1mBooking Load (0.5ms)[0m   [0mSELECT * FROM `bookings` WHERE (`bookings`.bookable_id = 2 AND `bookings`.bookable_type = 'Desk') [0m
+Completed in 518ms (View: 338, DB: 125) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-02-19 15:03:14) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 28ms (View: 26, DB: 0) | 200 OK [http://localhost/login]
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-02-19 15:03:20) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"/OJdXxt8zSdr/5rvDrWdYIoGtJD/WFQX4IqVpbocgSI=", "login"=>"ben", "password"=>"benben"}
+  [4;36;1mUser Load (76.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`login` = 'ben') AND (users.state = 'active') LIMIT 1[0m
+Failed login for 'ben' from 127.0.0.1 at Fri Feb 19 15:03:20 UTC 2010
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 85ms (View: 5, DB: 77) | 200 OK [http://localhost/session]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-02-19 15:03:31) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"/OJdXxt8zSdr/5rvDrWdYIoGtJD/WFQX4IqVpbocgSI=", "login"=>"ben", "password"=>"susejben"}
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`login` = 'ben') AND (users.state = 'active') LIMIT 1[0m
+Failed login for 'ben' from 127.0.0.1 at Fri Feb 19 15:03:31 UTC 2010
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 9ms (View: 4, DB: 1) | 200 OK [http://localhost/session]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-02-19 15:03:44) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"/OJdXxt8zSdr/5rvDrWdYIoGtJD/WFQX4IqVpbocgSI=", "login"=>"ben@bobop.co.uk", "password"=>"benben"}
+  [4;36;1mUser Load (35.1ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`login` = 'ben@bobop.co.uk') AND (users.state = 'active') LIMIT 1[0m
+  [4;35;1mUser Columns (4.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (5.7ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed in 56ms (DB: 46) | 302 Found [http://localhost/session]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-19 15:03:44) [GET]
+  Parameters: {"id"=>1}
+  [4;35;1mLocation Columns (5.9ms)[0m   [0mSHOW FIELDS FROM `locations`[0m
+  [4;36;1mLocation Load (4.5ms)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;35;1mDesk Load (0.6ms)[0m   [0mSELECT * FROM `desks` WHERE (`desks`.location_id = 1) [0m
+  [4;36;1mDesk Columns (2.8ms)[0m   [0;1mSHOW FIELDS FROM `desks`[0m
+  [4;35;1mBooking Load (0.5ms)[0m   [0mSELECT * FROM `bookings` WHERE (`bookings`.bookable_id = 1 AND `bookings`.bookable_type = 'Desk') [0m
+  [4;36;1mBooking Columns (10.2ms)[0m   [0;1mSHOW FIELDS FROM `bookings`[0m
+  [4;35;1mUser Columns (9.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (11.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mBooking Load (0.5ms)[0m   [0mSELECT * FROM `bookings` WHERE (`bookings`.bookable_id = 2 AND `bookings`.bookable_type = 'Desk') [0m
+Completed in 114ms (View: 60, DB: 46) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BookingsController#create (for 127.0.0.1 at 2010-02-19 15:04:02) [POST]
+  Parameters: {"commit"=>"Book & Pay", "desk"=>{"id"=>"1"}, "date"=>{"chosen"=>"2010-02-23"}, "authenticity_token"=>"/OJdXxt8zSdr/5rvDrWdYIoGtJD/WFQX4IqVpbocgSI="}
+  [4;35;1mUser Columns (2.8ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mBooking Columns (2.3ms)[0m   [0mSHOW FIELDS FROM `bookings`[0m
+  [4;36;1mDesk Columns (2.6ms)[0m   [0;1mSHOW FIELDS FROM `desks`[0m
+  [4;35;1mDesk Load (0.4ms)[0m   [0mSELECT * FROM `desks` WHERE (`desks`.`id` = 1) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mBooking Create (67.4ms)[0m   [0mINSERT INTO `bookings` (`end_at`, `updated_at`, `bookable_type`, `bookable_id`, `start_at`, `paid`, `user_id`, `created_at`) VALUES('2010-02-23 17:00:00', '2010-02-19 15:04:02', 'Desk', 1, '2010-02-23 09:00:00', NULL, 2, '2010-02-19 15:04:02')[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/bookings/2
+Completed in 246ms (DB: 77) | 302 Found [http://localhost/bookings]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BookingsController#show (for 127.0.0.1 at 2010-02-19 15:04:02) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mUser Columns (2.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mBooking Columns (2.7ms)[0m   [0;1mSHOW FIELDS FROM `bookings`[0m
+  [4;35;1mBooking Load (0.5ms)[0m   [0mSELECT * FROM `bookings` WHERE (`bookings`.`id` = 2) [0m
+Rendering template within layouts/application
+Rendering bookings/show
+Completed in 48ms (View: 31, DB: 7) | 200 OK [http://localhost/bookings/2]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-19 15:04:12) [GET]
+  Parameters: {"id"=>1}
+  [4;35;1mLocation Columns (54.3ms)[0m   [0mSHOW FIELDS FROM `locations`[0m
+  [4;36;1mLocation Load (0.6ms)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;35;1mDesk Load (0.6ms)[0m   [0mSELECT * FROM `desks` WHERE (`desks`.location_id = 1) [0m
+  [4;36;1mDesk Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `desks`[0m
+  [4;35;1mBooking Load (0.5ms)[0m   [0mSELECT * FROM `bookings` WHERE (`bookings`.bookable_id = 1 AND `bookings`.bookable_type = 'Desk') [0m
+  [4;36;1mBooking Columns (2.7ms)[0m   [0;1mSHOW FIELDS FROM `bookings`[0m
+  [4;35;1mUser Columns (5.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (2.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mBooking Load (0.5ms)[0m   [0mSELECT * FROM `bookings` WHERE (`bookings`.bookable_id = 2 AND `bookings`.bookable_type = 'Desk') [0m
+Completed in 146ms (View: 70, DB: 68) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LocationsController#show (for 192.168.1.103 at 2010-02-19 15:05:12) [GET]
+  Parameters: {"id"=>1}
+  [4;35;1mLocation Columns (260.5ms)[0m   [0mSHOW FIELDS FROM `locations`[0m
+  [4;36;1mLocation Load (0.6ms)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;35;1mDesk Load (0.5ms)[0m   [0mSELECT * FROM `desks` WHERE (`desks`.location_id = 1) [0m
+  [4;36;1mDesk Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `desks`[0m
+  [4;35;1mBooking Load (0.6ms)[0m   [0mSELECT * FROM `bookings` WHERE (`bookings`.bookable_id = 1 AND `bookings`.bookable_type = 'Desk') [0m
+  [4;36;1mBooking Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `bookings`[0m
+  [4;35;1mBooking Load (0.5ms)[0m   [0mSELECT * FROM `bookings` WHERE (`bookings`.bookable_id = 2 AND `bookings`.bookable_type = 'Desk') [0m
+Completed in 318ms (View: 43, DB: 267) | 200 OK [http://192.168.1.106/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (41.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (21.6ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20100109192606)
+Migrating to CreateRoles (20100109195227)
+Migrating to CreateLocations (20100109195338)
+Migrating to CreateDesks (20100109195403)
+Migrating to CreateMeetingRooms (20100109195418)
+Migrating to CreateBookings (20100109195451)
+Migrating to AddMembershipToUsers (20100109195619)
+Migrating to RemoveDesksAndMeetingRooms (20100219151124)
+  [4;35;1mSQL (58.3ms)[0m   [0mDROP TABLE `desks`[0m
+  [4;36;1mSQL (34.5ms)[0m   [0;1mDROP TABLE `meeting_rooms`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100219151124')[0m
+  [4;36;1mSQL (2.7ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (2.1ms)[0m   [0mSHOW FIELDS FROM `bookings`[0m
+  [4;36;1mSQL (2.1ms)[0m   [0;1mdescribe `bookings`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW KEYS FROM `bookings`[0m
+  [4;36;1mSQL (2.7ms)[0m   [0;1mSHOW FIELDS FROM `locations`[0m
+  [4;35;1mSQL (2.3ms)[0m   [0mdescribe `locations`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW KEYS FROM `locations`[0m
+  [4;35;1mSQL (21.2ms)[0m   [0mSHOW FIELDS FROM `roles`[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mdescribe `roles`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW KEYS FROM `roles`[0m
+  [4;36;1mSQL (8.6ms)[0m   [0;1mSHOW FIELDS FROM `roles_users`[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mdescribe `roles_users`[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW KEYS FROM `roles_users`[0m
+  [4;35;1mSQL (2.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (2.6ms)[0m   [0;1mdescribe `users`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-19 15:16:42) [GET]
+  Parameters: {"id"=>1}
+  [4;35;1mLocation Columns (76.5ms)[0m   [0mSHOW FIELDS FROM `locations`[0m
+  [4;36;1mLocation Load (0.6ms)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;35;1mDesk Load (0.0ms)[0m   [0mMysql::Error: Table 'ftc_booking_system.desks' doesn't exist: SELECT * FROM `desks` WHERE (`desks`.location_id = 1) [0m
+
+ActionView::TemplateError (Mysql::Error: Table 'ftc_booking_system.desks' doesn't exist: SELECT * FROM `desks` WHERE (`desks`.location_id = 1) ) on line #24 of app/views/locations/show.html.erb:
+21: 
+22: 	<% if @location.desks %>
+23: 		<h2>Desks</h2>
+24: 		<% @location.desks.each do |d| %>
+25: 			<p><strong><%= d.name %></strong>: <%= number_to_currency(d.member_price, :unit => "&pound;") %>/<%= number_to_currency(d.non_member_price, :unit => "&pound;") %></p>
+26: 			<table width="100%"><tr>
+27: 			<% s.upto(e) do |date| %>
+
+    app/views/locations/show.html.erb:24
+    app/controllers/locations_controller.rb:19:in `show'
+
+Rendered rescues/_trace (61.3ms)
+Rendered rescues/_request_and_response (19.1ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (53.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20100109192606)
+Migrating to CreateRoles (20100109195227)
+Migrating to CreateLocations (20100109195338)
+Migrating to CreateBookings (20100109195451)
+Migrating to AddMembershipToUsers (20100109195619)
+Migrating to RemoveDesksAndMeetingRooms (20100219151124)
+Migrating to AddResourcesTable (20100219152251)
+  [4;35;1mSQL (389.8ms)[0m   [0mCREATE TABLE `resources` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `description` text, `start_hour` int(11), `end_hour` int(11), `member_price` decimal(8,2), `non_member_price` decimal(8,2), `number_available` int(11)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (90.7ms)[0m   [0;1mALTER TABLE `users` ADD `member_until` datetime[0m
+  [4;35;1mSQL (56.9ms)[0m   [0mALTER TABLE `bookings` DROP `bookable_type`[0m
+  [4;36;1mSQL (57.7ms)[0m   [0;1mALTER TABLE `bookings` DROP `bookable_id`[0m
+  [4;35;1mSQL (81.2ms)[0m   [0mALTER TABLE `bookings` ADD `resources_id` int(11)[0m
+  [4;36;1mSQL (219.6ms)[0m   [0;1mALTER TABLE `bookings` ADD `payment_ref` varchar(255)[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100219152251')[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mSHOW FIELDS FROM `bookings`[0m
+  [4;36;1mSQL (2.5ms)[0m   [0;1mdescribe `bookings`[0m
+  [4;35;1mSQL (3.8ms)[0m   [0mSHOW KEYS FROM `bookings`[0m
+  [4;36;1mSQL (9.7ms)[0m   [0;1mSHOW FIELDS FROM `locations`[0m
+  [4;35;1mSQL (7.6ms)[0m   [0mdescribe `locations`[0m
+  [4;36;1mSQL (1.8ms)[0m   [0;1mSHOW KEYS FROM `locations`[0m
+  [4;35;1mSQL (1.9ms)[0m   [0mSHOW FIELDS FROM `resources`[0m
+  [4;36;1mSQL (2.4ms)[0m   [0;1mdescribe `resources`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSHOW KEYS FROM `resources`[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mSHOW FIELDS FROM `roles`[0m
+  [4;35;1mSQL (2.7ms)[0m   [0mdescribe `roles`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW KEYS FROM `roles`[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mSHOW FIELDS FROM `roles_users`[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mdescribe `roles_users`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW KEYS FROM `roles_users`[0m
+  [4;36;1mSQL (3.1ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (2.9ms)[0m   [0mdescribe `users`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to AddResourcesTable (20100219152251)
+  [4;35;1mSQL (104.8ms)[0m   [0mALTER TABLE `bookings` DROP `payment_ref`[0m
+  [4;36;1mSQL (366.9ms)[0m   [0;1mALTER TABLE `bookings` DROP `resources_id`[0m
+  [4;35;1mSQL (590.2ms)[0m   [0mALTER TABLE `bookings` ADD `bookable_id` int(11)[0m
+  [4;36;1mSQL (80.3ms)[0m   [0;1mALTER TABLE `bookings` ADD `bookable_type` varchar(255)[0m
+  [4;35;1mSQL (70.7ms)[0m   [0mALTER TABLE `users` DROP `member_until`[0m
+  [4;36;1mSQL (1.8ms)[0m   [0;1mDROP TABLE `resources`[0m
+  [4;35;1mSQL (29.4ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20100219152251'[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (2.1ms)[0m   [0mSHOW FIELDS FROM `bookings`[0m
+  [4;36;1mSQL (2.4ms)[0m   [0;1mdescribe `bookings`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW KEYS FROM `bookings`[0m
+  [4;36;1mSQL (3.2ms)[0m   [0;1mSHOW FIELDS FROM `locations`[0m
+  [4;35;1mSQL (2.5ms)[0m   [0mdescribe `locations`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW KEYS FROM `locations`[0m
+  [4;35;1mSQL (1.5ms)[0m   [0mSHOW FIELDS FROM `roles`[0m
+  [4;36;1mSQL (2.2ms)[0m   [0;1mdescribe `roles`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW KEYS FROM `roles`[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mSHOW FIELDS FROM `roles_users`[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mdescribe `roles_users`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW KEYS FROM `roles_users`[0m
+  [4;35;1mSQL (2.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (2.7ms)[0m   [0;1mdescribe `users`[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20100109192606)
+Migrating to CreateRoles (20100109195227)
+Migrating to CreateLocations (20100109195338)
+Migrating to CreateBookings (20100109195451)
+Migrating to AddMembershipToUsers (20100109195619)
+Migrating to RemoveDesksAndMeetingRooms (20100219151124)
+Migrating to AddResourcesTable (20100219152251)
+  [4;35;1mSQL (176.6ms)[0m   [0mCREATE TABLE `resources` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `description` text, `start_hour` int(11), `end_hour` int(11), `member_price` decimal(8,2), `non_member_price` decimal(8,2), `number_available` int(11)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (475.2ms)[0m   [0;1mALTER TABLE `users` ADD `member_until` datetime[0m
+  [4;35;1mSQL (56.5ms)[0m   [0mALTER TABLE `bookings` DROP `bookable_type`[0m
+  [4;36;1mSQL (75.7ms)[0m   [0;1mALTER TABLE `bookings` DROP `bookable_id`[0m
+  [4;35;1mSQL (71.0ms)[0m   [0mALTER TABLE `bookings` ADD `resources_id` int(11)[0m
+  [4;36;1mSQL (56.3ms)[0m   [0;1mALTER TABLE `bookings` ADD `payment_ref` varchar(255)[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100219152251')[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (2.5ms)[0m   [0mSHOW FIELDS FROM `bookings`[0m
+  [4;36;1mSQL (2.2ms)[0m   [0;1mdescribe `bookings`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW KEYS FROM `bookings`[0m
+  [4;36;1mSQL (3.2ms)[0m   [0;1mSHOW FIELDS FROM `locations`[0m
+  [4;35;1mSQL (2.3ms)[0m   [0mdescribe `locations`[0m
+  [4;36;1mSQL (4.8ms)[0m   [0;1mSHOW KEYS FROM `locations`[0m
+  [4;35;1mSQL (2.4ms)[0m   [0mSHOW FIELDS FROM `resources`[0m
+  [4;36;1mSQL (2.1ms)[0m   [0;1mdescribe `resources`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW KEYS FROM `resources`[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mSHOW FIELDS FROM `roles`[0m
+  [4;35;1mSQL (1.9ms)[0m   [0mdescribe `roles`[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSHOW KEYS FROM `roles`[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mSHOW FIELDS FROM `roles_users`[0m
+  [4;36;1mSQL (2.4ms)[0m   [0;1mdescribe `roles_users`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW KEYS FROM `roles_users`[0m
+  [4;36;1mSQL (2.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (2.7ms)[0m   [0mdescribe `users`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to AddResourcesTable (20100219152251)
+  [4;35;1mSQL (99.6ms)[0m   [0mALTER TABLE `bookings` DROP `payment_ref`[0m
+  [4;36;1mSQL (314.0ms)[0m   [0;1mALTER TABLE `bookings` DROP `resources_id`[0m
+  [4;35;1mSQL (57.8ms)[0m   [0mALTER TABLE `bookings` ADD `bookable_id` int(11)[0m
+  [4;36;1mSQL (56.6ms)[0m   [0;1mALTER TABLE `bookings` ADD `bookable_type` varchar(255)[0m
+  [4;35;1mSQL (79.5ms)[0m   [0mALTER TABLE `users` DROP `member_until`[0m
+  [4;36;1mSQL (1.6ms)[0m   [0;1mDROP TABLE `resources`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20100219152251'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (2.3ms)[0m   [0mSHOW FIELDS FROM `bookings`[0m
+  [4;36;1mSQL (1.9ms)[0m   [0;1mdescribe `bookings`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW KEYS FROM `bookings`[0m
+  [4;36;1mSQL (3.7ms)[0m   [0;1mSHOW FIELDS FROM `locations`[0m
+  [4;35;1mSQL (4.2ms)[0m   [0mdescribe `locations`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW KEYS FROM `locations`[0m
+  [4;35;1mSQL (1.8ms)[0m   [0mSHOW FIELDS FROM `roles`[0m
+  [4;36;1mSQL (2.3ms)[0m   [0;1mdescribe `roles`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSHOW KEYS FROM `roles`[0m
+  [4;36;1mSQL (1.6ms)[0m   [0;1mSHOW FIELDS FROM `roles_users`[0m
+  [4;35;1mSQL (2.3ms)[0m   [0mdescribe `roles_users`[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW KEYS FROM `roles_users`[0m
+  [4;35;1mSQL (2.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (2.6ms)[0m   [0;1mdescribe `users`[0m
+  [4;35;1mSQL (1.7ms)[0m   [0mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20100109192606)
+Migrating to CreateRoles (20100109195227)
+Migrating to CreateLocations (20100109195338)
+Migrating to CreateBookings (20100109195451)
+Migrating to AddMembershipToUsers (20100109195619)
+Migrating to RemoveDesksAndMeetingRooms (20100219151124)
+Migrating to AddResourcesTable (20100219152251)
+  [4;35;1mSQL (82.5ms)[0m   [0mCREATE TABLE `resources` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `description` text, `start_hour` int(11), `end_hour` int(11), `member_price` decimal(8,2), `non_member_price` decimal(8,2), `number_available` int(11)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (463.0ms)[0m   [0;1mALTER TABLE `users` ADD `member_until` datetime[0m
+  [4;35;1mSQL (72.6ms)[0m   [0mALTER TABLE `bookings` DROP `bookable_type`[0m
+  [4;36;1mSQL (62.9ms)[0m   [0;1mALTER TABLE `bookings` DROP `bookable_id`[0m
+  [4;35;1mSQL (56.6ms)[0m   [0mALTER TABLE `bookings` ADD `resources_id` int(11)[0m
+  [4;36;1mSQL (56.2ms)[0m   [0;1mALTER TABLE `bookings` ADD `payment_ref` varchar(255)[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100219152251')[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (2.2ms)[0m   [0mSHOW FIELDS FROM `bookings`[0m
+  [4;36;1mSQL (1.9ms)[0m   [0;1mdescribe `bookings`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW KEYS FROM `bookings`[0m
+  [4;36;1mSQL (2.9ms)[0m   [0;1mSHOW FIELDS FROM `locations`[0m
+  [4;35;1mSQL (3.3ms)[0m   [0mdescribe `locations`[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mSHOW KEYS FROM `locations`[0m
+  [4;35;1mSQL (3.5ms)[0m   [0mSHOW FIELDS FROM `resources`[0m
+  [4;36;1mSQL (1.9ms)[0m   [0;1mdescribe `resources`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW KEYS FROM `resources`[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mSHOW FIELDS FROM `roles`[0m
+  [4;35;1mSQL (1.8ms)[0m   [0mdescribe `roles`[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW KEYS FROM `roles`[0m
+  [4;35;1mSQL (1.6ms)[0m   [0mSHOW FIELDS FROM `roles_users`[0m
+  [4;36;1mSQL (3.1ms)[0m   [0;1mdescribe `roles_users`[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mSHOW KEYS FROM `roles_users`[0m
+  [4;36;1mSQL (3.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (2.5ms)[0m   [0mdescribe `users`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to AddResourcesTable (20100219152251)
+  [4;35;1mSQL (157.3ms)[0m   [0mALTER TABLE `bookings` DROP `payment_ref`[0m
+  [4;36;1mSQL (70.7ms)[0m   [0;1mALTER TABLE `bookings` DROP `resources_id`[0m
+  [4;35;1mSQL (57.1ms)[0m   [0mALTER TABLE `bookings` ADD `bookable_id` int(11)[0m
+  [4;36;1mSQL (56.7ms)[0m   [0;1mALTER TABLE `bookings` ADD `bookable_type` varchar(255)[0m
+  [4;35;1mSQL (79.5ms)[0m   [0mALTER TABLE `users` DROP `member_until`[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mDROP TABLE `resources`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20100219152251'[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (2.6ms)[0m   [0mSHOW FIELDS FROM `bookings`[0m
+  [4;36;1mSQL (1.9ms)[0m   [0;1mdescribe `bookings`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW KEYS FROM `bookings`[0m
+  [4;36;1mSQL (2.8ms)[0m   [0;1mSHOW FIELDS FROM `locations`[0m
+  [4;35;1mSQL (2.5ms)[0m   [0mdescribe `locations`[0m
+  [4;36;1mSQL (3.5ms)[0m   [0;1mSHOW KEYS FROM `locations`[0m
+  [4;35;1mSQL (1.7ms)[0m   [0mSHOW FIELDS FROM `roles`[0m
+  [4;36;1mSQL (2.1ms)[0m   [0;1mdescribe `roles`[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSHOW KEYS FROM `roles`[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mSHOW FIELDS FROM `roles_users`[0m
+  [4;35;1mSQL (2.1ms)[0m   [0mdescribe `roles_users`[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW KEYS FROM `roles_users`[0m
+  [4;35;1mSQL (2.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (2.9ms)[0m   [0;1mdescribe `users`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20100109192606)
+Migrating to CreateRoles (20100109195227)
+Migrating to CreateLocations (20100109195338)
+Migrating to CreateBookings (20100109195451)
+Migrating to AddMembershipToUsers (20100109195619)
+Migrating to RemoveDesksAndMeetingRooms (20100219151124)
+Migrating to AddResourcesTable (20100219152251)
+  [4;35;1mSQL (166.3ms)[0m   [0mCREATE TABLE `resources` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `description` text, `start_hour` int(11), `end_hour` int(11), `member_price` decimal(8,2), `non_member_price` decimal(8,2), `number_available` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (68.0ms)[0m   [0;1mALTER TABLE `users` ADD `member_until` datetime[0m
+  [4;35;1mSQL (67.7ms)[0m   [0mALTER TABLE `bookings` DROP `bookable_type`[0m
+  [4;36;1mSQL (454.1ms)[0m   [0;1mALTER TABLE `bookings` DROP `bookable_id`[0m
+  [4;35;1mSQL (69.6ms)[0m   [0mALTER TABLE `bookings` ADD `resources_id` int(11)[0m
+  [4;36;1mSQL (57.4ms)[0m   [0;1mALTER TABLE `bookings` ADD `payment_ref` varchar(255)[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100219152251')[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mSHOW FIELDS FROM `bookings`[0m
+  [4;36;1mSQL (1.9ms)[0m   [0;1mdescribe `bookings`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW KEYS FROM `bookings`[0m
+  [4;36;1mSQL (2.3ms)[0m   [0;1mSHOW FIELDS FROM `locations`[0m
+  [4;35;1mSQL (2.4ms)[0m   [0mdescribe `locations`[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW KEYS FROM `locations`[0m
+  [4;35;1mSQL (4.0ms)[0m   [0mSHOW FIELDS FROM `resources`[0m
+  [4;36;1mSQL (3.2ms)[0m   [0;1mdescribe `resources`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW KEYS FROM `resources`[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mSHOW FIELDS FROM `roles`[0m
+  [4;35;1mSQL (2.2ms)[0m   [0mdescribe `roles`[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mSHOW KEYS FROM `roles`[0m
+  [4;35;1mSQL (1.5ms)[0m   [0mSHOW FIELDS FROM `roles_users`[0m
+  [4;36;1mSQL (2.8ms)[0m   [0;1mdescribe `roles_users`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW KEYS FROM `roles_users`[0m
+  [4;36;1mSQL (2.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (2.5ms)[0m   [0mdescribe `users`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-19 15:55:17) [GET]
+  Parameters: {"id"=>1}
+  [4;35;1mLocation Columns (281.1ms)[0m   [0mSHOW FIELDS FROM `locations`[0m
+  [4;36;1mLocation Load (0.6ms)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+
+ActionView::TemplateError (uninitialized constant Location::Desk) on line #22 of app/views/locations/show.html.erb:
+19: 
+20: <div id="booking_area">
+21: 
+22: 	<% if @location.desks %>
+23: 		<h2>Desks</h2>
+24: 		<% @location.desks.each do |d| %>
+25: 			<p><strong><%= d.name %></strong>: <%= number_to_currency(d.member_price, :unit => "&pound;") %>/<%= number_to_currency(d.non_member_price, :unit => "&pound;") %></p>
+
+    app/views/locations/show.html.erb:22
+    app/controllers/locations_controller.rb:19:in `show'
+
+Rendered rescues/_trace (57.8ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResourcesController#new (for 127.0.0.1 at 2010-02-19 15:55:26) [GET]
+  [4;36;1mResource Columns (2.3ms)[0m   [0;1mSHOW FIELDS FROM `resources`[0m
+Rendering template within layouts/resources
+Rendering resources/new
+
+ActionView::TemplateError (undefined method `select_hour' for #<ActionView::Helpers::FormBuilder:0x237e054>) on line #15 of app/views/resources/new.html.erb:
+12:   </p>
+13:   <p>
+14:     <%= f.label :start_hour %><br />
+15:     <%= f.select_hour :field_name => 'start_hour' %>
+16:   </p>
+17:   <p>
+18:     <%= f.label :end_hour %><br />
+
+    app/views/resources/new.html.erb:15
+    app/views/resources/new.html.erb:3
+    app/controllers/resources_controller.rb:29:in `new'
+
+Rendered rescues/_trace (52.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResourcesController#new (for 127.0.0.1 at 2010-02-19 15:56:19) [GET]
+  [4;36;1mResource Columns (76.3ms)[0m   [0;1mSHOW FIELDS FROM `resources`[0m
+Rendering template within layouts/resources
+Rendering resources/new
+
+ActionView::TemplateError (undefined method `select_hour' for #<ActionView::Helpers::FormBuilder:0x244d700>) on line #15 of app/views/resources/new.html.erb:
+12:   </p>
+13:   <p>
+14:     <%= f.label :start_hour %><br />
+15:     <%= f.select_hour Time.now, :field_name => 'start_hour' %>
+16:   </p>
+17:   <p>
+18:     <%= f.label :end_hour %><br />
+
+    app/views/resources/new.html.erb:15
+    app/views/resources/new.html.erb:3
+    app/controllers/resources_controller.rb:29:in `new'
+
+Rendered rescues/_trace (145.0ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResourcesController#new (for 127.0.0.1 at 2010-02-19 15:57:09) [GET]
+  [4;36;1mResource Columns (2.4ms)[0m   [0;1mSHOW FIELDS FROM `resources`[0m
+Rendering template within layouts/resources
+Rendering resources/new
+Completed in 30ms (View: 21, DB: 3) | 200 OK [http://localhost/resources/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResourcesController#new (for 127.0.0.1 at 2010-02-19 15:57:25) [GET]
+  [4;36;1mResource Columns (2.3ms)[0m   [0;1mSHOW FIELDS FROM `resources`[0m
+Rendering template within layouts/application
+Rendering resources/new
+Completed in 21ms (View: 12, DB: 2) | 200 OK [http://localhost/resources/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResourcesController#new (for 127.0.0.1 at 2010-02-19 15:59:37) [GET]
+  [4;36;1mResource Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `resources`[0m
+Rendering template within layouts/application
+Rendering resources/new
+Completed in 28ms (View: 19, DB: 2) | 200 OK [http://localhost/resources/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResourcesController#new (for 127.0.0.1 at 2010-02-19 16:00:08) [GET]
+  [4;36;1mResource Columns (2.5ms)[0m   [0;1mSHOW FIELDS FROM `resources`[0m
+Rendering template within layouts/application
+Rendering resources/new
+
+ActionView::TemplateError (undefined method `select_hour' for #<ActionView::Helpers::FormBuilder:0x2642510>) on line #15 of app/views/resources/new.html.erb:
+12:   </p>
+13:   <p>
+14:     <%= f.label :start_hour %><br />
+15:     <%= f.select_hour Time.now, :field_name => 'resource[start_hour]' %>
+16:   </p>
+17:   <p>
+18:     <%= f.label :end_hour %><br />
+
+    app/views/resources/new.html.erb:15
+    app/views/resources/new.html.erb:3
+    app/controllers/resources_controller.rb:29:in `new'
+
+Rendered rescues/_trace (52.1ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResourcesController#new (for 127.0.0.1 at 2010-02-19 16:00:19) [GET]
+  [4;36;1mResource Columns (2.4ms)[0m   [0;1mSHOW FIELDS FROM `resources`[0m
+Rendering template within layouts/application
+Rendering resources/new
+Completed in 29ms (View: 20, DB: 2) | 200 OK [http://localhost/resources/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResourcesController#new (for 127.0.0.1 at 2010-02-19 16:01:22) [GET]
+  [4;36;1mResource Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `resources`[0m
+Rendering template within layouts/application
+Rendering resources/new
+Completed in 27ms (View: 18, DB: 2) | 200 OK [http://localhost/resources/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResourcesController#new (for 127.0.0.1 at 2010-02-19 16:01:25) [GET]
+  [4;36;1mResource Columns (2.4ms)[0m   [0;1mSHOW FIELDS FROM `resources`[0m
+Rendering template within layouts/application
+Rendering resources/new
+Completed in 22ms (View: 13, DB: 3) | 200 OK [http://localhost/resources/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResourcesController#new (for 127.0.0.1 at 2010-02-19 16:03:07) [GET]
+  [4;36;1mResource Columns (2.6ms)[0m   [0;1mSHOW FIELDS FROM `resources`[0m
+Rendering template within layouts/application
+Rendering resources/new
+Completed in 28ms (View: 19, DB: 3) | 200 OK [http://localhost/resources/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResourcesController#create (for 127.0.0.1 at 2010-02-19 16:03:57) [POST]
+  Parameters: {"commit"=>"Create", "resource"=>{"name"=>"Hot-Desk Morning", "non_member_price"=>"12.00", "description"=>"Co-Work on this beautiful hot-desk between 9am and 1pm on your chosen day!", "number_available"=>"3", "member_price"=>"10.00"}, "date"=>{"start_hour"=>"09", "end_hour"=>"13"}, "authenticity_token"=>"/OJdXxt8zSdr/5rvDrWdYIoGtJD/WFQX4IqVpbocgSI="}
+  [4;36;1mResource Columns (268.4ms)[0m   [0;1mSHOW FIELDS FROM `resources`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mResource Create (0.3ms)[0m   [0;1mINSERT INTO `resources` (`name`, `updated_at`, `non_member_price`, `start_hour`, `description`, `end_hour`, `member_price`, `number_available`, `created_at`) VALUES('Hot-Desk Morning', '2010-02-19 16:03:58', 12.0, 9, 'Co-Work on this beautiful hot-desk between 9am and 1pm on your chosen day!', 13, 10.0, 3, '2010-02-19 16:03:58')[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/resources/1
+Completed in 281ms (DB: 270) | 302 Found [http://localhost/resources]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResourcesController#show (for 127.0.0.1 at 2010-02-19 16:03:58) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mResource Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `resources`[0m
+  [4;36;1mResource Load (0.4ms)[0m   [0;1mSELECT * FROM `resources` WHERE (`resources`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering resources/show
+Completed in 17ms (View: 7, DB: 3) | 200 OK [http://localhost/resources/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResourcesController#edit (for 127.0.0.1 at 2010-02-19 16:04:56) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mResource Columns (263.1ms)[0m   [0;1mSHOW FIELDS FROM `resources`[0m
+  [4;35;1mResource Load (0.6ms)[0m   [0mSELECT * FROM `resources` WHERE (`resources`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering resources/edit
+Completed in 287ms (View: 15, DB: 264) | 200 OK [http://localhost/resources/1/edit]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResourcesController#edit (for 127.0.0.1 at 2010-02-19 16:05:31) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mResource Columns (2.4ms)[0m   [0mSHOW FIELDS FROM `resources`[0m
+  [4;36;1mResource Load (1.3ms)[0m   [0;1mSELECT * FROM `resources` WHERE (`resources`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering resources/edit
+
+ActionView::TemplateError (undefined method `hour' for {:field_name=>"start_hour"}:Hash) on line #15 of app/views/resources/edit.html.erb:
+12:   </p>
+13:   <p>
+14:     <%= f.label :start_hour %><br />
+15:     <%= select_hour :field_name => 'start_hour' %>
+16:   </p>
+17:   <p>
+18:     <%= f.label :end_hour %><br />
+
+    app/views/resources/edit.html.erb:15
+    app/views/resources/edit.html.erb:3
+
+Rendered rescues/_trace (50.4ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResourcesController#edit (for 127.0.0.1 at 2010-02-19 16:06:30) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mResource Columns (2.4ms)[0m   [0;1mSHOW FIELDS FROM `resources`[0m
+  [4;35;1mResource Load (0.4ms)[0m   [0mSELECT * FROM `resources` WHERE (`resources`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering resources/edit
+Completed in 29ms (View: 20, DB: 3) | 200 OK [http://localhost/resources/1/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LocationsController#show (for 192.168.1.103 at 2010-02-19 16:11:16) [GET]
+  Parameters: {"id"=>1}
+  [4;35;1mLocation Columns (72.1ms)[0m   [0mSHOW FIELDS FROM `locations`[0m
+  [4;36;1mLocation Load (0.6ms)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+
+ActionView::TemplateError (uninitialized constant Location::Desk) on line #22 of app/views/locations/show.html.erb:
+19: 
+20: <div id="booking_area">
+21: 
+22: 	<% if @location.desks %>
+23: 		<h2>Desks</h2>
+24: 		<% @location.desks.each do |d| %>
+25: 			<p><strong><%= d.name %></strong>: <%= number_to_currency(d.member_price, :unit => "&pound;") %>/<%= number_to_currency(d.non_member_price, :unit => "&pound;") %></p>
+
+    app/views/locations/show.html.erb:22
+    app/controllers/locations_controller.rb:19:in `show'
+
+Rendered rescues/_trace (57.0ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#new (for 192.168.1.103 at 2010-02-19 16:12:06) [GET]
+  [4;36;1mUser Columns (2.9ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 60ms (View: 53, DB: 3) | 200 OK [http://192.168.1.106/signup]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-19 16:12:44) [GET]
+
+SyntaxError (/Users/bengibbs/websites/ftc_booking_system/app/controllers/resources_controller.rb:3: syntax error, unexpected ':', expecting kEND
+  before_filter :login_required :except =>[:show, :index]
+                                 ^):
+  
+
+Rendered rescues/_trace (35.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResourcesController#index (for 127.0.0.1 at 2010-02-19 16:14:12) [GET]
+  [4;35;1mResource Load (0.5ms)[0m   [0mSELECT * FROM `resources` [0m
+Rendering template within layouts/application
+Rendering resources/index
+  [4;36;1mResource Columns (2.4ms)[0m   [0;1mSHOW FIELDS FROM `resources`[0m
+Completed in 21ms (View: 13, DB: 3) | 200 OK [http://localhost/resources/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-02-19 16:14:19) [GET]
+Redirected to http://localhost:3000/
+Completed in 3ms (DB: 0) | 302 Found [http://localhost/logout]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-19 16:14:19) [GET]
+  Parameters: {"id"=>1}
+  [4;35;1mLocation Columns (2.5ms)[0m   [0mSHOW FIELDS FROM `locations`[0m
+  [4;36;1mLocation Load (0.4ms)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+
+ActionView::TemplateError (uninitialized constant Location::Desk) on line #22 of app/views/locations/show.html.erb:
+19: 
+20: <div id="booking_area">
+21: 
+22: 	<% if @location.desks %>
+23: 		<h2>Desks</h2>
+24: 		<% @location.desks.each do |d| %>
+25: 			<p><strong><%= d.name %></strong>: <%= number_to_currency(d.member_price, :unit => "&pound;") %>/<%= number_to_currency(d.non_member_price, :unit => "&pound;") %></p>
+
+    app/views/locations/show.html.erb:22
+    app/controllers/locations_controller.rb:19:in `show'
+
+Rendered rescues/_trace (57.6ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResourcesController#index (for 127.0.0.1 at 2010-02-19 16:14:24) [GET]
+  [4;36;1mResource Load (0.6ms)[0m   [0;1mSELECT * FROM `resources` [0m
+Rendering template within layouts/application
+Rendering resources/index
+  [4;35;1mResource Columns (2.5ms)[0m   [0mSHOW FIELDS FROM `resources`[0m
+Completed in 19ms (View: 8, DB: 3) | 200 OK [http://localhost/resources/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResourcesController#edit (for 127.0.0.1 at 2010-02-19 16:14:27) [GET]
+  Parameters: {"id"=>"1"}
+Redirected to http://localhost:3000/session/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/resources/1/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-02-19 16:14:27) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/session/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#create (for 192.168.1.103 at 2010-02-19 16:16:06) [POST]
+  Parameters: {"user"=>{"company"=>"Alteris", "password_confirmation"=>"test", "phone"=>"07870331894", "first_name"=>"Ian", "password"=>"test", "login"=>"hello@ianmoss.com", "surname"=>"Moss"}, "commit"=>"Sign up", "authenticity_token"=>"xZb4LH1RP2MoWtE+Pc6sW7ngD3CLlfyZZVFBVFC5eWo="}
+  [4;35;1mUser Columns (286.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (108.7ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`login` = BINARY 'hello@ianmoss.com') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`login` = BINARY 'hello@ianmoss.com') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 421ms (View: 13, DB: 395) | 200 OK [http://192.168.1.106/users]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#create (for 192.168.1.103 at 2010-02-19 16:16:20) [POST]
+  Parameters: {"user"=>{"company"=>"Alteris", "password_confirmation"=>"testtest", "phone"=>"07870331894", "first_name"=>"Ian", "password"=>"testtest", "login"=>"hello@ianmoss.com", "surname"=>"Moss"}, "commit"=>"Sign up", "authenticity_token"=>"xZb4LH1RP2MoWtE+Pc6sW7ngD3CLlfyZZVFBVFC5eWo="}
+  [4;35;1mUser Columns (288.1ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`login` = BINARY 'hello@ianmoss.com') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Create (0.5ms)[0m   [0;1mINSERT INTO `users` (`name`, `salt`, `company`, `updated_at`, `activated_at`, `crypted_password`, `deleted_at`, `remember_token_expires_at`, `activation_code`, `member`, `remember_token`, `phone`, `member_until`, `first_name`, `login`, `surname`, `email`, `created_at`, `state`) VALUES('', '86ad747a39ab796354b1387fc52efe647e8166ec', 'Alteris', '2010-02-19 16:16:21', NULL, 'f04e6ef412b42ffd7180748cedcad0f2caac089b', NULL, NULL, 'e324aaaebcc7c157773a6975280e6595dd78ba75', NULL, NULL, '07870331894', NULL, 'Ian', 'hello@ianmoss.com', 'Moss', NULL, '2010-02-19 16:16:21', 'pending')[0m
+Sent mail to 
+
+Date: Fri, 19 Feb 2010 16:16:21 +0000
+From: ADMINEMAIL
+Subject: [YOURSITE] Please activate your new account
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Your account has been created.
+
+  Username: hello@ianmoss.com
+  Password: testtest
+
+Visit this url to activate your account:
+
+  http://YOURSITE/activate/e324aaaebcc7c157773a6975280e6595dd78ba75
+  [4;35;1mSQL (0.6ms)[0m   [0mCOMMIT[0m
+  [4;36;1mUser Load (16.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`login` = BINARY 'hello@ianmoss.com' AND `users`.id <> 4) LIMIT 1[0m
+Redirected to http://192.168.1.106:3000/
+Completed in 404ms (DB: 306) | 302 Found [http://192.168.1.106/users]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LocationsController#show (for 192.168.1.103 at 2010-02-19 16:16:21) [GET]
+  Parameters: {"id"=>1}
+  [4;36;1mLocation Columns (2.6ms)[0m   [0;1mSHOW FIELDS FROM `locations`[0m
+  [4;35;1mLocation Load (0.4ms)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+
+ActionView::TemplateError (uninitialized constant Location::Desk) on line #22 of app/views/locations/show.html.erb:
+19: 
+20: <div id="booking_area">
+21: 
+22: 	<% if @location.desks %>
+23: 		<h2>Desks</h2>
+24: 		<% @location.desks.each do |d| %>
+25: 			<p><strong><%= d.name %></strong>: <%= number_to_currency(d.member_price, :unit => "&pound;") %>/<%= number_to_currency(d.non_member_price, :unit => "&pound;") %></p>
+
+    app/views/locations/show.html.erb:22
+    app/controllers/locations_controller.rb:19:in `show'
+
+Rendered rescues/_trace (148.1ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (67.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to AddResourcesTable (20100219152251)
+  [4;35;1mSQL (343.2ms)[0m   [0mALTER TABLE `bookings` DROP `payment_ref`[0m
+  [4;36;1mSQL (71.0ms)[0m   [0;1mALTER TABLE `bookings` DROP `resources_id`[0m
+  [4;35;1mSQL (56.1ms)[0m   [0mALTER TABLE `bookings` ADD `bookable_id` int(11)[0m
+  [4;36;1mSQL (78.5ms)[0m   [0;1mALTER TABLE `bookings` ADD `bookable_type` varchar(255)[0m
+  [4;35;1mSQL (78.2ms)[0m   [0mALTER TABLE `users` DROP `member_until`[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mDROP TABLE `resources`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20100219152251'[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (2.8ms)[0m   [0mSHOW FIELDS FROM `bookings`[0m
+  [4;36;1mSQL (1.9ms)[0m   [0;1mdescribe `bookings`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW KEYS FROM `bookings`[0m
+  [4;36;1mSQL (2.8ms)[0m   [0;1mSHOW FIELDS FROM `locations`[0m
+  [4;35;1mSQL (8.1ms)[0m   [0mdescribe `locations`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW KEYS FROM `locations`[0m
+  [4;35;1mSQL (1.8ms)[0m   [0mSHOW FIELDS FROM `roles`[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mdescribe `roles`[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSHOW KEYS FROM `roles`[0m
+  [4;36;1mSQL (1.6ms)[0m   [0;1mSHOW FIELDS FROM `roles_users`[0m
+  [4;35;1mSQL (2.2ms)[0m   [0mdescribe `roles_users`[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW KEYS FROM `roles_users`[0m
+  [4;35;1mSQL (4.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (2.5ms)[0m   [0;1mdescribe `users`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20100109192606)
+Migrating to CreateRoles (20100109195227)
+Migrating to CreateLocations (20100109195338)
+Migrating to CreateBookings (20100109195451)
+Migrating to AddMembershipToUsers (20100109195619)
+Migrating to RemoveDesksAndMeetingRooms (20100219151124)
+Migrating to AddResourcesTable (20100219152251)
+  [4;35;1mSQL (75.5ms)[0m   [0mCREATE TABLE `resources` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `location_id` int(11), `name` varchar(255), `description` text, `start_hour` int(11), `end_hour` int(11), `member_price` decimal(8,2), `non_member_price` decimal(8,2), `number_available` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (550.5ms)[0m   [0;1mALTER TABLE `users` ADD `member_until` datetime[0m
+  [4;35;1mSQL (69.2ms)[0m   [0mALTER TABLE `bookings` DROP `bookable_type`[0m
+  [4;36;1mSQL (56.9ms)[0m   [0;1mALTER TABLE `bookings` DROP `bookable_id`[0m
+  [4;35;1mSQL (56.3ms)[0m   [0mALTER TABLE `bookings` ADD `resources_id` int(11)[0m
+  [4;36;1mSQL (56.3ms)[0m   [0;1mALTER TABLE `bookings` ADD `payment_ref` varchar(255)[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100219152251')[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (2.5ms)[0m   [0mSHOW FIELDS FROM `bookings`[0m
+  [4;36;1mSQL (2.4ms)[0m   [0;1mdescribe `bookings`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW KEYS FROM `bookings`[0m
+  [4;36;1mSQL (3.0ms)[0m   [0;1mSHOW FIELDS FROM `locations`[0m
+  [4;35;1mSQL (3.3ms)[0m   [0mdescribe `locations`[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mSHOW KEYS FROM `locations`[0m
+  [4;35;1mSQL (3.8ms)[0m   [0mSHOW FIELDS FROM `resources`[0m
+  [4;36;1mSQL (2.8ms)[0m   [0;1mdescribe `resources`[0m
+  [4;35;1mSQL (2.1ms)[0m   [0mSHOW KEYS FROM `resources`[0m
+  [4;36;1mSQL (1.8ms)[0m   [0;1mSHOW FIELDS FROM `roles`[0m
+  [4;35;1mSQL (1.7ms)[0m   [0mdescribe `roles`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW KEYS FROM `roles`[0m
+  [4;35;1mSQL (1.4ms)[0m   [0mSHOW FIELDS FROM `roles_users`[0m
+  [4;36;1mSQL (1.9ms)[0m   [0;1mdescribe `roles_users`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW KEYS FROM `roles_users`[0m
+  [4;36;1mSQL (2.8ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (2.4ms)[0m   [0mdescribe `users`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LocationsController#show (for 192.168.1.103 at 2010-02-19 16:18:52) [GET]
+  Parameters: {"id"=>1}
+  [4;35;1mLocation Columns (277.9ms)[0m   [0mSHOW FIELDS FROM `locations`[0m
+  [4;36;1mLocation Load (0.6ms)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+
+ActionView::TemplateError (undefined method `desks' for #<Location:0x23eae5c>) on line #22 of app/views/locations/show.html.erb:
+19: 
+20: <div id="booking_area">
+21: 
+22: 	<% if @location.desks %>
+23: 		<h2>Desks</h2>
+24: 		<% @location.desks.each do |d| %>
+25: 			<p><strong><%= d.name %></strong>: <%= number_to_currency(d.member_price, :unit => "&pound;") %>/<%= number_to_currency(d.non_member_price, :unit => "&pound;") %></p>
+
+    app/views/locations/show.html.erb:22
+    app/controllers/locations_controller.rb:19:in `show'
+
+Rendered rescues/_trace (50.3ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResourcesController#index (for 127.0.0.1 at 2010-02-19 16:26:02) [GET]
+  [4;36;1mResource Load (0.5ms)[0m   [0;1mSELECT * FROM `resources` [0m
+Rendering template within layouts/application
+Rendering resources/index
+Completed in 9ms (View: 2, DB: 1) | 200 OK [http://localhost/resources/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResourcesController#new (for 127.0.0.1 at 2010-02-19 16:26:03) [GET]
+Redirected to http://localhost:3000/session/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/resources/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-02-19 16:26:03) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/session/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-02-19 16:26:08) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"dbriXQ1M6bcg7F8NbYk2yE+dx8Vr1NnKlcSsp5BRP88=", "login"=>"ben", "password"=>"benben"}
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`login` = 'ben') AND (users.state = 'active') LIMIT 1[0m
+Failed login for 'ben' from 127.0.0.1 at Fri Feb 19 16:26:08 UTC 2010
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 8ms (View: 4, DB: 1) | 200 OK [http://localhost/session]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-02-19 16:26:18) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"dbriXQ1M6bcg7F8NbYk2yE+dx8Vr1NnKlcSsp5BRP88=", "login"=>"ben@bobop.co.uk", "password"=>"benben"}
+  [4;36;1mUser Load (0.8ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`login` = 'ben@bobop.co.uk') AND (users.state = 'active') LIMIT 1[0m
+  [4;35;1mUser Columns (2.8ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed in 14ms (DB: 4) | 302 Found [http://localhost/session]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-19 16:26:18) [GET]
+  Parameters: {"id"=>1}
+  [4;35;1mLocation Columns (2.5ms)[0m   [0mSHOW FIELDS FROM `locations`[0m
+  [4;36;1mLocation Load (0.4ms)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+
+ActionView::TemplateError (undefined method `desks' for #<Location:0x2603068>) on line #22 of app/views/locations/show.html.erb:
+19: 
+20: <div id="booking_area">
+21: 
+22: 	<% if @location.desks %>
+23: 		<h2>Desks</h2>
+24: 		<% @location.desks.each do |d| %>
+25: 			<p><strong><%= d.name %></strong>: <%= number_to_currency(d.member_price, :unit => "&pound;") %>/<%= number_to_currency(d.non_member_price, :unit => "&pound;") %></p>
+
+    app/views/locations/show.html.erb:22
+    app/controllers/locations_controller.rb:19:in `show'
+
+Rendered rescues/_trace (50.1ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResourcesController#index (for 127.0.0.1 at 2010-02-19 16:26:23) [GET]
+  [4;36;1mResource Load (0.5ms)[0m   [0;1mSELECT * FROM `resources` [0m
+Rendering template within layouts/application
+Rendering resources/index
+Completed in 9ms (View: 2, DB: 1) | 200 OK [http://localhost/resources/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResourcesController#new (for 127.0.0.1 at 2010-02-19 16:26:26) [GET]
+  [4;36;1mUser Columns (2.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mResource Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `resources`[0m
+Rendering template within layouts/application
+Rendering resources/new
+  [4;35;1mLocation Load (0.5ms)[0m   [0mSELECT * FROM `locations` [0m
+  [4;36;1mLocation Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `locations`[0m
+Completed in 45ms (View: 27, DB: 8) | 200 OK [http://localhost/resources/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LocationsController#show (for 192.168.1.103 at 2010-02-19 16:27:16) [GET]
+  Parameters: {"id"=>1}
+  [4;36;1mLocation Columns (2.8ms)[0m   [0;1mSHOW FIELDS FROM `locations`[0m
+  [4;35;1mLocation Load (0.5ms)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+
+ActionView::TemplateError (undefined method `desks' for #<Location:0x25b0ffc>) on line #22 of app/views/locations/show.html.erb:
+19: 
+20: <div id="booking_area">
+21: 
+22: 	<% if @location.desks %>
+23: 		<h2>Desks</h2>
+24: 		<% @location.desks.each do |d| %>
+25: 			<p><strong><%= d.name %></strong>: <%= number_to_currency(d.member_price, :unit => "&pound;") %>/<%= number_to_currency(d.non_member_price, :unit => "&pound;") %></p>
+
+    app/views/locations/show.html.erb:22
+    app/controllers/locations_controller.rb:19:in `show'
+
+Rendered rescues/_trace (52.1ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BookingsController#index (for 192.168.1.103 at 2010-02-19 16:27:27) [GET]
+Redirected to http://192.168.1.106:3000/session/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://192.168.1.106/bookings]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 192.168.1.103 at 2010-02-19 16:27:29) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://192.168.1.106/session/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResourcesController#create (for 127.0.0.1 at 2010-02-19 16:27:41) [POST]
+  Parameters: {"commit"=>"Create", "resource"=>{"name"=>"Hot-Desk Morning", "non_member_price"=>"12", "description"=>"Co-Work on this beautiful hot-desk between 9am and 1pm on your chosen day!", "number_available"=>"3", "member_price"=>"10", "location"=>"1"}, "date"=>{"start_hour"=>"09", "end_hour"=>"17"}, "authenticity_token"=>"dbriXQ1M6bcg7F8NbYk2yE+dx8Vr1NnKlcSsp5BRP88="}
+  [4;35;1mUser Columns (71.3ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.6ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mResource Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `resources`[0m
+
+ActiveRecord::AssociationTypeMismatch (Location(#19716540) expected, got String(#113650)):
+  app/controllers/resources_controller.rb:45:in `new'
+  app/controllers/resources_controller.rb:45:in `create'
+
+Rendered rescues/_trace (41.7ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 192.168.1.103 at 2010-02-19 16:27:52) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"xZb4LH1RP2MoWtE+Pc6sW7ngD3CLlfyZZVFBVFC5eWo=", "login"=>"hello@ianmoss.com", "password"=>"testtest"}
+  [4;35;1mUser Load (3.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`login` = 'hello@ianmoss.com') AND (users.state = 'active') LIMIT 1[0m
+Failed login for 'hello@ianmoss.com' from 192.168.1.103 at Fri Feb 19 16:27:52 UTC 2010
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 13ms (View: 4, DB: 4) | 200 OK [http://192.168.1.106/session]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#activate (for 127.0.0.1 at 2010-02-19 16:28:40) [GET]
+  Parameters: {"activation_code"=>"e324aaaebcc7c157773a6975280e6595dd78ba75"}
+  [4;35;1mUser Columns (73.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`activation_code` = 'e324aaaebcc7c157773a6975280e6595dd78ba75') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (19.1ms)[0m   [0;1mUPDATE `users` SET `activated_at` = '2010-02-19 16:28:40', `activation_code` = NULL, `state` = 'active', `updated_at` = '2010-02-19 16:28:40' WHERE `id` = 4[0m
+Sent mail to 
+
+Date: Fri, 19 Feb 2010 16:28:40 +0000
+From: ADMINEMAIL
+Subject: [YOURSITE] Your account has been activated!
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+hello@ianmoss.com, your account has been activated.  Welcome aboard!
+
+  http://YOURSITE/
+  [4;35;1mSQL (0.6ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/login
+Completed in 142ms (DB: 94) | 302 Found [http://localhost/activate/e324aaaebcc7c157773a6975280e6595dd78ba75]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-02-19 16:28:40) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 100ms (View: 10, DB: 0) | 200 OK [http://localhost/login]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 192.168.1.103 at 2010-02-19 16:28:57) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"xZb4LH1RP2MoWtE+Pc6sW7ngD3CLlfyZZVFBVFC5eWo=", "login"=>"hello@ianmoss.com", "password"=>"testtest"}
+  [4;36;1mUser Load (0.7ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`login` = 'hello@ianmoss.com') AND (users.state = 'active') LIMIT 1[0m
+  [4;35;1mUser Columns (70.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mCOMMIT[0m
+Redirected to http://192.168.1.106:3000/
+Completed in 84ms (DB: 72) | 302 Found [http://192.168.1.106/session]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LocationsController#show (for 192.168.1.103 at 2010-02-19 16:28:58) [GET]
+  Parameters: {"id"=>1}
+  [4;35;1mLocation Columns (2.6ms)[0m   [0mSHOW FIELDS FROM `locations`[0m
+  [4;36;1mLocation Load (0.5ms)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+
+ActionView::TemplateError (undefined method `desks' for #<Location:0x241d94c>) on line #22 of app/views/locations/show.html.erb:
+19: 
+20: <div id="booking_area">
+21: 
+22: 	<% if @location.desks %>
+23: 		<h2>Desks</h2>
+24: 		<% @location.desks.each do |d| %>
+25: 			<p><strong><%= d.name %></strong>: <%= number_to_currency(d.member_price, :unit => "&pound;") %>/<%= number_to_currency(d.non_member_price, :unit => "&pound;") %></p>
+
+    app/views/locations/show.html.erb:22
+    app/controllers/locations_controller.rb:19:in `show'
+
+Rendered rescues/_trace (69.6ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResourcesController#index (for 192.168.1.103 at 2010-02-19 16:29:48) [GET]
+  [4;36;1mResource Load (0.5ms)[0m   [0;1mSELECT * FROM `resources` [0m
+Rendering template within layouts/application
+Rendering resources/index
+Completed in 9ms (View: 2, DB: 1) | 200 OK [http://192.168.1.106/resources]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResourcesController#new (for 127.0.0.1 at 2010-02-19 16:29:58) [GET]
+  [4;36;1mUser Columns (2.9ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mResource Columns (2.4ms)[0m   [0;1mSHOW FIELDS FROM `resources`[0m
+Rendering template within layouts/application
+Rendering resources/new
+  [4;35;1mLocation Load (0.5ms)[0m   [0mSELECT * FROM `locations` [0m
+  [4;36;1mLocation Columns (2.3ms)[0m   [0;1mSHOW FIELDS FROM `locations`[0m
+Completed in 47ms (View: 28, DB: 9) | 200 OK [http://localhost/resources/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResourcesController#create (for 127.0.0.1 at 2010-02-19 16:30:19) [POST]
+  Parameters: {"commit"=>"Create", "resource"=>{"name"=>"Hot-Desk Morning", "non_member_price"=>"12", "location_id"=>"1", "description"=>"Co-Work on this beautiful hot-desk between 9am and 1pm on your chosen day!", "number_available"=>"3", "member_price"=>"10"}, "date"=>{"start_hour"=>"09", "end_hour"=>"17"}, "authenticity_token"=>"dbriXQ1M6bcg7F8NbYk2yE+dx8Vr1NnKlcSsp5BRP88="}
+  [4;36;1mUser Columns (78.2ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.7ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mResource Columns (2.5ms)[0m   [0;1mSHOW FIELDS FROM `resources`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mResource Create (0.3ms)[0m   [0;1mINSERT INTO `resources` (`name`, `updated_at`, `non_member_price`, `location_id`, `start_hour`, `description`, `end_hour`, `member_price`, `number_available`, `created_at`) VALUES('Hot-Desk Morning', '2010-02-19 16:30:19', 12.0, 1, 9, 'Co-Work on this beautiful hot-desk between 9am and 1pm on your chosen day!', 17, 10.0, 3, '2010-02-19 16:30:19')[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/resources/1
+Completed in 103ms (DB: 83) | 302 Found [http://localhost/resources]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResourcesController#show (for 127.0.0.1 at 2010-02-19 16:30:19) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mResource Columns (2.4ms)[0m   [0mSHOW FIELDS FROM `resources`[0m
+  [4;36;1mResource Load (0.6ms)[0m   [0;1mSELECT * FROM `resources` WHERE (`resources`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering resources/show
+Completed in 15ms (View: 3, DB: 3) | 200 OK [http://localhost/resources/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResourcesController#index (for 127.0.0.1 at 2010-02-19 16:30:22) [GET]
+  [4;36;1mResource Load (0.5ms)[0m   [0;1mSELECT * FROM `resources` [0m
+Rendering template within layouts/application
+Rendering resources/index
+  [4;35;1mResource Columns (2.3ms)[0m   [0mSHOW FIELDS FROM `resources`[0m
+Completed in 17ms (View: 8, DB: 3) | 200 OK [http://localhost/resources]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResourcesController#index (for 192.168.1.103 at 2010-02-19 16:30:41) [GET]
+  [4;35;1mResource Load (0.5ms)[0m   [0mSELECT * FROM `resources` [0m
+Rendering template within layouts/application
+Rendering resources/index
+  [4;36;1mResource Columns (2.4ms)[0m   [0;1mSHOW FIELDS FROM `resources`[0m
+Completed in 17ms (View: 8, DB: 3) | 200 OK [http://192.168.1.106/resources]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResourcesController#show (for 192.168.1.103 at 2010-02-19 16:30:45) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mResource Columns (2.7ms)[0m   [0;1mSHOW FIELDS FROM `resources`[0m
+  [4;35;1mResource Load (0.4ms)[0m   [0mSELECT * FROM `resources` WHERE (`resources`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering resources/show
+Completed in 12ms (View: 2, DB: 3) | 200 OK [http://192.168.1.106/resources/1]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResourcesController#new (for 127.0.0.1 at 2010-02-19 16:31:15) [GET]
+  [4;35;1mUser Columns (2.9ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mResource Columns (3.3ms)[0m   [0mSHOW FIELDS FROM `resources`[0m
+Rendering template within layouts/application
+Rendering resources/new
+  [4;36;1mLocation Load (0.5ms)[0m   [0;1mSELECT * FROM `locations` [0m
+  [4;35;1mLocation Columns (2.3ms)[0m   [0mSHOW FIELDS FROM `locations`[0m
+Completed in 41ms (View: 21, DB: 10) | 200 OK [http://localhost/resources/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResourcesController#create (for 127.0.0.1 at 2010-02-19 16:31:43) [POST]
+  Parameters: {"commit"=>"Create", "resource"=>{"name"=>"Hot-Desk Afternoon", "non_member_price"=>"12", "location_id"=>"1", "description"=>"Blah", "number_available"=>"3", "member_price"=>"10"}, "date"=>{"start_hour"=>"13", "end_hour"=>"17"}, "authenticity_token"=>"dbriXQ1M6bcg7F8NbYk2yE+dx8Vr1NnKlcSsp5BRP88="}
+  [4;35;1mUser Columns (2.8ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mResource Columns (2.3ms)[0m   [0mSHOW FIELDS FROM `resources`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mResource Create (0.3ms)[0m   [0mINSERT INTO `resources` (`name`, `updated_at`, `non_member_price`, `location_id`, `start_hour`, `description`, `end_hour`, `member_price`, `number_available`, `created_at`) VALUES('Hot-Desk Afternoon', '2010-02-19 16:31:43', 12.0, 1, 13, 'Blah', 17, 10.0, 3, '2010-02-19 16:31:43')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/resources/2
+Completed in 21ms (DB: 7) | 302 Found [http://localhost/resources]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResourcesController#show (for 127.0.0.1 at 2010-02-19 16:31:43) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mResource Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `resources`[0m
+  [4;35;1mResource Load (0.4ms)[0m   [0mSELECT * FROM `resources` WHERE (`resources`.`id` = 2) [0m
+Rendering template within layouts/application
+Rendering resources/show
+Completed in 12ms (View: 2, DB: 3) | 200 OK [http://localhost/resources/2]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResourcesController#index (for 127.0.0.1 at 2010-02-19 16:31:45) [GET]
+  [4;35;1mResource Load (0.5ms)[0m   [0mSELECT * FROM `resources` [0m
+Rendering template within layouts/application
+Rendering resources/index
+  [4;36;1mResource Columns (2.5ms)[0m   [0;1mSHOW FIELDS FROM `resources`[0m
+Completed in 23ms (View: 13, DB: 3) | 200 OK [http://localhost/resources]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResourcesController#new (for 127.0.0.1 at 2010-02-19 16:31:47) [GET]
+  [4;36;1mUser Columns (2.9ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mResource Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `resources`[0m
+Rendering template within layouts/application
+Rendering resources/new
+  [4;35;1mLocation Load (0.5ms)[0m   [0mSELECT * FROM `locations` [0m
+  [4;36;1mLocation Columns (2.3ms)[0m   [0;1mSHOW FIELDS FROM `locations`[0m
+Completed in 40ms (View: 20, DB: 9) | 200 OK [http://localhost/resources/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResourcesController#create (for 127.0.0.1 at 2010-02-19 16:32:10) [POST]
+  Parameters: {"commit"=>"Create", "resource"=>{"name"=>"Hot-Desk All-day", "non_member_price"=>"20", "location_id"=>"1", "description"=>"Foo", "number_available"=>"3", "member_price"=>"17.50"}, "date"=>{"start_hour"=>"09", "end_hour"=>"17"}, "authenticity_token"=>"dbriXQ1M6bcg7F8NbYk2yE+dx8Vr1NnKlcSsp5BRP88="}
+  [4;36;1mUser Columns (268.2ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mResource Columns (3.3ms)[0m   [0;1mSHOW FIELDS FROM `resources`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mResource Create (0.3ms)[0m   [0;1mINSERT INTO `resources` (`name`, `updated_at`, `non_member_price`, `location_id`, `start_hour`, `description`, `end_hour`, `member_price`, `number_available`, `created_at`) VALUES('Hot-Desk All-day', '2010-02-19 16:32:10', 20.0, 1, 9, 'Foo', 17, 17.5, 3, '2010-02-19 16:32:10')[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/resources/3
+Completed in 289ms (DB: 273) | 302 Found [http://localhost/resources]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResourcesController#show (for 127.0.0.1 at 2010-02-19 16:32:10) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mResource Columns (2.4ms)[0m   [0mSHOW FIELDS FROM `resources`[0m
+  [4;36;1mResource Load (0.4ms)[0m   [0;1mSELECT * FROM `resources` WHERE (`resources`.`id` = 3) [0m
+Rendering template within layouts/application
+Rendering resources/show
+Completed in 13ms (View: 3, DB: 3) | 200 OK [http://localhost/resources/3]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResourcesController#index (for 127.0.0.1 at 2010-02-19 16:32:13) [GET]
+  [4;36;1mResource Load (0.5ms)[0m   [0;1mSELECT * FROM `resources` [0m
+Rendering template within layouts/application
+Rendering resources/index
+  [4;35;1mResource Columns (2.5ms)[0m   [0mSHOW FIELDS FROM `resources`[0m
+Completed in 30ms (View: 19, DB: 3) | 200 OK [http://localhost/resources]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResourcesController#show (for 192.168.1.103 at 2010-02-19 16:32:13) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mResource Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `resources`[0m
+  [4;36;1mResource Load (0.4ms)[0m   [0;1mSELECT * FROM `resources` WHERE (`resources`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering resources/show
+Completed in 12ms (View: 2, DB: 3) | 200 OK [http://192.168.1.106/resources/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResourcesController#show (for 192.168.1.103 at 2010-02-19 16:32:20) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mResource Columns (2.3ms)[0m   [0;1mSHOW FIELDS FROM `resources`[0m
+  [4;35;1mResource Load (0.5ms)[0m   [0mSELECT * FROM `resources` WHERE (`resources`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering resources/show
+Completed in 12ms (View: 2, DB: 3) | 200 OK [http://192.168.1.106/resources/1]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResourcesController#index (for 192.168.1.103 at 2010-02-19 16:32:30) [GET]
+  [4;35;1mResource Load (0.5ms)[0m   [0mSELECT * FROM `resources` [0m
+Rendering template within layouts/application
+Rendering resources/index
+  [4;36;1mResource Columns (74.2ms)[0m   [0;1mSHOW FIELDS FROM `resources`[0m
+Completed in 98ms (View: 17, DB: 75) | 200 OK [http://192.168.1.106/resources]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResourcesController#index (for 127.0.0.1 at 2010-02-19 16:34:22) [GET]
+  [4;36;1mResource Load (0.6ms)[0m   [0;1mSELECT * FROM `resources` [0m
+Rendering template within layouts/application
+Rendering resources/index
+  [4;35;1mResource Columns (2.7ms)[0m   [0mSHOW FIELDS FROM `resources`[0m
+Completed in 36ms (View: 26, DB: 3) | 200 OK [http://localhost/resources]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResourcesController#index (for 127.0.0.1 at 2010-02-19 16:35:27) [GET]
+  [4;35;1mResource Load (0.5ms)[0m   [0mSELECT * FROM `resources` [0m
+Rendering template within layouts/application
+Rendering resources/index
+  [4;36;1mResource Columns (2.5ms)[0m   [0;1mSHOW FIELDS FROM `resources`[0m
+Completed in 37ms (View: 26, DB: 3) | 200 OK [http://localhost/resources]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResourcesController#index (for 192.168.1.103 at 2010-02-19 16:35:55) [GET]
+  [4;36;1mResource Load (0.6ms)[0m   [0;1mSELECT * FROM `resources` [0m
+Rendering template within layouts/application
+Rendering resources/index
+  [4;35;1mResource Columns (76.9ms)[0m   [0mSHOW FIELDS FROM `resources`[0m
+Completed in 106ms (View: 22, DB: 78) | 200 OK [http://192.168.1.106/resources]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResourcesController#index (for 127.0.0.1 at 2010-02-19 16:38:57) [GET]
+  [4;35;1mResource Load (0.5ms)[0m   [0mSELECT * FROM `resources` [0m
+Rendering template within layouts/application
+Rendering resources/index
+  [4;36;1mResource Columns (2.4ms)[0m   [0;1mSHOW FIELDS FROM `resources`[0m
+  [4;35;1mUser Columns (2.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.8ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mroles_users Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `roles_users`[0m
+  [4;36;1mRole Load (0.4ms)[0m   [0;1mSELECT * FROM `roles` INNER JOIN `roles_users` ON `roles`.id = `roles_users`.role_id WHERE (`roles_users`.user_id = 2 ) [0m
+Completed in 50ms (View: 35, DB: 9) | 200 OK [http://localhost/resources]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResourcesController#index (for 192.168.1.103 at 2010-02-19 16:39:03) [GET]
+  [4;36;1mResource Load (0.5ms)[0m   [0;1mSELECT * FROM `resources` [0m
+Rendering template within layouts/application
+Rendering resources/index
+  [4;35;1mResource Columns (2.3ms)[0m   [0mSHOW FIELDS FROM `resources`[0m
+  [4;36;1mUser Columns (2.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 4) LIMIT 1[0m
+  [4;36;1mroles_users Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `roles_users`[0m
+  [4;35;1mRole Load (0.4ms)[0m   [0mSELECT * FROM `roles` INNER JOIN `roles_users` ON `roles`.id = `roles_users`.role_id WHERE (`roles_users`.user_id = 4 ) [0m
+Completed in 27ms (View: 13, DB: 8) | 200 OK [http://192.168.1.106/resources]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-19 16:48:33) [GET]
+  Parameters: {"id"=>1}
+  [4;35;1mLocation Columns (415.8ms)[0m   [0mSHOW FIELDS FROM `locations`[0m
+  [4;36;1mLocation Load (1.5ms)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+
+ActionView::TemplateError (undefined method `desks' for #<Location:0x25c8d50>) on line #22 of app/views/locations/show.html.erb:
+19: 
+20: <div id="booking_area">
+21: 
+22: 	<% if @location.desks %>
+23: 		<h2>Desks</h2>
+24: 		<% @location.desks.each do |d| %>
+25: 			<p><strong><%= d.name %></strong>: <%= number_to_currency(d.member_price, :unit => "&pound;") %>/<%= number_to_currency(d.non_member_price, :unit => "&pound;") %></p>
+
+    app/views/locations/show.html.erb:22
+    app/controllers/locations_controller.rb:19:in `show'
+
+Rendered rescues/_trace (58.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LocationsController#show (for 192.168.1.103 at 2010-02-19 16:53:54) [GET]
+  Parameters: {"id"=>1}
+  [4;36;1mLocation Columns (264.6ms)[0m   [0;1mSHOW FIELDS FROM `locations`[0m
+  [4;35;1mLocation Load (0.6ms)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+
+ActionView::TemplateError (undefined method `desks' for #<Location:0x23098d0>) on line #22 of app/views/locations/show.html.erb:
+19: 
+20: <div id="booking_area">
+21: 
+22: 	<% if @location.desks %>
+23: 		<h2>Desks</h2>
+24: 		<% @location.desks.each do |d| %>
+25: 			<p><strong><%= d.name %></strong>: <%= number_to_currency(d.member_price, :unit => "&pound;") %>/<%= number_to_currency(d.non_member_price, :unit => "&pound;") %></p>
+
+    app/views/locations/show.html.erb:22
+    app/controllers/locations_controller.rb:19:in `show'
+
+Rendered rescues/_trace (145.4ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LocationsController#show (for 192.168.1.103 at 2010-02-19 16:54:28) [GET]
+  Parameters: {"id"=>1}
+  [4;35;1mLocation Columns (2.8ms)[0m   [0mSHOW FIELDS FROM `locations`[0m
+  [4;36;1mLocation Load (0.5ms)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+Completed in 20ms (View: 10, DB: 3) | 200 OK [http://192.168.1.106/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LocationsController#show (for 192.168.1.103 at 2010-02-19 16:54:29) [GET]
+  Parameters: {"id"=>1}
+  [4;36;1mLocation Columns (2.4ms)[0m   [0;1mSHOW FIELDS FROM `locations`[0m
+  [4;35;1mLocation Load (0.5ms)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+Completed in 14ms (View: 4, DB: 3) | 200 OK [http://192.168.1.106/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LocationsController#show (for 192.168.1.103 at 2010-02-19 16:59:35) [GET]
+  Parameters: {"id"=>1}
+  [4;35;1mLocation Columns (2.6ms)[0m   [0mSHOW FIELDS FROM `locations`[0m
+  [4;36;1mLocation Load (0.5ms)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+Completed in 22ms (View: 13, DB: 3) | 200 OK [http://192.168.1.106/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-19 17:00:22) [GET]
+  Parameters: {"id"=>1}
+  [4;36;1mLocation Columns (2.7ms)[0m   [0;1mSHOW FIELDS FROM `locations`[0m
+  [4;35;1mLocation Load (0.5ms)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+Completed in 111ms (View: 12, DB: 3) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-02-19 17:00:25) [GET]
+  [4;35;1mUser Columns (2.9ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 18ms (View: 12, DB: 3) | 200 OK [http://localhost/signup]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-19 17:00:45) [GET]
+  Parameters: {"id"=>1}
+  [4;35;1mLocation Columns (2.6ms)[0m   [0mSHOW FIELDS FROM `locations`[0m
+  [4;36;1mLocation Load (0.5ms)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;35;1mUser Columns (2.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+Completed in 28ms (View: 15, DB: 6) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LocationsController#show (for 192.168.1.103 at 2010-02-19 17:00:49) [GET]
+  Parameters: {"id"=>1}
+  [4;36;1mLocation Columns (2.9ms)[0m   [0;1mSHOW FIELDS FROM `locations`[0m
+  [4;35;1mLocation Load (0.6ms)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;36;1mUser Columns (4.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.7ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 4) LIMIT 1[0m
+Completed in 27ms (View: 9, DB: 9) | 200 OK [http://192.168.1.106/]

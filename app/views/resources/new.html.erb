@@ -1,0 +1,43 @@
+<h1>New resource</h1>
+
+<% form_for(@resource) do |f| %>
+  <%= f.error_messages %>
+  <p>
+	<%= f.label :location_id %><br>
+	<%= f.select :location_id, Location.all.collect {|p| [ p.name, p.id ] } %>
+  </p>
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :description %><br />
+    <%= f.text_area :description %>
+  </p>
+  <p>
+    <%= f.label :start_hour %><br />
+    <%= select_hour Time.now, :field_name => 'start_hour' %>
+  </p>
+  <p>
+    <%= f.label :end_hour %><br />
+    <%= select_hour Time.now, :field_name => 'end_hour' %>
+  </p>
+  <p>
+    <%= f.label :member_price %><br />
+    <%= f.text_field :member_price %>
+  </p>
+  <p>
+    <%= f.label :non_member_price %><br />
+    <%= f.text_field :non_member_price %>
+  </p>
+  <p>
+    <%= f.label :number_available %><br />
+    <%= f.text_field :number_available %>
+  </p>
+
+  <p>
+    <%= f.submit 'Create' %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', resources_path %>

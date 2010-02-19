@@ -1,0 +1,32 @@
+<h1>Listing resources</h1>
+
+<table>
+  <tr>
+	<td>Name</td>
+	<td>Description</td>
+	<td>Start Hour</td>
+	<td>End Hour</td>
+	<td>Member Price</td>
+	<td>Non-Member Price</td>
+	<td>Available Number</td>
+  </tr>
+
+<% @resources.each do |resource| %>
+  <tr>
+	<td><%= resource.name %></td>
+	<td><%= resource.description %></td>
+	<td><%= resource.start_hour %></td>
+	<td><%= resource.end_hour %></td>
+	<td><%= resource.member_price %></td>
+	<td><%= resource.non_member_price %></td>
+	<td><%= resource.number_available %></td>
+    <td><%= link_to 'Show', resource %></td>
+    <td><%= link_to 'Edit', edit_resource_path(resource) if current_user.has_role?('admin') %></td>
+    <td><%= link_to 'Destroy', resource, :confirm => 'Are you sure?', :method => :delete if current_user.has_role?('admin') %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New resource', new_resource_path %>

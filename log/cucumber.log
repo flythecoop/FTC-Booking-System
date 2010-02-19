@@ -1,0 +1,3265 @@
+# Logfile created on Wed Feb 03 13:51:39 +0000 2010
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-02-03 13:51:40) [GET]
+Redirected to http://www.example.com/
+Completed in 77ms (DB: 2) | 302 Found [http://www.example.com/sessions/destroy]
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 13:51:40) [GET]
+  Parameters: {"id"=>1}
+  [4;36;1mLocation Load (0.5ms)[0m   [0;1mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;35;1mDesk Load (0.2ms)[0m   [0mSELECT * FROM "desks" WHERE ("desks".location_id = 1) [0m
+Completed in 17ms (View: 12, DB: 1) | 200 OK [http://www.example.com/]
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 13:51:40) [GET]
+  Parameters: {"id"=>1}
+  [4;36;1mLocation Load (0.4ms)[0m   [0;1mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;35;1mDesk Load (0.2ms)[0m   [0mSELECT * FROM "desks" WHERE ("desks".location_id = 1) [0m
+Completed in 4ms (View: 2, DB: 1) | 200 OK [http://www.example.com/]
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-02-03 14:00:54) [GET]
+Redirected to http://www.example.com/
+Completed in 82ms (DB: 2) | 302 Found [http://www.example.com/sessions/destroy]
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 14:00:54) [GET]
+  Parameters: {"id"=>1}
+  [4;36;1mLocation Load (0.5ms)[0m   [0;1mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;35;1mDesk Load (0.3ms)[0m   [0mSELECT * FROM "desks" WHERE ("desks".location_id = 1) [0m
+Completed in 16ms (View: 12, DB: 1) | 200 OK [http://www.example.com/]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-02-03 14:00:54) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Completed in 14ms (View: 11, DB: 0) | 200 OK [http://www.example.com/signup]
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-02-03 14:00:54) [GET]
+Redirected to http://www.example.com/
+Completed in 0ms (DB: 1) | 302 Found [http://www.example.com/sessions/destroy]
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 14:00:54) [GET]
+  Parameters: {"id"=>1}
+  [4;36;1mLocation Load (0.5ms)[0m   [0;1mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;35;1mDesk Load (0.2ms)[0m   [0mSELECT * FROM "desks" WHERE ("desks".location_id = 1) [0m
+Completed in 4ms (View: 2, DB: 1) | 200 OK [http://www.example.com/]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'Oona') [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'Oona') LIMIT 1[0m
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-02-03 14:00:54) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"1234oona", "login"=>"oona", "password"=>"1234oona", "email"=>"unactivated@example.com"}}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 29ms (View: 22, DB: 1) | 200 OK [http://www.example.com/users]
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-02-03 14:00:54) [GET]
+Redirected to http://www.example.com/
+Completed in 0ms (DB: 2) | 302 Found [http://www.example.com/sessions/destroy]
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 14:00:54) [GET]
+  Parameters: {"id"=>1}
+  [4;35;1mLocation Load (0.6ms)[0m   [0mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;36;1mDesk Load (0.2ms)[0m   [0;1mSELECT * FROM "desks" WHERE ("desks".location_id = 1) [0m
+Completed in 5ms (View: 3, DB: 1) | 200 OK [http://www.example.com/]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-02-03 14:00:54) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"monkey", "login"=>"reggie", "password"=>"monkey", "email"=>"registered@example.com"}}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 26ms (View: 21, DB: 0) | 200 OK [http://www.example.com/users]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-02-03 14:00:54) [GET]
+Redirected to http://www.example.com/
+Completed in 0ms (DB: 2) | 302 Found [http://www.example.com/sessions/destroy]
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 14:00:54) [GET]
+  Parameters: {"id"=>1}
+  [4;36;1mLocation Load (0.4ms)[0m   [0;1mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;35;1mDesk Load (0.1ms)[0m   [0mSELECT * FROM "desks" WHERE ("desks".location_id = 1) [0m
+Completed in 4ms (View: 2, DB: 1) | 200 OK [http://www.example.com/]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'Oona') [0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'Oona') LIMIT 1[0m
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-02-03 14:00:54) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"monkey", "_password"=>"monkey", "login"=>"", "email"=>"unactivated@example.com"}}
+WARNING: Can't mass-assign these protected attributes: _password
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login" = '') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."login" = '') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 42ms (View: 37, DB: 1) | 200 OK [http://www.example.com/users]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = '') LIMIT 1[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-02-03 14:00:54) [GET]
+Redirected to http://www.example.com/
+Completed in 1ms (DB: 1) | 302 Found [http://www.example.com/sessions/destroy]
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 14:00:54) [GET]
+  Parameters: {"id"=>1}
+  [4;35;1mLocation Load (0.4ms)[0m   [0mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;36;1mDesk Load (0.2ms)[0m   [0;1mSELECT * FROM "desks" WHERE ("desks".location_id = 1) [0m
+Completed in 4ms (View: 2, DB: 1) | 200 OK [http://www.example.com/]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'Oona') [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'Oona') LIMIT 1[0m
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-02-03 14:00:54) [POST]
+  Parameters: {"user"=>{"_password_confirmation"=>"monkey", "login"=>"oona", "password"=>"", "email"=>"unactivated@example.com"}}
+WARNING: Can't mass-assign these protected attributes: _password_confirmation
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 38ms (View: 34, DB: 1) | 200 OK [http://www.example.com/users]
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-02-03 14:00:54) [GET]
+Redirected to http://www.example.com/
+Completed in 0ms (DB: 2) | 302 Found [http://www.example.com/sessions/destroy]
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 14:00:54) [GET]
+  Parameters: {"id"=>1}
+  [4;35;1mLocation Load (0.4ms)[0m   [0mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;36;1mDesk Load (0.2ms)[0m   [0;1mSELECT * FROM "desks" WHERE ("desks".location_id = 1) [0m
+Completed in 8ms (View: 5, DB: 1) | 200 OK [http://www.example.com/]
+  [4;35;1mUser Load (2.8ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'Oona') [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'Oona') LIMIT 1[0m
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-02-03 14:00:54) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"", "login"=>"oona", "password"=>"monkey", "email"=>"unactivated@example.com"}}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 34ms (View: 28, DB: 3) | 200 OK [http://www.example.com/users]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-02-03 14:00:54) [GET]
+Redirected to http://www.example.com/
+Completed in 1ms (DB: 2) | 302 Found [http://www.example.com/sessions/destroy]
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 14:00:55) [GET]
+  Parameters: {"id"=>1}
+  [4;35;1mLocation Load (0.4ms)[0m   [0mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;36;1mDesk Load (0.2ms)[0m   [0;1mSELECT * FROM "desks" WHERE ("desks".location_id = 1) [0m
+Completed in 4ms (View: 2, DB: 1) | 200 OK [http://www.example.com/]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'Oona') [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'Oona') LIMIT 1[0m
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-02-03 14:00:55) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"monkeY", "login"=>"oona", "password"=>"monkey", "email"=>"unactivated@example.com"}}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 33ms (View: 29, DB: 1) | 200 OK [http://www.example.com/users]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-02-03 14:00:55) [GET]
+Redirected to http://www.example.com/
+Completed in 0ms (DB: 2) | 302 Found [http://www.example.com/sessions/destroy]
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 14:00:55) [GET]
+  Parameters: {"id"=>1}
+  [4;35;1mLocation Load (0.4ms)[0m   [0mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;36;1mDesk Load (0.2ms)[0m   [0;1mSELECT * FROM "desks" WHERE ("desks".location_id = 1) [0m
+Completed in 5ms (View: 2, DB: 1) | 200 OK [http://www.example.com/]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'Oona') [0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'Oona') LIMIT 1[0m
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-02-03 14:00:55) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"monkey", "login"=>"oona", "password"=>"monkey", "email"=>""}}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 31ms (View: 25, DB: 1) | 200 OK [http://www.example.com/users]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-02-03 14:00:55) [GET]
+Redirected to http://www.example.com/
+Completed in 0ms (DB: 2) | 302 Found [http://www.example.com/sessions/destroy]
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 14:00:55) [GET]
+  Parameters: {"id"=>1}
+  [4;36;1mLocation Load (0.4ms)[0m   [0;1mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;35;1mDesk Load (0.2ms)[0m   [0mSELECT * FROM "desks" WHERE ("desks".location_id = 1) [0m
+Completed in 4ms (View: 2, DB: 1) | 200 OK [http://www.example.com/]
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 14:00:55) [GET]
+  Parameters: {"id"=>1}
+  [4;36;1mLocation Load (0.4ms)[0m   [0;1mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;35;1mDesk Load (0.2ms)[0m   [0mSELECT * FROM "desks" WHERE ("desks".location_id = 1) [0m
+Completed in 4ms (View: 3, DB: 1) | 200 OK [http://www.example.com/]
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-02-03 14:00:55) [GET]
+Redirected to http://www.example.com/
+Completed in 0ms (DB: 1) | 302 Found [http://www.example.com/sessions/destroy]
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 14:00:55) [GET]
+  Parameters: {"id"=>1}
+  [4;36;1mLocation Load (0.4ms)[0m   [0;1mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;35;1mDesk Load (0.2ms)[0m   [0mSELECT * FROM "desks" WHERE ("desks".location_id = 1) [0m
+Completed in 4ms (View: 2, DB: 1) | 200 OK [http://www.example.com/]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-02-03 14:00:55) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 4ms (View: 4, DB: 0) | 200 OK [http://www.example.com/login]
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-02-03 14:00:55) [GET]
+Redirected to http://www.example.com/
+Completed in 0ms (DB: 1) | 302 Found [http://www.example.com/sessions/destroy]
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 14:00:55) [GET]
+  Parameters: {"id"=>1}
+  [4;36;1mLocation Load (0.4ms)[0m   [0;1mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;35;1mDesk Load (0.2ms)[0m   [0mSELECT * FROM "desks" WHERE ("desks".location_id = 1) [0m
+Completed in 4ms (View: 2, DB: 1) | 200 OK [http://www.example.com/]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-02-03 14:00:55) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"monkey", "login"=>"reggie", "password"=>"monkey", "email"=>"registered@example.com"}}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 26ms (View: 22, DB: 0) | 200 OK [http://www.example.com/users]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-02-03 14:00:55) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"monkey", "login"=>"reggie", "password"=>"monkey", "email"=>"registered@example.com"}}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 30ms (View: 23, DB: 2) | 200 OK [http://www.example.com/users]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-02-03 14:00:55) [GET]
+Redirected to http://www.example.com/
+Completed in 0ms (DB: 1) | 302 Found [http://www.example.com/sessions/destroy]
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 14:00:55) [GET]
+  Parameters: {"id"=>1}
+  [4;36;1mLocation Load (2.4ms)[0m   [0;1mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;35;1mDesk Load (0.2ms)[0m   [0mSELECT * FROM "desks" WHERE ("desks".location_id = 1) [0m
+Completed in 7ms (View: 2, DB: 3) | 200 OK [http://www.example.com/]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-02-03 14:00:55) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"monkey", "login"=>"reggie", "password"=>"monkey", "email"=>"registered@example.com"}}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 26ms (View: 21, DB: 0) | 200 OK [http://www.example.com/users]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-02-03 14:00:55) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"1234oona", "login"=>"oona", "password"=>"1234oona", "email"=>"unactivated@example.com"}}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 28ms (View: 23, DB: 2) | 200 OK [http://www.example.com/users]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-02-03 14:00:55) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"monkey", "login"=>"reggie", "password"=>"monkey", "email"=>"registered@example.com"}}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 23ms (View: 18, DB: 2) | 200 OK [http://www.example.com/users]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-02-03 14:00:55) [GET]
+Redirected to http://www.example.com/
+Completed in 0ms (DB: 1) | 302 Found [http://www.example.com/sessions/destroy]
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 14:00:55) [GET]
+  Parameters: {"id"=>1}
+  [4;35;1mLocation Load (0.4ms)[0m   [0mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;36;1mDesk Load (0.7ms)[0m   [0;1mSELECT * FROM "desks" WHERE ("desks".location_id = 1) [0m
+Completed in 5ms (View: 3, DB: 1) | 200 OK [http://www.example.com/]
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-02-03 14:00:55) [GET]
+Redirected to http://www.example.com/
+Completed in 1ms (DB: 0) | 302 Found [http://www.example.com/logout]
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 14:00:55) [GET]
+  Parameters: {"id"=>1}
+  [4;35;1mLocation Load (0.4ms)[0m   [0mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;36;1mDesk Load (0.2ms)[0m   [0;1mSELECT * FROM "desks" WHERE ("desks".location_id = 1) [0m
+Completed in 4ms (View: 2, DB: 1) | 200 OK [http://www.example.com/]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-02-03 14:00:56) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"monkey", "login"=>"reggie", "password"=>"monkey", "email"=>"registered@example.com"}}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 26ms (View: 21, DB: 1) | 200 OK [http://www.example.com/users]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-02-03 14:03:47) [GET]
+Redirected to http://www.example.com/
+Completed in 81ms (DB: 2) | 302 Found [http://www.example.com/sessions/destroy]
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 14:03:47) [GET]
+  Parameters: {"id"=>1}
+  [4;36;1mLocation Load (0.5ms)[0m   [0;1mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;35;1mDesk Load (0.2ms)[0m   [0mSELECT * FROM "desks" WHERE ("desks".location_id = 1) [0m
+Completed in 16ms (View: 12, DB: 1) | 200 OK [http://www.example.com/]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-02-03 14:03:47) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Completed in 13ms (View: 10, DB: 0) | 200 OK [http://www.example.com/signup]
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-02-03 14:03:47) [GET]
+Redirected to http://www.example.com/
+Completed in 0ms (DB: 1) | 302 Found [http://www.example.com/sessions/destroy]
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 14:03:47) [GET]
+  Parameters: {"id"=>1}
+  [4;36;1mLocation Load (0.4ms)[0m   [0;1mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;35;1mDesk Load (0.2ms)[0m   [0mSELECT * FROM "desks" WHERE ("desks".location_id = 1) [0m
+Completed in 4ms (View: 2, DB: 1) | 200 OK [http://www.example.com/]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'Oona') [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'Oona') LIMIT 1[0m
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-02-03 14:03:47) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"1234oona", "login"=>"oona", "password"=>"1234oona", "email"=>"unactivated@example.com"}}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 30ms (View: 25, DB: 1) | 200 OK [http://www.example.com/users]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-02-03 14:03:47) [GET]
+Redirected to http://www.example.com/
+Completed in 0ms (DB: 1) | 302 Found [http://www.example.com/sessions/destroy]
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 14:03:47) [GET]
+  Parameters: {"id"=>1}
+  [4;35;1mLocation Load (0.4ms)[0m   [0mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;36;1mDesk Load (0.2ms)[0m   [0;1mSELECT * FROM "desks" WHERE ("desks".location_id = 1) [0m
+Completed in 7ms (View: 3, DB: 1) | 200 OK [http://www.example.com/]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-02-03 14:03:47) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"monkey", "login"=>"reggie", "password"=>"monkey", "email"=>"registered@example.com"}}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 27ms (View: 22, DB: 0) | 200 OK [http://www.example.com/users]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-02-03 14:03:47) [GET]
+Redirected to http://www.example.com/
+Completed in 0ms (DB: 2) | 302 Found [http://www.example.com/sessions/destroy]
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 14:03:47) [GET]
+  Parameters: {"id"=>1}
+  [4;36;1mLocation Load (0.4ms)[0m   [0;1mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;35;1mDesk Load (0.2ms)[0m   [0mSELECT * FROM "desks" WHERE ("desks".location_id = 1) [0m
+Completed in 4ms (View: 2, DB: 1) | 200 OK [http://www.example.com/]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'Oona') [0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'Oona') LIMIT 1[0m
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-02-03 14:03:47) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"monkey", "_password"=>"monkey", "login"=>"", "email"=>"unactivated@example.com"}}
+WARNING: Can't mass-assign these protected attributes: _password
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login" = '') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."login" = '') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 42ms (View: 37, DB: 1) | 200 OK [http://www.example.com/users]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = '') LIMIT 1[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-02-03 14:03:47) [GET]
+Redirected to http://www.example.com/
+Completed in 1ms (DB: 1) | 302 Found [http://www.example.com/sessions/destroy]
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 14:03:47) [GET]
+  Parameters: {"id"=>1}
+  [4;35;1mLocation Load (0.4ms)[0m   [0mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;36;1mDesk Load (0.2ms)[0m   [0;1mSELECT * FROM "desks" WHERE ("desks".location_id = 1) [0m
+Completed in 4ms (View: 2, DB: 1) | 200 OK [http://www.example.com/]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'Oona') [0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'Oona') LIMIT 1[0m
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-02-03 14:03:47) [POST]
+  Parameters: {"user"=>{"_password_confirmation"=>"monkey", "login"=>"oona", "password"=>"", "email"=>"unactivated@example.com"}}
+WARNING: Can't mass-assign these protected attributes: _password_confirmation
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 34ms (View: 29, DB: 1) | 200 OK [http://www.example.com/users]
+  [4;35;1mUser Load (0.7ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-02-03 14:03:47) [GET]
+Redirected to http://www.example.com/
+Completed in 0ms (DB: 2) | 302 Found [http://www.example.com/sessions/destroy]
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 14:03:47) [GET]
+  Parameters: {"id"=>1}
+  [4;35;1mLocation Load (0.4ms)[0m   [0mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;36;1mDesk Load (0.2ms)[0m   [0;1mSELECT * FROM "desks" WHERE ("desks".location_id = 1) [0m
+Completed in 5ms (View: 4, DB: 1) | 200 OK [http://www.example.com/]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'Oona') [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'Oona') LIMIT 1[0m
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-02-03 14:03:47) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"", "login"=>"oona", "password"=>"monkey", "email"=>"unactivated@example.com"}}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 33ms (View: 29, DB: 1) | 200 OK [http://www.example.com/users]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-02-03 14:03:48) [GET]
+Redirected to http://www.example.com/
+Completed in 1ms (DB: 2) | 302 Found [http://www.example.com/sessions/destroy]
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 14:03:48) [GET]
+  Parameters: {"id"=>1}
+  [4;35;1mLocation Load (0.4ms)[0m   [0mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;36;1mDesk Load (0.2ms)[0m   [0;1mSELECT * FROM "desks" WHERE ("desks".location_id = 1) [0m
+Completed in 4ms (View: 2, DB: 1) | 200 OK [http://www.example.com/]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'Oona') [0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'Oona') LIMIT 1[0m
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-02-03 14:03:48) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"monkeY", "login"=>"oona", "password"=>"monkey", "email"=>"unactivated@example.com"}}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 35ms (View: 30, DB: 1) | 200 OK [http://www.example.com/users]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-02-03 14:03:48) [GET]
+Redirected to http://www.example.com/
+Completed in 0ms (DB: 2) | 302 Found [http://www.example.com/sessions/destroy]
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 14:03:48) [GET]
+  Parameters: {"id"=>1}
+  [4;35;1mLocation Load (0.5ms)[0m   [0mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;36;1mDesk Load (0.2ms)[0m   [0;1mSELECT * FROM "desks" WHERE ("desks".location_id = 1) [0m
+Completed in 4ms (View: 2, DB: 1) | 200 OK [http://www.example.com/]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'Oona') [0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'Oona') LIMIT 1[0m
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-02-03 14:03:48) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"monkey", "login"=>"oona", "password"=>"monkey", "email"=>""}}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 29ms (View: 25, DB: 1) | 200 OK [http://www.example.com/users]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-02-03 14:03:48) [GET]
+Redirected to http://www.example.com/
+Completed in 0ms (DB: 2) | 302 Found [http://www.example.com/sessions/destroy]
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 14:03:48) [GET]
+  Parameters: {"id"=>1}
+  [4;36;1mLocation Load (0.4ms)[0m   [0;1mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;35;1mDesk Load (0.2ms)[0m   [0mSELECT * FROM "desks" WHERE ("desks".location_id = 1) [0m
+Completed in 4ms (View: 2, DB: 1) | 200 OK [http://www.example.com/]
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 14:03:48) [GET]
+  Parameters: {"id"=>1}
+  [4;36;1mLocation Load (0.4ms)[0m   [0;1mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;35;1mDesk Load (0.2ms)[0m   [0mSELECT * FROM "desks" WHERE ("desks".location_id = 1) [0m
+Completed in 4ms (View: 2, DB: 1) | 200 OK [http://www.example.com/]
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-02-03 14:03:48) [GET]
+Redirected to http://www.example.com/
+Completed in 0ms (DB: 1) | 302 Found [http://www.example.com/sessions/destroy]
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 14:03:48) [GET]
+  Parameters: {"id"=>1}
+  [4;36;1mLocation Load (0.5ms)[0m   [0;1mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;35;1mDesk Load (0.6ms)[0m   [0mSELECT * FROM "desks" WHERE ("desks".location_id = 1) [0m
+Completed in 7ms (View: 4, DB: 1) | 200 OK [http://www.example.com/]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-02-03 14:03:48) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 4ms (View: 4, DB: 0) | 200 OK [http://www.example.com/login]
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-02-03 14:03:48) [GET]
+Redirected to http://www.example.com/
+Completed in 2ms (DB: 1) | 302 Found [http://www.example.com/sessions/destroy]
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 14:03:48) [GET]
+  Parameters: {"id"=>1}
+  [4;36;1mLocation Load (0.4ms)[0m   [0;1mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;35;1mDesk Load (0.2ms)[0m   [0mSELECT * FROM "desks" WHERE ("desks".location_id = 1) [0m
+Completed in 4ms (View: 2, DB: 1) | 200 OK [http://www.example.com/]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-02-03 14:03:48) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"monkey", "login"=>"reggie", "password"=>"monkey", "email"=>"registered@example.com"}}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 24ms (View: 19, DB: 0) | 200 OK [http://www.example.com/users]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-02-03 14:03:48) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"monkey", "login"=>"reggie", "password"=>"monkey", "email"=>"registered@example.com"}}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 30ms (View: 23, DB: 2) | 200 OK [http://www.example.com/users]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-02-03 14:03:48) [GET]
+Redirected to http://www.example.com/
+Completed in 0ms (DB: 2) | 302 Found [http://www.example.com/sessions/destroy]
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 14:03:48) [GET]
+  Parameters: {"id"=>1}
+  [4;36;1mLocation Load (0.6ms)[0m   [0;1mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;35;1mDesk Load (0.2ms)[0m   [0mSELECT * FROM "desks" WHERE ("desks".location_id = 1) [0m
+Completed in 5ms (View: 2, DB: 1) | 200 OK [http://www.example.com/]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-02-03 14:03:48) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"monkey", "login"=>"reggie", "password"=>"monkey", "email"=>"registered@example.com"}}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 25ms (View: 20, DB: 0) | 200 OK [http://www.example.com/users]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-02-03 14:03:48) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"1234oona", "login"=>"oona", "password"=>"1234oona", "email"=>"unactivated@example.com"}}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 31ms (View: 27, DB: 2) | 200 OK [http://www.example.com/users]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-02-03 14:03:48) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"monkey", "login"=>"reggie", "password"=>"monkey", "email"=>"registered@example.com"}}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 24ms (View: 20, DB: 2) | 200 OK [http://www.example.com/users]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-02-03 14:03:49) [GET]
+Redirected to http://www.example.com/
+Completed in 0ms (DB: 2) | 302 Found [http://www.example.com/sessions/destroy]
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 14:03:49) [GET]
+  Parameters: {"id"=>1}
+  [4;35;1mLocation Load (0.5ms)[0m   [0mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;36;1mDesk Load (0.2ms)[0m   [0;1mSELECT * FROM "desks" WHERE ("desks".location_id = 1) [0m
+Completed in 4ms (View: 2, DB: 1) | 200 OK [http://www.example.com/]
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-02-03 14:03:49) [GET]
+Redirected to http://www.example.com/
+Completed in 1ms (DB: 0) | 302 Found [http://www.example.com/logout]
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 14:03:49) [GET]
+  Parameters: {"id"=>1}
+  [4;35;1mLocation Load (0.4ms)[0m   [0mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;36;1mDesk Load (0.2ms)[0m   [0;1mSELECT * FROM "desks" WHERE ("desks".location_id = 1) [0m
+Completed in 5ms (View: 2, DB: 1) | 200 OK [http://www.example.com/]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-02-03 14:03:49) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"monkey", "login"=>"reggie", "password"=>"monkey", "email"=>"registered@example.com"}}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 27ms (View: 20, DB: 1) | 200 OK [http://www.example.com/users]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-02-03 14:11:00) [GET]
+Redirected to http://www.example.com/
+Completed in 81ms (DB: 2) | 302 Found [http://www.example.com/sessions/destroy]
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 14:11:00) [GET]
+  Parameters: {"id"=>1}
+  [4;36;1mLocation Load (0.5ms)[0m   [0;1mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;35;1mDesk Load (0.2ms)[0m   [0mSELECT * FROM "desks" WHERE ("desks".location_id = 1) [0m
+Completed in 16ms (View: 12, DB: 1) | 200 OK [http://www.example.com/]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-02-03 14:11:00) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Completed in 13ms (View: 11, DB: 0) | 200 OK [http://www.example.com/signup]
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-02-03 14:11:00) [GET]
+Redirected to http://www.example.com/
+Completed in 1ms (DB: 1) | 302 Found [http://www.example.com/sessions/destroy]
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 14:11:00) [GET]
+  Parameters: {"id"=>1}
+  [4;36;1mLocation Load (0.4ms)[0m   [0;1mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;35;1mDesk Load (0.2ms)[0m   [0mSELECT * FROM "desks" WHERE ("desks".location_id = 1) [0m
+Completed in 4ms (View: 2, DB: 1) | 200 OK [http://www.example.com/]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'Oona') [0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'Oona') LIMIT 1[0m
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-02-03 14:11:00) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"1234oona", "login"=>"oona", "password"=>"1234oona", "email"=>"unactivated@example.com"}}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 26ms (View: 22, DB: 1) | 200 OK [http://www.example.com/users]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-02-03 14:11:00) [GET]
+Redirected to http://www.example.com/
+Completed in 0ms (DB: 2) | 302 Found [http://www.example.com/sessions/destroy]
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 14:11:00) [GET]
+  Parameters: {"id"=>1}
+  [4;35;1mLocation Load (0.4ms)[0m   [0mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;36;1mDesk Load (0.2ms)[0m   [0;1mSELECT * FROM "desks" WHERE ("desks".location_id = 1) [0m
+Completed in 7ms (View: 5, DB: 1) | 200 OK [http://www.example.com/]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-02-03 14:11:00) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"monkey", "login"=>"reggie", "password"=>"monkey", "email"=>"registered@example.com"}}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 27ms (View: 21, DB: 0) | 200 OK [http://www.example.com/users]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-02-03 14:11:01) [GET]
+Redirected to http://www.example.com/
+Completed in 0ms (DB: 2) | 302 Found [http://www.example.com/sessions/destroy]
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 14:11:01) [GET]
+  Parameters: {"id"=>1}
+  [4;36;1mLocation Load (0.4ms)[0m   [0;1mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;35;1mDesk Load (0.2ms)[0m   [0mSELECT * FROM "desks" WHERE ("desks".location_id = 1) [0m
+Completed in 4ms (View: 2, DB: 1) | 200 OK [http://www.example.com/]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'Oona') [0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'Oona') LIMIT 1[0m
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-02-03 14:11:01) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"monkey", "_password"=>"monkey", "login"=>"", "email"=>"unactivated@example.com"}}
+WARNING: Can't mass-assign these protected attributes: _password
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login" = '') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."login" = '') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 41ms (View: 36, DB: 1) | 200 OK [http://www.example.com/users]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = '') LIMIT 1[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-02-03 14:11:01) [GET]
+Redirected to http://www.example.com/
+Completed in 0ms (DB: 2) | 302 Found [http://www.example.com/sessions/destroy]
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 14:11:01) [GET]
+  Parameters: {"id"=>1}
+  [4;35;1mLocation Load (0.4ms)[0m   [0mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;36;1mDesk Load (0.2ms)[0m   [0;1mSELECT * FROM "desks" WHERE ("desks".location_id = 1) [0m
+Completed in 4ms (View: 2, DB: 1) | 200 OK [http://www.example.com/]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'Oona') [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'Oona') LIMIT 1[0m
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-02-03 14:11:01) [POST]
+  Parameters: {"user"=>{"_password_confirmation"=>"monkey", "login"=>"oona", "password"=>"", "email"=>"unactivated@example.com"}}
+WARNING: Can't mass-assign these protected attributes: _password_confirmation
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 34ms (View: 29, DB: 1) | 200 OK [http://www.example.com/users]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-02-03 14:11:01) [GET]
+Redirected to http://www.example.com/
+Completed in 1ms (DB: 2) | 302 Found [http://www.example.com/sessions/destroy]
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 14:11:01) [GET]
+  Parameters: {"id"=>1}
+  [4;35;1mLocation Load (0.4ms)[0m   [0mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;36;1mDesk Load (0.2ms)[0m   [0;1mSELECT * FROM "desks" WHERE ("desks".location_id = 1) [0m
+Completed in 5ms (View: 3, DB: 1) | 200 OK [http://www.example.com/]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'Oona') [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'Oona') LIMIT 1[0m
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-02-03 14:11:01) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"", "login"=>"oona", "password"=>"monkey", "email"=>"unactivated@example.com"}}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 31ms (View: 26, DB: 1) | 200 OK [http://www.example.com/users]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-02-03 14:11:01) [GET]
+Redirected to http://www.example.com/
+Completed in 0ms (DB: 2) | 302 Found [http://www.example.com/sessions/destroy]
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 14:11:01) [GET]
+  Parameters: {"id"=>1}
+  [4;35;1mLocation Load (0.4ms)[0m   [0mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;36;1mDesk Load (0.2ms)[0m   [0;1mSELECT * FROM "desks" WHERE ("desks".location_id = 1) [0m
+Completed in 4ms (View: 2, DB: 1) | 200 OK [http://www.example.com/]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'Oona') [0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'Oona') LIMIT 1[0m
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-02-03 14:11:01) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"monkeY", "login"=>"oona", "password"=>"monkey", "email"=>"unactivated@example.com"}}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 33ms (View: 28, DB: 1) | 200 OK [http://www.example.com/users]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-02-03 14:11:01) [GET]
+Redirected to http://www.example.com/
+Completed in 0ms (DB: 2) | 302 Found [http://www.example.com/sessions/destroy]
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 14:11:01) [GET]
+  Parameters: {"id"=>1}
+  [4;35;1mLocation Load (0.4ms)[0m   [0mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;36;1mDesk Load (0.2ms)[0m   [0;1mSELECT * FROM "desks" WHERE ("desks".location_id = 1) [0m
+Completed in 4ms (View: 2, DB: 1) | 200 OK [http://www.example.com/]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'Oona') [0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'Oona') LIMIT 1[0m
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-02-03 14:11:01) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"monkey", "login"=>"oona", "password"=>"monkey", "email"=>""}}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 31ms (View: 26, DB: 1) | 200 OK [http://www.example.com/users]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-02-03 14:11:01) [GET]
+Redirected to http://www.example.com/
+Completed in 0ms (DB: 2) | 302 Found [http://www.example.com/sessions/destroy]
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 14:11:01) [GET]
+  Parameters: {"id"=>1}
+  [4;36;1mLocation Load (0.4ms)[0m   [0;1mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;35;1mDesk Load (0.2ms)[0m   [0mSELECT * FROM "desks" WHERE ("desks".location_id = 1) [0m
+Completed in 4ms (View: 2, DB: 1) | 200 OK [http://www.example.com/]
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 14:11:01) [GET]
+  Parameters: {"id"=>1}
+  [4;36;1mLocation Load (0.4ms)[0m   [0;1mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;35;1mDesk Load (0.2ms)[0m   [0mSELECT * FROM "desks" WHERE ("desks".location_id = 1) [0m
+Completed in 4ms (View: 2, DB: 1) | 200 OK [http://www.example.com/]
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-02-03 14:11:01) [GET]
+Redirected to http://www.example.com/
+Completed in 0ms (DB: 2) | 302 Found [http://www.example.com/sessions/destroy]
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 14:11:01) [GET]
+  Parameters: {"id"=>1}
+  [4;36;1mLocation Load (0.4ms)[0m   [0;1mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;35;1mDesk Load (0.2ms)[0m   [0mSELECT * FROM "desks" WHERE ("desks".location_id = 1) [0m
+Completed in 5ms (View: 3, DB: 1) | 200 OK [http://www.example.com/]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-02-03 14:11:01) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 4ms (View: 4, DB: 0) | 200 OK [http://www.example.com/login]
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-02-03 14:11:01) [GET]
+Redirected to http://www.example.com/
+Completed in 0ms (DB: 1) | 302 Found [http://www.example.com/sessions/destroy]
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 14:11:01) [GET]
+  Parameters: {"id"=>1}
+  [4;36;1mLocation Load (0.4ms)[0m   [0;1mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;35;1mDesk Load (0.2ms)[0m   [0mSELECT * FROM "desks" WHERE ("desks".location_id = 1) [0m
+Completed in 4ms (View: 2, DB: 1) | 200 OK [http://www.example.com/]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-02-03 14:11:01) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"monkey", "login"=>"reggie", "password"=>"monkey", "email"=>"registered@example.com"}}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 24ms (View: 19, DB: 0) | 200 OK [http://www.example.com/users]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-02-03 14:11:01) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"monkey", "login"=>"reggie", "password"=>"monkey", "email"=>"registered@example.com"}}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 28ms (View: 24, DB: 2) | 200 OK [http://www.example.com/users]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-02-03 14:11:02) [GET]
+Redirected to http://www.example.com/
+Completed in 0ms (DB: 2) | 302 Found [http://www.example.com/sessions/destroy]
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 14:11:02) [GET]
+  Parameters: {"id"=>1}
+  [4;36;1mLocation Load (0.5ms)[0m   [0;1mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;35;1mDesk Load (0.2ms)[0m   [0mSELECT * FROM "desks" WHERE ("desks".location_id = 1) [0m
+Completed in 8ms (View: 5, DB: 1) | 200 OK [http://www.example.com/]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-02-03 14:11:02) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"monkey", "login"=>"reggie", "password"=>"monkey", "email"=>"registered@example.com"}}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 28ms (View: 22, DB: 0) | 200 OK [http://www.example.com/users]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-02-03 14:11:02) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"1234oona", "login"=>"oona", "password"=>"1234oona", "email"=>"unactivated@example.com"}}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 30ms (View: 26, DB: 2) | 200 OK [http://www.example.com/users]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-02-03 14:11:02) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"monkey", "login"=>"reggie", "password"=>"monkey", "email"=>"registered@example.com"}}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 25ms (View: 20, DB: 2) | 200 OK [http://www.example.com/users]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-02-03 14:11:02) [GET]
+Redirected to http://www.example.com/
+Completed in 0ms (DB: 1) | 302 Found [http://www.example.com/sessions/destroy]
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 14:11:02) [GET]
+  Parameters: {"id"=>1}
+  [4;35;1mLocation Load (0.4ms)[0m   [0mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;36;1mDesk Load (0.3ms)[0m   [0;1mSELECT * FROM "desks" WHERE ("desks".location_id = 1) [0m
+Completed in 4ms (View: 2, DB: 1) | 200 OK [http://www.example.com/]
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-02-03 14:11:02) [GET]
+Redirected to http://www.example.com/
+Completed in 1ms (DB: 0) | 302 Found [http://www.example.com/logout]
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 14:11:02) [GET]
+  Parameters: {"id"=>1}
+  [4;35;1mLocation Load (0.4ms)[0m   [0mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;36;1mDesk Load (0.2ms)[0m   [0;1mSELECT * FROM "desks" WHERE ("desks".location_id = 1) [0m
+Completed in 4ms (View: 2, DB: 1) | 200 OK [http://www.example.com/]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-02-03 14:11:02) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"monkey", "login"=>"reggie", "password"=>"monkey", "email"=>"registered@example.com"}}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 26ms (View: 22, DB: 1) | 200 OK [http://www.example.com/users]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-02-03 14:17:24) [GET]
+Redirected to http://www.example.com/
+Completed in 85ms (DB: 2) | 302 Found [http://www.example.com/sessions/destroy]
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 14:17:25) [GET]
+  Parameters: {"id"=>1}
+  [4;36;1mLocation Load (0.5ms)[0m   [0;1mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;35;1mDesk Load (0.2ms)[0m   [0mSELECT * FROM "desks" WHERE ("desks".location_id = 1) [0m
+Completed in 17ms (View: 12, DB: 1) | 200 OK [http://www.example.com/]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-02-03 14:17:25) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Completed in 14ms (View: 11, DB: 0) | 200 OK [http://www.example.com/signup]
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-02-03 14:17:25) [GET]
+Redirected to http://www.example.com/
+Completed in 0ms (DB: 1) | 302 Found [http://www.example.com/sessions/destroy]
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 14:17:25) [GET]
+  Parameters: {"id"=>1}
+  [4;36;1mLocation Load (0.4ms)[0m   [0;1mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;35;1mDesk Load (0.2ms)[0m   [0mSELECT * FROM "desks" WHERE ("desks".location_id = 1) [0m
+Completed in 8ms (View: 3, DB: 1) | 200 OK [http://www.example.com/]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'Oona') [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'Oona') LIMIT 1[0m
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-02-03 14:17:25) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"1234oona", "login"=>"oona", "password"=>"1234oona", "email"=>"unactivated@example.com"}}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 28ms (View: 23, DB: 1) | 200 OK [http://www.example.com/users]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-02-03 14:17:25) [GET]
+Redirected to http://www.example.com/
+Completed in 3ms (DB: 2) | 302 Found [http://www.example.com/sessions/destroy]
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 14:17:25) [GET]
+  Parameters: {"id"=>1}
+  [4;35;1mLocation Load (1.8ms)[0m   [0mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;36;1mDesk Load (0.2ms)[0m   [0;1mSELECT * FROM "desks" WHERE ("desks".location_id = 1) [0m
+Completed in 6ms (View: 2, DB: 2) | 200 OK [http://www.example.com/]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-02-03 14:17:25) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"monkey", "login"=>"reggie", "password"=>"monkey", "email"=>"registered@example.com"}}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 27ms (View: 21, DB: 0) | 200 OK [http://www.example.com/users]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-02-03 14:17:25) [GET]
+Redirected to http://www.example.com/
+Completed in 3ms (DB: 2) | 302 Found [http://www.example.com/sessions/destroy]
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 14:17:25) [GET]
+  Parameters: {"id"=>1}
+  [4;36;1mLocation Load (0.4ms)[0m   [0;1mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;35;1mDesk Load (0.2ms)[0m   [0mSELECT * FROM "desks" WHERE ("desks".location_id = 1) [0m
+Completed in 4ms (View: 2, DB: 1) | 200 OK [http://www.example.com/]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'Oona') [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'Oona') LIMIT 1[0m
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-02-03 14:17:25) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"monkey", "_password"=>"monkey", "login"=>"", "email"=>"unactivated@example.com"}}
+WARNING: Can't mass-assign these protected attributes: _password
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login" = '') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."login" = '') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 180ms (View: 174, DB: 1) | 200 OK [http://www.example.com/users]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = '') LIMIT 1[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-02-03 14:17:25) [GET]
+Redirected to http://www.example.com/
+Completed in 1ms (DB: 1) | 302 Found [http://www.example.com/sessions/destroy]
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 14:17:25) [GET]
+  Parameters: {"id"=>1}
+  [4;35;1mLocation Load (0.4ms)[0m   [0mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;36;1mDesk Load (0.2ms)[0m   [0;1mSELECT * FROM "desks" WHERE ("desks".location_id = 1) [0m
+Completed in 4ms (View: 2, DB: 1) | 200 OK [http://www.example.com/]
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'Oona') [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'Oona') LIMIT 1[0m
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-02-03 14:17:25) [POST]
+  Parameters: {"user"=>{"_password_confirmation"=>"monkey", "login"=>"oona", "password"=>"", "email"=>"unactivated@example.com"}}
+WARNING: Can't mass-assign these protected attributes: _password_confirmation
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 40ms (View: 36, DB: 1) | 200 OK [http://www.example.com/users]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-02-03 14:17:25) [GET]
+Redirected to http://www.example.com/
+Completed in 0ms (DB: 3) | 302 Found [http://www.example.com/sessions/destroy]
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 14:17:25) [GET]
+  Parameters: {"id"=>1}
+  [4;35;1mLocation Load (0.4ms)[0m   [0mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;36;1mDesk Load (0.2ms)[0m   [0;1mSELECT * FROM "desks" WHERE ("desks".location_id = 1) [0m
+Completed in 6ms (View: 3, DB: 1) | 200 OK [http://www.example.com/]
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'Oona') [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'Oona') LIMIT 1[0m
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-02-03 14:17:25) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"", "login"=>"oona", "password"=>"monkey", "email"=>"unactivated@example.com"}}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 34ms (View: 30, DB: 1) | 200 OK [http://www.example.com/users]
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-02-03 14:17:25) [GET]
+Redirected to http://www.example.com/
+Completed in 0ms (DB: 2) | 302 Found [http://www.example.com/sessions/destroy]
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 14:17:25) [GET]
+  Parameters: {"id"=>1}
+  [4;35;1mLocation Load (0.4ms)[0m   [0mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;36;1mDesk Load (0.2ms)[0m   [0;1mSELECT * FROM "desks" WHERE ("desks".location_id = 1) [0m
+Completed in 4ms (View: 2, DB: 1) | 200 OK [http://www.example.com/]
+  [4;35;1mUser Load (0.8ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'Oona') [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'Oona') LIMIT 1[0m
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-02-03 14:17:25) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"monkeY", "login"=>"oona", "password"=>"monkey", "email"=>"unactivated@example.com"}}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 161ms (View: 155, DB: 1) | 200 OK [http://www.example.com/users]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-02-03 14:17:26) [GET]
+Redirected to http://www.example.com/
+Completed in 4ms (DB: 2) | 302 Found [http://www.example.com/sessions/destroy]
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 14:17:26) [GET]
+  Parameters: {"id"=>1}
+  [4;35;1mLocation Load (0.4ms)[0m   [0mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;36;1mDesk Load (0.4ms)[0m   [0;1mSELECT * FROM "desks" WHERE ("desks".location_id = 1) [0m
+Completed in 5ms (View: 3, DB: 1) | 200 OK [http://www.example.com/]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'Oona') [0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'Oona') LIMIT 1[0m
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-02-03 14:17:26) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"monkey", "login"=>"oona", "password"=>"monkey", "email"=>""}}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 29ms (View: 24, DB: 1) | 200 OK [http://www.example.com/users]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-02-03 14:17:26) [GET]
+Redirected to http://www.example.com/
+Completed in 0ms (DB: 2) | 302 Found [http://www.example.com/sessions/destroy]
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 14:17:26) [GET]
+  Parameters: {"id"=>1}
+  [4;36;1mLocation Load (0.5ms)[0m   [0;1mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;35;1mDesk Load (0.2ms)[0m   [0mSELECT * FROM "desks" WHERE ("desks".location_id = 1) [0m
+Completed in 5ms (View: 3, DB: 1) | 200 OK [http://www.example.com/]
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 14:17:26) [GET]
+  Parameters: {"id"=>1}
+  [4;36;1mLocation Load (0.4ms)[0m   [0;1mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;35;1mDesk Load (0.2ms)[0m   [0mSELECT * FROM "desks" WHERE ("desks".location_id = 1) [0m
+Completed in 4ms (View: 2, DB: 1) | 200 OK [http://www.example.com/]
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-02-03 14:17:26) [GET]
+Redirected to http://www.example.com/
+Completed in 0ms (DB: 1) | 302 Found [http://www.example.com/sessions/destroy]
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 14:17:26) [GET]
+  Parameters: {"id"=>1}
+  [4;36;1mLocation Load (0.4ms)[0m   [0;1mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;35;1mDesk Load (0.4ms)[0m   [0mSELECT * FROM "desks" WHERE ("desks".location_id = 1) [0m
+Completed in 8ms (View: 6, DB: 1) | 200 OK [http://www.example.com/]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-02-03 14:17:26) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 4ms (View: 4, DB: 0) | 200 OK [http://www.example.com/login]
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-02-03 14:17:26) [GET]
+Redirected to http://www.example.com/
+Completed in 1ms (DB: 1) | 302 Found [http://www.example.com/sessions/destroy]
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 14:17:26) [GET]
+  Parameters: {"id"=>1}
+  [4;36;1mLocation Load (0.4ms)[0m   [0;1mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;35;1mDesk Load (0.2ms)[0m   [0mSELECT * FROM "desks" WHERE ("desks".location_id = 1) [0m
+Completed in 4ms (View: 2, DB: 1) | 200 OK [http://www.example.com/]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-02-03 14:17:26) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"monkey", "login"=>"reggie", "password"=>"monkey", "email"=>"registered@example.com"}}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 157ms (View: 19, DB: 0) | 200 OK [http://www.example.com/users]
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-02-03 14:17:26) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"monkey", "login"=>"reggie", "password"=>"monkey", "email"=>"registered@example.com"}}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 26ms (View: 20, DB: 2) | 200 OK [http://www.example.com/users]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-02-03 14:17:26) [GET]
+Redirected to http://www.example.com/
+Completed in 1ms (DB: 2) | 302 Found [http://www.example.com/sessions/destroy]
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 14:17:26) [GET]
+  Parameters: {"id"=>1}
+  [4;36;1mLocation Load (0.7ms)[0m   [0;1mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;35;1mDesk Load (0.2ms)[0m   [0mSELECT * FROM "desks" WHERE ("desks".location_id = 1) [0m
+Completed in 5ms (View: 2, DB: 1) | 200 OK [http://www.example.com/]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-02-03 14:17:26) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"monkey", "login"=>"reggie", "password"=>"monkey", "email"=>"registered@example.com"}}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 27ms (View: 23, DB: 0) | 200 OK [http://www.example.com/users]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-02-03 14:17:26) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"1234oona", "login"=>"oona", "password"=>"1234oona", "email"=>"unactivated@example.com"}}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 28ms (View: 24, DB: 2) | 200 OK [http://www.example.com/users]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-02-03 14:17:26) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"monkey", "login"=>"reggie", "password"=>"monkey", "email"=>"registered@example.com"}}
+  [4;36;1mUser Load (1.6ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 28ms (View: 20, DB: 3) | 200 OK [http://www.example.com/users]
+  [4;36;1mUser Load (5.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-02-03 14:17:26) [GET]
+Redirected to http://www.example.com/
+Completed in 0ms (DB: 7) | 302 Found [http://www.example.com/sessions/destroy]
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 14:17:26) [GET]
+  Parameters: {"id"=>1}
+  [4;35;1mLocation Load (0.4ms)[0m   [0mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;36;1mDesk Load (0.2ms)[0m   [0;1mSELECT * FROM "desks" WHERE ("desks".location_id = 1) [0m
+Completed in 4ms (View: 2, DB: 1) | 200 OK [http://www.example.com/]
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-02-03 14:17:26) [GET]
+Redirected to http://www.example.com/
+Completed in 1ms (DB: 0) | 302 Found [http://www.example.com/logout]
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 14:17:26) [GET]
+  Parameters: {"id"=>1}
+  [4;35;1mLocation Load (0.4ms)[0m   [0mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;36;1mDesk Load (0.2ms)[0m   [0;1mSELECT * FROM "desks" WHERE ("desks".location_id = 1) [0m
+Completed in 4ms (View: 2, DB: 1) | 200 OK [http://www.example.com/]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-02-03 14:17:26) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"monkey", "login"=>"reggie", "password"=>"monkey", "email"=>"registered@example.com"}}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 25ms (View: 21, DB: 1) | 200 OK [http://www.example.com/users]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-02-03 14:18:07) [GET]
+Redirected to http://www.example.com/
+Completed in 77ms (DB: 2) | 302 Found [http://www.example.com/sessions/destroy]
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 14:18:08) [GET]
+  Parameters: {"id"=>1}
+  [4;36;1mLocation Load (0.5ms)[0m   [0;1mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;35;1mDesk Load (0.3ms)[0m   [0mSELECT * FROM "desks" WHERE ("desks".location_id = 1) [0m
+Completed in 17ms (View: 13, DB: 1) | 200 OK [http://www.example.com/]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-02-03 14:18:08) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Completed in 14ms (View: 11, DB: 0) | 200 OK [http://www.example.com/signup]
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-02-03 14:18:08) [GET]
+Redirected to http://www.example.com/
+Completed in 1ms (DB: 1) | 302 Found [http://www.example.com/sessions/destroy]
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 14:18:08) [GET]
+  Parameters: {"id"=>1}
+  [4;36;1mLocation Load (0.8ms)[0m   [0;1mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;35;1mDesk Load (0.2ms)[0m   [0mSELECT * FROM "desks" WHERE ("desks".location_id = 1) [0m
+Completed in 5ms (View: 2, DB: 1) | 200 OK [http://www.example.com/]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'Oona') [0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'Oona') LIMIT 1[0m
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-02-03 14:18:08) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"1234oona", "login"=>"oona", "password"=>"1234oona", "email"=>"unactivated@example.com"}}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 28ms (View: 23, DB: 1) | 200 OK [http://www.example.com/users]
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-02-03 14:18:08) [GET]
+Redirected to http://www.example.com/
+Completed in 1ms (DB: 2) | 302 Found [http://www.example.com/sessions/destroy]
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 14:18:08) [GET]
+  Parameters: {"id"=>1}
+  [4;35;1mLocation Load (0.4ms)[0m   [0mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;36;1mDesk Load (0.2ms)[0m   [0;1mSELECT * FROM "desks" WHERE ("desks".location_id = 1) [0m
+Completed in 4ms (View: 2, DB: 1) | 200 OK [http://www.example.com/]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-02-03 14:18:08) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"monkey", "login"=>"reggie", "password"=>"monkey", "email"=>"registered@example.com"}}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 29ms (View: 20, DB: 0) | 200 OK [http://www.example.com/users]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-02-03 14:18:08) [GET]
+Redirected to http://www.example.com/
+Completed in 1ms (DB: 2) | 302 Found [http://www.example.com/sessions/destroy]
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 14:18:08) [GET]
+  Parameters: {"id"=>1}
+  [4;36;1mLocation Load (0.4ms)[0m   [0;1mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;35;1mDesk Load (0.2ms)[0m   [0mSELECT * FROM "desks" WHERE ("desks".location_id = 1) [0m
+Completed in 4ms (View: 2, DB: 1) | 200 OK [http://www.example.com/]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'Oona') [0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'Oona') LIMIT 1[0m
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-02-03 14:18:08) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"monkey", "_password"=>"monkey", "login"=>"", "email"=>"unactivated@example.com"}}
+WARNING: Can't mass-assign these protected attributes: _password
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login" = '') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."login" = '') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 36ms (View: 32, DB: 1) | 200 OK [http://www.example.com/users]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = '') LIMIT 1[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-02-03 14:18:08) [GET]
+Redirected to http://www.example.com/
+Completed in 1ms (DB: 1) | 302 Found [http://www.example.com/sessions/destroy]
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 14:18:08) [GET]
+  Parameters: {"id"=>1}
+  [4;35;1mLocation Load (0.9ms)[0m   [0mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;36;1mDesk Load (0.2ms)[0m   [0;1mSELECT * FROM "desks" WHERE ("desks".location_id = 1) [0m
+Completed in 5ms (View: 2, DB: 1) | 200 OK [http://www.example.com/]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'Oona') [0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'Oona') LIMIT 1[0m
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-02-03 14:18:08) [POST]
+  Parameters: {"user"=>{"_password_confirmation"=>"monkey", "login"=>"oona", "password"=>"", "email"=>"unactivated@example.com"}}
+WARNING: Can't mass-assign these protected attributes: _password_confirmation
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 37ms (View: 32, DB: 1) | 200 OK [http://www.example.com/users]
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-02-03 14:18:08) [GET]
+Redirected to http://www.example.com/
+Completed in 1ms (DB: 2) | 302 Found [http://www.example.com/sessions/destroy]
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 14:18:08) [GET]
+  Parameters: {"id"=>1}
+  [4;35;1mLocation Load (0.8ms)[0m   [0mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;36;1mDesk Load (0.2ms)[0m   [0;1mSELECT * FROM "desks" WHERE ("desks".location_id = 1) [0m
+Completed in 8ms (View: 3, DB: 1) | 200 OK [http://www.example.com/]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'Oona') [0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'Oona') LIMIT 1[0m
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-02-03 14:18:08) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"", "login"=>"oona", "password"=>"monkey", "email"=>"unactivated@example.com"}}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 31ms (View: 26, DB: 1) | 200 OK [http://www.example.com/users]
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-02-03 14:18:09) [GET]
+Redirected to http://www.example.com/
+Completed in 0ms (DB: 2) | 302 Found [http://www.example.com/sessions/destroy]
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 14:18:09) [GET]
+  Parameters: {"id"=>1}
+  [4;35;1mLocation Load (0.4ms)[0m   [0mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;36;1mDesk Load (0.2ms)[0m   [0;1mSELECT * FROM "desks" WHERE ("desks".location_id = 1) [0m
+Completed in 5ms (View: 2, DB: 1) | 200 OK [http://www.example.com/]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'Oona') [0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'Oona') LIMIT 1[0m
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-02-03 14:18:09) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"monkeY", "login"=>"oona", "password"=>"monkey", "email"=>"unactivated@example.com"}}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 29ms (View: 24, DB: 1) | 200 OK [http://www.example.com/users]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-02-03 14:18:09) [GET]
+Redirected to http://www.example.com/
+Completed in 0ms (DB: 2) | 302 Found [http://www.example.com/sessions/destroy]
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 14:18:09) [GET]
+  Parameters: {"id"=>1}
+  [4;35;1mLocation Load (0.4ms)[0m   [0mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;36;1mDesk Load (0.2ms)[0m   [0;1mSELECT * FROM "desks" WHERE ("desks".location_id = 1) [0m
+Completed in 4ms (View: 2, DB: 1) | 200 OK [http://www.example.com/]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'Oona') [0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'Oona') LIMIT 1[0m
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-02-03 14:18:09) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"monkey", "login"=>"oona", "password"=>"monkey", "email"=>""}}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 27ms (View: 23, DB: 1) | 200 OK [http://www.example.com/users]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-02-03 14:23:13) [GET]
+Redirected to http://www.example.com/
+Completed in 173ms (DB: 64) | 302 Found [http://www.example.com/sessions/destroy]
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 14:23:13) [GET]
+  Parameters: {"id"=>1}
+  [4;36;1mLocation Load (0.5ms)[0m   [0;1mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;35;1mDesk Load (0.2ms)[0m   [0mSELECT * FROM "desks" WHERE ("desks".location_id = 1) [0m
+Completed in 17ms (View: 12, DB: 1) | 200 OK [http://www.example.com/]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-02-03 14:23:13) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Completed in 15ms (View: 12, DB: 0) | 200 OK [http://www.example.com/signup]
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-02-03 14:23:13) [GET]
+Redirected to http://www.example.com/
+Completed in 1ms (DB: 1) | 302 Found [http://www.example.com/sessions/destroy]
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 14:23:13) [GET]
+  Parameters: {"id"=>1}
+  [4;36;1mLocation Load (0.5ms)[0m   [0;1mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;35;1mDesk Load (0.2ms)[0m   [0mSELECT * FROM "desks" WHERE ("desks".location_id = 1) [0m
+Completed in 4ms (View: 2, DB: 1) | 200 OK [http://www.example.com/]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'Oona') [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'Oona') LIMIT 1[0m
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-02-03 14:23:13) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"1234oona", "login"=>"oona", "password"=>"1234oona", "email"=>"unactivated@example.com"}}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 28ms (View: 24, DB: 1) | 200 OK [http://www.example.com/users]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-02-03 14:23:13) [GET]
+Redirected to http://www.example.com/
+Completed in 0ms (DB: 1) | 302 Found [http://www.example.com/sessions/destroy]
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 14:23:13) [GET]
+  Parameters: {"id"=>1}
+  [4;35;1mLocation Load (0.5ms)[0m   [0mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;36;1mDesk Load (0.3ms)[0m   [0;1mSELECT * FROM "desks" WHERE ("desks".location_id = 1) [0m
+Completed in 12ms (View: 9, DB: 1) | 200 OK [http://www.example.com/]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-02-03 14:23:13) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"monkey", "login"=>"reggie", "password"=>"monkey", "email"=>"registered@example.com"}}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 27ms (View: 22, DB: 0) | 200 OK [http://www.example.com/users]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-02-03 14:23:13) [GET]
+Redirected to http://www.example.com/
+Completed in 1ms (DB: 2) | 302 Found [http://www.example.com/sessions/destroy]
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 14:23:13) [GET]
+  Parameters: {"id"=>1}
+  [4;36;1mLocation Load (0.4ms)[0m   [0;1mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;35;1mDesk Load (0.2ms)[0m   [0mSELECT * FROM "desks" WHERE ("desks".location_id = 1) [0m
+Completed in 4ms (View: 2, DB: 1) | 200 OK [http://www.example.com/]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'Oona') [0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'Oona') LIMIT 1[0m
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-02-03 14:23:13) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"monkey", "_password"=>"monkey", "login"=>"", "email"=>"unactivated@example.com"}}
+WARNING: Can't mass-assign these protected attributes: _password
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login" = '') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."login" = '') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 181ms (View: 32, DB: 1) | 200 OK [http://www.example.com/users]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = '') LIMIT 1[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-02-03 14:23:13) [GET]
+Redirected to http://www.example.com/
+Completed in 0ms (DB: 1) | 302 Found [http://www.example.com/sessions/destroy]
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 14:23:13) [GET]
+  Parameters: {"id"=>1}
+  [4;35;1mLocation Load (0.4ms)[0m   [0mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;36;1mDesk Load (0.2ms)[0m   [0;1mSELECT * FROM "desks" WHERE ("desks".location_id = 1) [0m
+Completed in 5ms (View: 2, DB: 1) | 200 OK [http://www.example.com/]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'Oona') [0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'Oona') LIMIT 1[0m
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-02-03 14:23:13) [POST]
+  Parameters: {"user"=>{"_password_confirmation"=>"monkey", "login"=>"oona", "password"=>"", "email"=>"unactivated@example.com"}}
+WARNING: Can't mass-assign these protected attributes: _password_confirmation
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 39ms (View: 35, DB: 1) | 200 OK [http://www.example.com/users]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-02-03 14:23:13) [GET]
+Redirected to http://www.example.com/
+Completed in 1ms (DB: 2) | 302 Found [http://www.example.com/sessions/destroy]
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 14:23:14) [GET]
+  Parameters: {"id"=>1}
+  [4;35;1mLocation Load (0.7ms)[0m   [0mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;36;1mDesk Load (0.2ms)[0m   [0;1mSELECT * FROM "desks" WHERE ("desks".location_id = 1) [0m
+Completed in 4ms (View: 2, DB: 1) | 200 OK [http://www.example.com/]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'Oona') [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'Oona') LIMIT 1[0m
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-02-03 14:23:14) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"", "login"=>"oona", "password"=>"monkey", "email"=>"unactivated@example.com"}}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 36ms (View: 30, DB: 1) | 200 OK [http://www.example.com/users]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-02-03 14:23:14) [GET]
+Redirected to http://www.example.com/
+Completed in 0ms (DB: 2) | 302 Found [http://www.example.com/sessions/destroy]
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 14:23:14) [GET]
+  Parameters: {"id"=>1}
+  [4;35;1mLocation Load (0.4ms)[0m   [0mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;36;1mDesk Load (0.3ms)[0m   [0;1mSELECT * FROM "desks" WHERE ("desks".location_id = 1) [0m
+Completed in 5ms (View: 2, DB: 1) | 200 OK [http://www.example.com/]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'Oona') [0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'Oona') LIMIT 1[0m
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-02-03 14:23:14) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"monkeY", "login"=>"oona", "password"=>"monkey", "email"=>"unactivated@example.com"}}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 160ms (View: 156, DB: 1) | 200 OK [http://www.example.com/users]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-02-03 14:25:30) [GET]
+Redirected to http://www.example.com/
+Completed in 172ms (DB: 2) | 302 Found [http://www.example.com/sessions/destroy]
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 14:25:30) [GET]
+  Parameters: {"id"=>1}
+  [4;36;1mLocation Load (0.5ms)[0m   [0;1mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;35;1mDesk Load (0.2ms)[0m   [0mSELECT * FROM "desks" WHERE ("desks".location_id = 1) [0m
+Completed in 17ms (View: 12, DB: 1) | 200 OK [http://www.example.com/]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-02-03 14:25:30) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Completed in 14ms (View: 11, DB: 0) | 200 OK [http://www.example.com/signup]
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-02-03 14:25:30) [GET]
+Redirected to http://www.example.com/
+Completed in 0ms (DB: 1) | 302 Found [http://www.example.com/sessions/destroy]
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 14:25:30) [GET]
+  Parameters: {"id"=>1}
+  [4;36;1mLocation Load (0.7ms)[0m   [0;1mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;35;1mDesk Load (0.2ms)[0m   [0mSELECT * FROM "desks" WHERE ("desks".location_id = 1) [0m
+Completed in 6ms (View: 2, DB: 1) | 200 OK [http://www.example.com/]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'Oona') [0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'Oona') LIMIT 1[0m
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-02-03 14:25:30) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"1234oona", "login"=>"oona", "password"=>"1234oona", "email"=>"unactivated@example.com"}}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 25ms (View: 21, DB: 1) | 200 OK [http://www.example.com/users]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-02-03 14:25:30) [GET]
+Redirected to http://www.example.com/
+Completed in 0ms (DB: 1) | 302 Found [http://www.example.com/sessions/destroy]
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 14:25:30) [GET]
+  Parameters: {"id"=>1}
+  [4;35;1mLocation Load (0.4ms)[0m   [0mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;36;1mDesk Load (0.2ms)[0m   [0;1mSELECT * FROM "desks" WHERE ("desks".location_id = 1) [0m
+Completed in 4ms (View: 2, DB: 1) | 200 OK [http://www.example.com/]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-02-03 14:25:30) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"monkey", "login"=>"reggie", "password"=>"monkey", "email"=>"registered@example.com"}}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 26ms (View: 20, DB: 0) | 200 OK [http://www.example.com/users]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-02-03 14:25:30) [GET]
+Redirected to http://www.example.com/
+Completed in 1ms (DB: 2) | 302 Found [http://www.example.com/sessions/destroy]
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 14:25:30) [GET]
+  Parameters: {"id"=>1}
+  [4;36;1mLocation Load (0.5ms)[0m   [0;1mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;35;1mDesk Load (0.2ms)[0m   [0mSELECT * FROM "desks" WHERE ("desks".location_id = 1) [0m
+Completed in 5ms (View: 2, DB: 1) | 200 OK [http://www.example.com/]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'Oona') [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'Oona') LIMIT 1[0m
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-02-03 14:25:30) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"monkey", "_password"=>"monkey", "login"=>"", "email"=>"unactivated@example.com"}}
+WARNING: Can't mass-assign these protected attributes: _password
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login" = '') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."login" = '') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 176ms (View: 31, DB: 1) | 200 OK [http://www.example.com/users]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = '') LIMIT 1[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-02-03 14:25:30) [GET]
+Redirected to http://www.example.com/
+Completed in 0ms (DB: 1) | 302 Found [http://www.example.com/sessions/destroy]
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 14:25:30) [GET]
+  Parameters: {"id"=>1}
+  [4;35;1mLocation Load (0.5ms)[0m   [0mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;36;1mDesk Load (0.3ms)[0m   [0;1mSELECT * FROM "desks" WHERE ("desks".location_id = 1) [0m
+Completed in 6ms (View: 3, DB: 1) | 200 OK [http://www.example.com/]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'Oona') [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'Oona') LIMIT 1[0m
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-02-03 14:25:30) [POST]
+  Parameters: {"user"=>{"_password_confirmation"=>"monkey", "login"=>"oona", "password"=>"", "email"=>"unactivated@example.com"}}
+WARNING: Can't mass-assign these protected attributes: _password_confirmation
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 38ms (View: 33, DB: 1) | 200 OK [http://www.example.com/users]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-02-03 14:25:30) [GET]
+Redirected to http://www.example.com/
+Completed in 1ms (DB: 2) | 302 Found [http://www.example.com/sessions/destroy]
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 14:25:30) [GET]
+  Parameters: {"id"=>1}
+  [4;35;1mLocation Load (0.4ms)[0m   [0mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;36;1mDesk Load (0.7ms)[0m   [0;1mSELECT * FROM "desks" WHERE ("desks".location_id = 1) [0m
+Completed in 5ms (View: 3, DB: 1) | 200 OK [http://www.example.com/]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'Oona') [0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'Oona') LIMIT 1[0m
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-02-03 14:25:30) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"", "login"=>"oona", "password"=>"monkey", "email"=>"unactivated@example.com"}}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 37ms (View: 32, DB: 1) | 200 OK [http://www.example.com/users]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-02-03 14:25:30) [GET]
+Redirected to http://www.example.com/
+Completed in 0ms (DB: 2) | 302 Found [http://www.example.com/sessions/destroy]
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 14:25:30) [GET]
+  Parameters: {"id"=>1}
+  [4;35;1mLocation Load (0.4ms)[0m   [0mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;36;1mDesk Load (0.2ms)[0m   [0;1mSELECT * FROM "desks" WHERE ("desks".location_id = 1) [0m
+Completed in 4ms (View: 2, DB: 1) | 200 OK [http://www.example.com/]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'Oona') [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'Oona') LIMIT 1[0m
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-02-03 14:25:30) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"monkeY", "login"=>"oona", "password"=>"monkey", "email"=>"unactivated@example.com"}}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 162ms (View: 157, DB: 1) | 200 OK [http://www.example.com/users]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-02-03 14:25:53) [GET]
+Redirected to http://www.example.com/
+Completed in 169ms (DB: 2) | 302 Found [http://www.example.com/sessions/destroy]
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 14:25:53) [GET]
+  Parameters: {"id"=>1}
+  [4;36;1mLocation Load (0.5ms)[0m   [0;1mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;35;1mDesk Load (0.3ms)[0m   [0mSELECT * FROM "desks" WHERE ("desks".location_id = 1) [0m
+Completed in 17ms (View: 12, DB: 1) | 200 OK [http://www.example.com/]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-02-03 14:25:53) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Completed in 14ms (View: 11, DB: 0) | 200 OK [http://www.example.com/signup]
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-02-03 14:25:53) [GET]
+Redirected to http://www.example.com/
+Completed in 0ms (DB: 1) | 302 Found [http://www.example.com/sessions/destroy]
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 14:25:53) [GET]
+  Parameters: {"id"=>1}
+  [4;36;1mLocation Load (0.5ms)[0m   [0;1mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;35;1mDesk Load (0.2ms)[0m   [0mSELECT * FROM "desks" WHERE ("desks".location_id = 1) [0m
+Completed in 4ms (View: 2, DB: 1) | 200 OK [http://www.example.com/]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'Oona') [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'Oona') LIMIT 1[0m
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-02-03 14:25:53) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"1234oona", "login"=>"oona", "password"=>"1234oona", "email"=>"unactivated@example.com"}}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 30ms (View: 25, DB: 1) | 200 OK [http://www.example.com/users]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-02-03 14:25:53) [GET]
+Redirected to http://www.example.com/
+Completed in 0ms (DB: 2) | 302 Found [http://www.example.com/sessions/destroy]
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 14:25:53) [GET]
+  Parameters: {"id"=>1}
+  [4;35;1mLocation Load (0.5ms)[0m   [0mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;36;1mDesk Load (0.2ms)[0m   [0;1mSELECT * FROM "desks" WHERE ("desks".location_id = 1) [0m
+Completed in 7ms (View: 2, DB: 1) | 200 OK [http://www.example.com/]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-02-03 14:25:53) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"monkey", "login"=>"reggie", "password"=>"monkey", "email"=>"registered@example.com"}}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 25ms (View: 20, DB: 0) | 200 OK [http://www.example.com/users]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-02-03 14:25:53) [GET]
+Redirected to http://www.example.com/
+Completed in 1ms (DB: 3) | 302 Found [http://www.example.com/sessions/destroy]
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 14:25:53) [GET]
+  Parameters: {"id"=>1}
+  [4;36;1mLocation Load (0.4ms)[0m   [0;1mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;35;1mDesk Load (0.2ms)[0m   [0mSELECT * FROM "desks" WHERE ("desks".location_id = 1) [0m
+Completed in 4ms (View: 2, DB: 1) | 200 OK [http://www.example.com/]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'Oona') [0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'Oona') LIMIT 1[0m
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-02-03 14:25:53) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"monkey", "_password"=>"monkey", "login"=>"", "email"=>"unactivated@example.com"}}
+WARNING: Can't mass-assign these protected attributes: _password
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login" = '') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."login" = '') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 180ms (View: 33, DB: 1) | 200 OK [http://www.example.com/users]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = '') LIMIT 1[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-02-03 14:25:53) [GET]
+Redirected to http://www.example.com/
+Completed in 0ms (DB: 2) | 302 Found [http://www.example.com/sessions/destroy]
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 14:25:53) [GET]
+  Parameters: {"id"=>1}
+  [4;35;1mLocation Load (0.4ms)[0m   [0mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;36;1mDesk Load (0.2ms)[0m   [0;1mSELECT * FROM "desks" WHERE ("desks".location_id = 1) [0m
+Completed in 4ms (View: 2, DB: 1) | 200 OK [http://www.example.com/]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'Oona') [0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'Oona') LIMIT 1[0m
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-02-03 14:25:53) [POST]
+  Parameters: {"user"=>{"_password_confirmation"=>"monkey", "login"=>"oona", "password"=>"", "email"=>"unactivated@example.com"}}
+WARNING: Can't mass-assign these protected attributes: _password_confirmation
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 38ms (View: 33, DB: 1) | 200 OK [http://www.example.com/users]
+  [4;35;1mUser Load (0.9ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-02-03 14:25:53) [GET]
+Redirected to http://www.example.com/
+Completed in 0ms (DB: 2) | 302 Found [http://www.example.com/sessions/destroy]
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 14:25:53) [GET]
+  Parameters: {"id"=>1}
+  [4;35;1mLocation Load (0.7ms)[0m   [0mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;36;1mDesk Load (0.2ms)[0m   [0;1mSELECT * FROM "desks" WHERE ("desks".location_id = 1) [0m
+Completed in 4ms (View: 2, DB: 1) | 200 OK [http://www.example.com/]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'Oona') [0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'Oona') LIMIT 1[0m
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-02-03 14:25:53) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"", "login"=>"oona", "password"=>"monkey", "email"=>"unactivated@example.com"}}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 36ms (View: 31, DB: 1) | 200 OK [http://www.example.com/users]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-02-03 14:25:54) [GET]
+Redirected to http://www.example.com/
+Completed in 0ms (DB: 2) | 302 Found [http://www.example.com/sessions/destroy]
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 14:25:54) [GET]
+  Parameters: {"id"=>1}
+  [4;35;1mLocation Load (0.4ms)[0m   [0mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;36;1mDesk Load (0.2ms)[0m   [0;1mSELECT * FROM "desks" WHERE ("desks".location_id = 1) [0m
+Completed in 6ms (View: 2, DB: 1) | 200 OK [http://www.example.com/]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'Oona') [0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'Oona') LIMIT 1[0m
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-02-03 14:25:54) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"monkeY", "login"=>"oona", "password"=>"monkey", "email"=>"unactivated@example.com"}}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 164ms (View: 159, DB: 1) | 200 OK [http://www.example.com/users]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-02-03 14:28:14) [GET]
+Redirected to http://www.example.com/
+Completed in 170ms (DB: 2) | 302 Found [http://www.example.com/sessions/destroy]
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 14:28:14) [GET]
+  Parameters: {"id"=>1}
+  [4;36;1mLocation Load (0.5ms)[0m   [0;1mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;35;1mDesk Load (0.2ms)[0m   [0mSELECT * FROM "desks" WHERE ("desks".location_id = 1) [0m
+Completed in 17ms (View: 12, DB: 1) | 200 OK [http://www.example.com/]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-02-03 14:28:14) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Completed in 14ms (View: 11, DB: 0) | 200 OK [http://www.example.com/signup]
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-02-03 14:28:14) [GET]
+Redirected to http://www.example.com/
+Completed in 0ms (DB: 1) | 302 Found [http://www.example.com/sessions/destroy]
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 14:28:14) [GET]
+  Parameters: {"id"=>1}
+  [4;36;1mLocation Load (0.5ms)[0m   [0;1mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;35;1mDesk Load (0.2ms)[0m   [0mSELECT * FROM "desks" WHERE ("desks".location_id = 1) [0m
+Completed in 5ms (View: 2, DB: 1) | 200 OK [http://www.example.com/]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'Oona') [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'Oona') LIMIT 1[0m
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-02-03 14:28:14) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"1234oona", "login"=>"oona", "password"=>"1234oona", "email"=>"unactivated@example.com"}}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 27ms (View: 22, DB: 1) | 200 OK [http://www.example.com/users]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-02-03 14:28:14) [GET]
+Redirected to http://www.example.com/
+Completed in 0ms (DB: 2) | 302 Found [http://www.example.com/sessions/destroy]
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 14:28:14) [GET]
+  Parameters: {"id"=>1}
+  [4;35;1mLocation Load (0.4ms)[0m   [0mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;36;1mDesk Load (0.2ms)[0m   [0;1mSELECT * FROM "desks" WHERE ("desks".location_id = 1) [0m
+Completed in 7ms (View: 5, DB: 1) | 200 OK [http://www.example.com/]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-02-03 14:28:14) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"monkey", "login"=>"reggie", "password"=>"monkey", "email"=>"registered@example.com"}}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 29ms (View: 23, DB: 0) | 200 OK [http://www.example.com/users]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-02-03 14:28:14) [GET]
+Redirected to http://www.example.com/
+Completed in 0ms (DB: 2) | 302 Found [http://www.example.com/sessions/destroy]
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 14:28:14) [GET]
+  Parameters: {"id"=>1}
+  [4;36;1mLocation Load (1.3ms)[0m   [0;1mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;35;1mDesk Load (0.2ms)[0m   [0mSELECT * FROM "desks" WHERE ("desks".location_id = 1) [0m
+Completed in 5ms (View: 2, DB: 2) | 200 OK [http://www.example.com/]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'Oona') [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'Oona') LIMIT 1[0m
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-02-03 14:28:14) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"monkey", "_password"=>"monkey", "login"=>""}}
+WARNING: Can't mass-assign these protected attributes: _password
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login" = '') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."login" = '') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 180ms (View: 33, DB: 1) | 200 OK [http://www.example.com/users]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = '') LIMIT 1[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-02-03 14:28:15) [GET]
+Redirected to http://www.example.com/
+Completed in 0ms (DB: 1) | 302 Found [http://www.example.com/sessions/destroy]
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 14:28:15) [GET]
+  Parameters: {"id"=>1}
+  [4;35;1mLocation Load (0.4ms)[0m   [0mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;36;1mDesk Load (0.4ms)[0m   [0;1mSELECT * FROM "desks" WHERE ("desks".location_id = 1) [0m
+Completed in 6ms (View: 4, DB: 1) | 200 OK [http://www.example.com/]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'Oona') [0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'Oona') LIMIT 1[0m
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-02-03 14:28:15) [POST]
+  Parameters: {"user"=>{"_password_confirmation"=>"monkey", "login"=>"oona", "password"=>"", "email"=>"unactivated@example.com"}}
+WARNING: Can't mass-assign these protected attributes: _password_confirmation
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 34ms (View: 29, DB: 1) | 200 OK [http://www.example.com/users]
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-02-03 14:28:15) [GET]
+Redirected to http://www.example.com/
+Completed in 1ms (DB: 2) | 302 Found [http://www.example.com/sessions/destroy]
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 14:28:15) [GET]
+  Parameters: {"id"=>1}
+  [4;35;1mLocation Load (0.4ms)[0m   [0mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;36;1mDesk Load (0.3ms)[0m   [0;1mSELECT * FROM "desks" WHERE ("desks".location_id = 1) [0m
+Completed in 4ms (View: 2, DB: 1) | 200 OK [http://www.example.com/]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'Oona') [0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'Oona') LIMIT 1[0m
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-02-03 14:28:15) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"", "login"=>"oona", "password"=>"monkey", "email"=>"unactivated@example.com"}}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 36ms (View: 31, DB: 1) | 200 OK [http://www.example.com/users]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-02-03 14:28:15) [GET]
+Redirected to http://www.example.com/
+Completed in 0ms (DB: 2) | 302 Found [http://www.example.com/sessions/destroy]
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 14:28:15) [GET]
+  Parameters: {"id"=>1}
+  [4;35;1mLocation Load (0.4ms)[0m   [0mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;36;1mDesk Load (0.1ms)[0m   [0;1mSELECT * FROM "desks" WHERE ("desks".location_id = 1) [0m
+Completed in 4ms (View: 2, DB: 1) | 200 OK [http://www.example.com/]
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'Oona') [0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'Oona') LIMIT 1[0m
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-02-03 14:28:15) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"monkeY", "login"=>"oona", "password"=>"monkey", "email"=>"unactivated@example.com"}}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 165ms (View: 160, DB: 1) | 200 OK [http://www.example.com/users]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-02-03 14:31:28) [GET]
+Redirected to http://www.example.com/
+Completed in 172ms (DB: 2) | 302 Found [http://www.example.com/sessions/destroy]
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 14:31:28) [GET]
+  Parameters: {"id"=>1}
+  [4;36;1mLocation Load (0.5ms)[0m   [0;1mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;35;1mDesk Load (0.2ms)[0m   [0mSELECT * FROM "desks" WHERE ("desks".location_id = 1) [0m
+Completed in 17ms (View: 12, DB: 1) | 200 OK [http://www.example.com/]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-02-03 14:31:28) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Completed in 14ms (View: 11, DB: 0) | 200 OK [http://www.example.com/signup]
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-02-03 14:31:28) [GET]
+Redirected to http://www.example.com/
+Completed in 0ms (DB: 1) | 302 Found [http://www.example.com/sessions/destroy]
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 14:31:28) [GET]
+  Parameters: {"id"=>1}
+  [4;36;1mLocation Load (0.4ms)[0m   [0;1mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;35;1mDesk Load (0.2ms)[0m   [0mSELECT * FROM "desks" WHERE ("desks".location_id = 1) [0m
+Completed in 5ms (View: 3, DB: 1) | 200 OK [http://www.example.com/]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'Oona') [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'Oona') LIMIT 1[0m
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-02-03 14:31:28) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"1234oona", "login"=>"oona", "password"=>"1234oona", "email"=>"unactivated@example.com"}}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 29ms (View: 24, DB: 1) | 200 OK [http://www.example.com/users]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-02-03 14:31:28) [GET]
+Redirected to http://www.example.com/
+Completed in 0ms (DB: 2) | 302 Found [http://www.example.com/sessions/destroy]
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 14:31:28) [GET]
+  Parameters: {"id"=>1}
+  [4;35;1mLocation Load (0.4ms)[0m   [0mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;36;1mDesk Load (0.2ms)[0m   [0;1mSELECT * FROM "desks" WHERE ("desks".location_id = 1) [0m
+Completed in 4ms (View: 3, DB: 1) | 200 OK [http://www.example.com/]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-02-03 14:31:28) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"monkey", "login"=>"reggie", "password"=>"monkey", "email"=>"registered@example.com"}}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 26ms (View: 21, DB: 0) | 200 OK [http://www.example.com/users]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-02-03 14:31:28) [GET]
+Redirected to http://www.example.com/
+Completed in 0ms (DB: 5) | 302 Found [http://www.example.com/sessions/destroy]
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 14:31:28) [GET]
+  Parameters: {"id"=>1}
+  [4;36;1mLocation Load (0.4ms)[0m   [0;1mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;35;1mDesk Load (0.2ms)[0m   [0mSELECT * FROM "desks" WHERE ("desks".location_id = 1) [0m
+Completed in 4ms (View: 2, DB: 1) | 200 OK [http://www.example.com/]
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'Oona') [0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'Oona') LIMIT 1[0m
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-02-03 14:31:28) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"monkey", "_password"=>"monkey", "login"=>""}}
+WARNING: Can't mass-assign these protected attributes: _password
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login" = '') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."login" = '') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 177ms (View: 32, DB: 1) | 200 OK [http://www.example.com/users]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = '') LIMIT 1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-02-03 14:31:29) [GET]
+Redirected to http://www.example.com/
+Completed in 1ms (DB: 2) | 302 Found [http://www.example.com/sessions/destroy]
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 14:31:29) [GET]
+  Parameters: {"id"=>1}
+  [4;36;1mLocation Load (0.4ms)[0m   [0;1mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;35;1mDesk Load (0.2ms)[0m   [0mSELECT * FROM "desks" WHERE ("desks".location_id = 1) [0m
+Completed in 4ms (View: 2, DB: 1) | 200 OK [http://www.example.com/]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'Oona') [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'Oona') LIMIT 1[0m
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-02-03 14:31:29) [POST]
+  Parameters: {"user"=>{"_password_confirmation"=>"monkey", "login"=>"oona", "password"=>"", "email"=>"unactivated@example.com"}}
+WARNING: Can't mass-assign these protected attributes: _password_confirmation
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 36ms (View: 32, DB: 1) | 200 OK [http://www.example.com/users]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-02-03 14:31:29) [GET]
+Redirected to http://www.example.com/
+Completed in 0ms (DB: 2) | 302 Found [http://www.example.com/sessions/destroy]
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 14:31:29) [GET]
+  Parameters: {"id"=>1}
+  [4;36;1mLocation Load (0.4ms)[0m   [0;1mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;35;1mDesk Load (0.2ms)[0m   [0mSELECT * FROM "desks" WHERE ("desks".location_id = 1) [0m
+Completed in 5ms (View: 3, DB: 1) | 200 OK [http://www.example.com/]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'Oona') [0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'Oona') LIMIT 1[0m
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-02-03 14:31:29) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"", "login"=>"oona", "password"=>"monkey", "email"=>"unactivated@example.com"}}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 34ms (View: 30, DB: 1) | 200 OK [http://www.example.com/users]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-02-03 14:31:29) [GET]
+Redirected to http://www.example.com/
+Completed in 0ms (DB: 2) | 302 Found [http://www.example.com/sessions/destroy]
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 14:31:29) [GET]
+  Parameters: {"id"=>1}
+  [4;36;1mLocation Load (0.4ms)[0m   [0;1mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;35;1mDesk Load (0.2ms)[0m   [0mSELECT * FROM "desks" WHERE ("desks".location_id = 1) [0m
+Completed in 4ms (View: 2, DB: 1) | 200 OK [http://www.example.com/]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'Oona') [0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'Oona') LIMIT 1[0m
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-02-03 14:31:29) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"monkeY", "login"=>"oona", "password"=>"monkey", "email"=>"unactivated@example.com"}}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 164ms (View: 24, DB: 1) | 200 OK [http://www.example.com/users]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-02-03 14:46:42) [GET]
+Redirected to http://www.example.com/
+Completed in 80ms (DB: 2) | 302 Found [http://www.example.com/sessions/destroy]
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 14:46:42) [GET]
+  Parameters: {"id"=>1}
+  [4;36;1mLocation Load (0.5ms)[0m   [0;1mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;35;1mDesk Load (0.2ms)[0m   [0mSELECT * FROM "desks" WHERE ("desks".location_id = 1) [0m
+Completed in 108ms (View: 12, DB: 1) | 200 OK [http://www.example.com/]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-02-03 14:46:42) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 4ms (View: 4, DB: 0) | 200 OK [http://www.example.com/login]
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-02-03 14:46:42) [GET]
+Redirected to http://www.example.com/
+Completed in 0ms (DB: 2) | 302 Found [http://www.example.com/sessions/destroy]
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 14:46:42) [GET]
+  Parameters: {"id"=>1}
+  [4;36;1mLocation Load (0.4ms)[0m   [0;1mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;35;1mDesk Load (0.2ms)[0m   [0mSELECT * FROM "desks" WHERE ("desks".location_id = 1) [0m
+Completed in 4ms (View: 2, DB: 1) | 200 OK [http://www.example.com/]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-02-03 14:46:42) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"monkey", "login"=>"reggie", "password"=>"monkey", "email"=>"registered@example.com"}}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 37ms (View: 26, DB: 0) | 200 OK [http://www.example.com/users]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-02-03 14:46:42) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"monkey", "login"=>"reggie", "password"=>"monkey", "email"=>"registered@example.com"}}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 28ms (View: 23, DB: 2) | 200 OK [http://www.example.com/users]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-02-03 14:46:42) [GET]
+Redirected to http://www.example.com/
+Completed in 0ms (DB: 2) | 302 Found [http://www.example.com/sessions/destroy]
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 14:46:42) [GET]
+  Parameters: {"id"=>1}
+  [4;36;1mLocation Load (0.4ms)[0m   [0;1mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;35;1mDesk Load (0.2ms)[0m   [0mSELECT * FROM "desks" WHERE ("desks".location_id = 1) [0m
+Completed in 4ms (View: 2, DB: 1) | 200 OK [http://www.example.com/]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-02-03 14:46:42) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"monkey", "login"=>"reggie", "password"=>"monkey", "email"=>"registered@example.com"}}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 28ms (View: 22, DB: 0) | 200 OK [http://www.example.com/users]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-02-03 14:46:42) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"1234oona", "login"=>"oona", "password"=>"1234oona", "email"=>"unactivated@example.com"}}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 149ms (View: 143, DB: 2) | 200 OK [http://www.example.com/users]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-02-03 14:46:43) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"monkey", "login"=>"reggie", "password"=>"monkey", "email"=>"registered@example.com"}}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 24ms (View: 20, DB: 2) | 200 OK [http://www.example.com/users]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-02-03 14:46:43) [GET]
+Redirected to http://www.example.com/
+Completed in 1ms (DB: 2) | 302 Found [http://www.example.com/sessions/destroy]
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 14:46:43) [GET]
+  Parameters: {"id"=>1}
+  [4;35;1mLocation Load (0.4ms)[0m   [0mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;36;1mDesk Load (0.2ms)[0m   [0;1mSELECT * FROM "desks" WHERE ("desks".location_id = 1) [0m
+Completed in 5ms (View: 2, DB: 1) | 200 OK [http://www.example.com/]
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-02-03 14:46:43) [GET]
+Redirected to http://www.example.com/
+Completed in 1ms (DB: 0) | 302 Found [http://www.example.com/logout]
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 14:46:43) [GET]
+  Parameters: {"id"=>1}
+  [4;35;1mLocation Load (8.0ms)[0m   [0mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;36;1mDesk Load (0.2ms)[0m   [0;1mSELECT * FROM "desks" WHERE ("desks".location_id = 1) [0m
+Completed in 21ms (View: 12, DB: 8) | 200 OK [http://www.example.com/]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-02-03 14:46:43) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"monkey", "login"=>"reggie", "password"=>"monkey", "email"=>"registered@example.com"}}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 28ms (View: 23, DB: 1) | 200 OK [http://www.example.com/users]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-02-03 14:49:58) [GET]
+Redirected to http://www.example.com/
+Completed in 80ms (DB: 2) | 302 Found [http://www.example.com/sessions/destroy]
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 14:49:58) [GET]
+  Parameters: {"id"=>1}
+  [4;36;1mLocation Load (0.5ms)[0m   [0;1mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;35;1mDesk Load (0.2ms)[0m   [0mSELECT * FROM "desks" WHERE ("desks".location_id = 1) [0m
+Completed in 107ms (View: 12, DB: 1) | 200 OK [http://www.example.com/]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-02-03 14:49:58) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 4ms (View: 4, DB: 0) | 200 OK [http://www.example.com/login]
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-02-03 14:49:58) [GET]
+Redirected to http://www.example.com/
+Completed in 0ms (DB: 1) | 302 Found [http://www.example.com/sessions/destroy]
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 14:49:58) [GET]
+  Parameters: {"id"=>1}
+  [4;36;1mLocation Load (0.9ms)[0m   [0;1mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;35;1mDesk Load (0.3ms)[0m   [0mSELECT * FROM "desks" WHERE ("desks".location_id = 1) [0m
+Completed in 9ms (View: 3, DB: 1) | 200 OK [http://www.example.com/]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-02-03 14:49:58) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"monkey", "login"=>"reggie", "password"=>"monkey", "email"=>"registered@example.com"}}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 36ms (View: 25, DB: 0) | 200 OK [http://www.example.com/users]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-02-03 14:49:58) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"monkey", "login"=>"reggie", "password"=>"monkey", "email"=>"registered@example.com"}}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 25ms (View: 21, DB: 2) | 200 OK [http://www.example.com/users]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-02-03 14:49:58) [GET]
+Redirected to http://www.example.com/
+Completed in 0ms (DB: 1) | 302 Found [http://www.example.com/sessions/destroy]
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 14:49:58) [GET]
+  Parameters: {"id"=>1}
+  [4;36;1mLocation Load (0.5ms)[0m   [0;1mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;35;1mDesk Load (0.2ms)[0m   [0mSELECT * FROM "desks" WHERE ("desks".location_id = 1) [0m
+Completed in 8ms (View: 4, DB: 1) | 200 OK [http://www.example.com/]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-02-03 14:49:58) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"monkey", "login"=>"reggie", "password"=>"monkey", "email"=>"registered@example.com"}}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 29ms (View: 23, DB: 0) | 200 OK [http://www.example.com/users]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-02-03 14:49:58) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"1234oona", "login"=>"oona", "password"=>"1234oona", "email"=>"unactivated@example.com"}}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 146ms (View: 142, DB: 2) | 200 OK [http://www.example.com/users]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-02-03 14:49:58) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"monkey", "login"=>"reggie", "password"=>"monkey", "email"=>"registered@example.com"}}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 28ms (View: 21, DB: 2) | 200 OK [http://www.example.com/users]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-02-03 14:49:58) [GET]
+Redirected to http://www.example.com/
+Completed in 0ms (DB: 2) | 302 Found [http://www.example.com/sessions/destroy]
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 14:49:58) [GET]
+  Parameters: {"id"=>1}
+  [4;35;1mLocation Load (0.4ms)[0m   [0mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;36;1mDesk Load (0.2ms)[0m   [0;1mSELECT * FROM "desks" WHERE ("desks".location_id = 1) [0m
+Completed in 8ms (View: 6, DB: 1) | 200 OK [http://www.example.com/]
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-02-03 14:49:58) [GET]
+Redirected to http://www.example.com/
+Completed in 1ms (DB: 0) | 302 Found [http://www.example.com/logout]
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 14:49:58) [GET]
+  Parameters: {"id"=>1}
+  [4;35;1mLocation Load (0.4ms)[0m   [0mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;36;1mDesk Load (0.2ms)[0m   [0;1mSELECT * FROM "desks" WHERE ("desks".location_id = 1) [0m
+Completed in 4ms (View: 2, DB: 1) | 200 OK [http://www.example.com/]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-02-03 14:49:58) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"monkey", "login"=>"reggie", "password"=>"monkey", "email"=>"registered@example.com"}}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 28ms (View: 23, DB: 1) | 200 OK [http://www.example.com/users]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-02-03 14:55:57) [GET]
+Redirected to http://www.example.com/
+Completed in 80ms (DB: 66) | 302 Found [http://www.example.com/sessions/destroy]
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 14:55:57) [GET]
+  Parameters: {"id"=>1}
+  [4;36;1mLocation Load (0.5ms)[0m   [0;1mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;35;1mDesk Load (0.3ms)[0m   [0mSELECT * FROM "desks" WHERE ("desks".location_id = 1) [0m
+Completed in 108ms (View: 12, DB: 1) | 200 OK [http://www.example.com/]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-02-03 14:55:57) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 4ms (View: 4, DB: 0) | 200 OK [http://www.example.com/login]
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-02-03 14:55:57) [GET]
+Redirected to http://www.example.com/
+Completed in 1ms (DB: 1) | 302 Found [http://www.example.com/sessions/destroy]
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 14:55:57) [GET]
+  Parameters: {"id"=>1}
+  [4;36;1mLocation Load (0.4ms)[0m   [0;1mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;35;1mDesk Load (0.2ms)[0m   [0mSELECT * FROM "desks" WHERE ("desks".location_id = 1) [0m
+Completed in 4ms (View: 3, DB: 1) | 200 OK [http://www.example.com/]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-02-03 14:55:57) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"monkey", "login"=>"reggie", "password"=>"monkey", "email"=>"registered@example.com"}}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 35ms (View: 24, DB: 0) | 200 OK [http://www.example.com/users]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-02-03 14:55:57) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"monkey", "login"=>"reggie", "password"=>"monkey", "email"=>"registered@example.com"}}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 27ms (View: 23, DB: 2) | 200 OK [http://www.example.com/users]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-02-03 14:55:57) [GET]
+Redirected to http://www.example.com/
+Completed in 0ms (DB: 1) | 302 Found [http://www.example.com/sessions/destroy]
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 14:55:57) [GET]
+  Parameters: {"id"=>1}
+  [4;36;1mLocation Load (0.5ms)[0m   [0;1mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;35;1mDesk Load (0.2ms)[0m   [0mSELECT * FROM "desks" WHERE ("desks".location_id = 1) [0m
+Completed in 5ms (View: 2, DB: 1) | 200 OK [http://www.example.com/]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-02-03 14:55:57) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"monkey", "login"=>"reggie", "password"=>"monkey", "email"=>"registered@example.com"}}
+  [4;36;1mUser Load (1.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 28ms (View: 22, DB: 1) | 200 OK [http://www.example.com/users]
+  [4;36;1mUser Load (0.8ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-02-03 14:55:57) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"1234oona", "login"=>"oona", "password"=>"1234oona", "email"=>"unactivated@example.com"}}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 143ms (View: 138, DB: 4) | 200 OK [http://www.example.com/users]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-02-03 14:55:57) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"monkey", "login"=>"reggie", "password"=>"monkey", "email"=>"registered@example.com"}}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 26ms (View: 22, DB: 2) | 200 OK [http://www.example.com/users]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-02-03 14:55:57) [GET]
+Redirected to http://www.example.com/
+Completed in 0ms (DB: 2) | 302 Found [http://www.example.com/sessions/destroy]
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 14:55:57) [GET]
+  Parameters: {"id"=>1}
+  [4;35;1mLocation Load (0.4ms)[0m   [0mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;36;1mDesk Load (0.2ms)[0m   [0;1mSELECT * FROM "desks" WHERE ("desks".location_id = 1) [0m
+Completed in 5ms (View: 2, DB: 1) | 200 OK [http://www.example.com/]
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-02-03 14:55:57) [GET]
+Redirected to http://www.example.com/
+Completed in 1ms (DB: 0) | 302 Found [http://www.example.com/logout]
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 14:55:57) [GET]
+  Parameters: {"id"=>1}
+  [4;35;1mLocation Load (0.4ms)[0m   [0mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;36;1mDesk Load (0.2ms)[0m   [0;1mSELECT * FROM "desks" WHERE ("desks".location_id = 1) [0m
+Completed in 4ms (View: 2, DB: 1) | 200 OK [http://www.example.com/]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-02-03 14:55:57) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"monkey", "login"=>"reggie", "password"=>"monkey", "email"=>"registered@example.com"}}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 34ms (View: 30, DB: 1) | 200 OK [http://www.example.com/users]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-02-03 15:10:13) [GET]
+Redirected to http://www.example.com/
+Completed in 80ms (DB: 61) | 302 Found [http://www.example.com/sessions/destroy]
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 15:10:13) [GET]
+  Parameters: {"id"=>1}
+  [4;36;1mLocation Load (0.5ms)[0m   [0;1mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;35;1mDesk Load (0.3ms)[0m   [0mSELECT * FROM "desks" WHERE ("desks".location_id = 1) [0m
+Completed in 17ms (View: 12, DB: 1) | 200 OK [http://www.example.com/]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-02-03 15:10:13) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 4ms (View: 4, DB: 0) | 200 OK [http://www.example.com/login]
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-02-03 15:10:13) [GET]
+Redirected to http://www.example.com/
+Completed in 0ms (DB: 1) | 302 Found [http://www.example.com/sessions/destroy]
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 15:10:13) [GET]
+  Parameters: {"id"=>1}
+  [4;36;1mLocation Load (0.8ms)[0m   [0;1mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;35;1mDesk Load (0.2ms)[0m   [0mSELECT * FROM "desks" WHERE ("desks".location_id = 1) [0m
+Completed in 4ms (View: 2, DB: 1) | 200 OK [http://www.example.com/]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-02-03 15:10:13) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"monkey", "login"=>"reggie", "password"=>"monkey", "email"=>"registered@example.com"}}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 39ms (View: 26, DB: 0) | 200 OK [http://www.example.com/users]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-02-03 15:10:13) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"monkey", "login"=>"reggie", "password"=>"monkey", "email"=>"registered@example.com"}}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 28ms (View: 20, DB: 2) | 200 OK [http://www.example.com/users]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-02-03 15:10:13) [GET]
+Redirected to http://www.example.com/
+Completed in 0ms (DB: 2) | 302 Found [http://www.example.com/sessions/destroy]
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 15:10:13) [GET]
+  Parameters: {"id"=>1}
+  [4;36;1mLocation Load (0.4ms)[0m   [0;1mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;35;1mDesk Load (0.2ms)[0m   [0mSELECT * FROM "desks" WHERE ("desks".location_id = 1) [0m
+Completed in 5ms (View: 2, DB: 1) | 200 OK [http://www.example.com/]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-02-03 15:10:13) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"monkey", "login"=>"reggie", "password"=>"monkey", "email"=>"registered@example.com"}}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 27ms (View: 23, DB: 0) | 200 OK [http://www.example.com/users]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-02-03 15:10:13) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"1234oona", "login"=>"oona", "password"=>"1234oona", "email"=>"unactivated@example.com"}}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 150ms (View: 145, DB: 2) | 200 OK [http://www.example.com/users]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-02-03 15:10:13) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"monkey", "login"=>"reggie", "password"=>"monkey", "email"=>"registered@example.com"}}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 27ms (View: 22, DB: 2) | 200 OK [http://www.example.com/users]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-02-03 15:10:13) [GET]
+Redirected to http://www.example.com/
+Completed in 0ms (DB: 2) | 302 Found [http://www.example.com/sessions/destroy]
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 15:10:13) [GET]
+  Parameters: {"id"=>1}
+  [4;35;1mLocation Load (0.4ms)[0m   [0mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;36;1mDesk Load (0.2ms)[0m   [0;1mSELECT * FROM "desks" WHERE ("desks".location_id = 1) [0m
+Completed in 4ms (View: 2, DB: 1) | 200 OK [http://www.example.com/]
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-02-03 15:10:13) [GET]
+Redirected to http://www.example.com/
+Completed in 1ms (DB: 0) | 302 Found [http://www.example.com/logout]
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 15:10:13) [GET]
+  Parameters: {"id"=>1}
+  [4;35;1mLocation Load (0.4ms)[0m   [0mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;36;1mDesk Load (0.2ms)[0m   [0;1mSELECT * FROM "desks" WHERE ("desks".location_id = 1) [0m
+Completed in 4ms (View: 2, DB: 1) | 200 OK [http://www.example.com/]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-02-03 15:10:14) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"monkey", "login"=>"reggie", "password"=>"monkey", "email"=>"registered@example.com"}}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 31ms (View: 26, DB: 1) | 200 OK [http://www.example.com/users]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-02-03 15:11:57) [GET]
+Redirected to http://www.example.com/
+Completed in 79ms (DB: 2) | 302 Found [http://www.example.com/sessions/destroy]
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 15:11:57) [GET]
+  Parameters: {"id"=>1}
+  [4;36;1mLocation Load (0.4ms)[0m   [0;1mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;35;1mDesk Load (0.2ms)[0m   [0mSELECT * FROM "desks" WHERE ("desks".location_id = 1) [0m
+Completed in 16ms (View: 12, DB: 1) | 200 OK [http://www.example.com/]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-02-03 15:11:57) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 4ms (View: 4, DB: 0) | 200 OK [http://www.example.com/login]
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-02-03 15:11:58) [GET]
+Redirected to http://www.example.com/
+Completed in 1ms (DB: 1) | 302 Found [http://www.example.com/sessions/destroy]
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 15:11:58) [GET]
+  Parameters: {"id"=>1}
+  [4;36;1mLocation Load (0.5ms)[0m   [0;1mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;35;1mDesk Load (0.2ms)[0m   [0mSELECT * FROM "desks" WHERE ("desks".location_id = 1) [0m
+Completed in 4ms (View: 2, DB: 1) | 200 OK [http://www.example.com/]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-02-03 15:11:58) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"monkey", "login"=>"reggie", "password"=>"monkey", "email"=>"registered@example.com"}}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 34ms (View: 22, DB: 0) | 200 OK [http://www.example.com/users]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-02-03 15:11:58) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"monkey", "login"=>"reggie", "password"=>"monkey", "email"=>"registered@example.com"}}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 24ms (View: 19, DB: 2) | 200 OK [http://www.example.com/users]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-02-03 15:11:58) [GET]
+Redirected to http://www.example.com/
+Completed in 0ms (DB: 1) | 302 Found [http://www.example.com/sessions/destroy]
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 15:11:58) [GET]
+  Parameters: {"id"=>1}
+  [4;36;1mLocation Load (0.4ms)[0m   [0;1mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;35;1mDesk Load (0.2ms)[0m   [0mSELECT * FROM "desks" WHERE ("desks".location_id = 1) [0m
+Completed in 5ms (View: 3, DB: 1) | 200 OK [http://www.example.com/]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-02-03 15:11:58) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"monkey", "login"=>"reggie", "password"=>"monkey", "email"=>"registered@example.com"}}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 30ms (View: 24, DB: 0) | 200 OK [http://www.example.com/users]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-02-03 15:11:58) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"1234oona", "login"=>"oona", "password"=>"1234oona", "email"=>"unactivated@example.com"}}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 145ms (View: 140, DB: 2) | 200 OK [http://www.example.com/users]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'oona') LIMIT 1[0m
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-02-03 15:11:58) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"monkey", "login"=>"reggie", "password"=>"monkey", "email"=>"registered@example.com"}}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 28ms (View: 22, DB: 2) | 200 OK [http://www.example.com/users]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-02-03 15:11:58) [GET]
+Redirected to http://www.example.com/
+Completed in 0ms (DB: 2) | 302 Found [http://www.example.com/sessions/destroy]
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 15:11:58) [GET]
+  Parameters: {"id"=>1}
+  [4;35;1mLocation Load (0.4ms)[0m   [0mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;36;1mDesk Load (0.2ms)[0m   [0;1mSELECT * FROM "desks" WHERE ("desks".location_id = 1) [0m
+Completed in 4ms (View: 2, DB: 1) | 200 OK [http://www.example.com/]
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-02-03 15:11:58) [GET]
+Redirected to http://www.example.com/
+Completed in 1ms (DB: 0) | 302 Found [http://www.example.com/logout]
+
+
+Processing LocationsController#show (for 127.0.0.1 at 2010-02-03 15:11:58) [GET]
+  Parameters: {"id"=>1}
+  [4;35;1mLocation Load (0.4ms)[0m   [0mSELECT * FROM "locations" WHERE ("locations"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering locations/show
+  [4;36;1mDesk Load (0.2ms)[0m   [0;1mSELECT * FROM "desks" WHERE ("desks".location_id = 1) [0m
+Completed in 4ms (View: 2, DB: 1) | 200 OK [http://www.example.com/]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-02-03 15:11:58) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"monkey", "login"=>"reggie", "password"=>"monkey", "email"=>"registered@example.com"}}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 26ms (View: 22, DB: 1) | 200 OK [http://www.example.com/users]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'reggie') LIMIT 1[0m
