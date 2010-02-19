@@ -9,17 +9,17 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100219151124) do
+ActiveRecord::Schema.define(:version => 20100219152251) do
 
   create_table "bookings", :force => true do |t|
     t.integer  "user_id"
-    t.string   "bookable_type"
-    t.integer  "bookable_id"
     t.datetime "start_at"
     t.datetime "end_at"
     t.datetime "paid"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "resources_id"
+    t.string   "payment_ref"
   end
 
   create_table "locations", :force => true do |t|
@@ -33,6 +33,19 @@ ActiveRecord::Schema.define(:version => 20100219151124) do
     t.string   "postcode"
     t.string   "lat"
     t.string   "lon"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "resources", :force => true do |t|
+    t.integer  "location_id"
+    t.string   "name"
+    t.text     "description"
+    t.integer  "start_hour"
+    t.integer  "end_hour"
+    t.decimal  "member_price",     :precision => 8, :scale => 2
+    t.decimal  "non_member_price", :precision => 8, :scale => 2
+    t.integer  "number_available"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -68,6 +81,7 @@ ActiveRecord::Schema.define(:version => 20100219151124) do
     t.string   "surname"
     t.string   "company"
     t.string   "phone"
+    t.datetime "member_until"
   end
 
   add_index "users", ["login"], :name => "index_users_on_login", :unique => true

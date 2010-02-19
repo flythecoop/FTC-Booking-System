@@ -1,4 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :resources
+
   map.resources :bookings
 
   map.resources :locations
