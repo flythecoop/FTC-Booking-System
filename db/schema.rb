@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100109195619) do
+ActiveRecord::Schema.define(:version => 20100219151124) do
 
   create_table "bookings", :force => true do |t|
     t.integer  "user_id"
@@ -18,16 +18,6 @@ ActiveRecord::Schema.define(:version => 20100109195619) do
     t.datetime "start_at"
     t.datetime "end_at"
     t.datetime "paid"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "desks", :force => true do |t|
-    t.integer  "location_id"
-    t.string   "name"
-    t.text     "description"
-    t.decimal  "member_price",     :precision => 8, :scale => 2
-    t.decimal  "non_member_price", :precision => 8, :scale => 2
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -43,16 +33,6 @@ ActiveRecord::Schema.define(:version => 20100109195619) do
     t.string   "postcode"
     t.string   "lat"
     t.string   "lon"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "meeting_rooms", :force => true do |t|
-    t.integer  "location_id"
-    t.string   "name"
-    t.text     "description"
-    t.decimal  "member_price",     :precision => 8, :scale => 2
-    t.decimal  "non_member_price", :precision => 8, :scale => 2
     t.datetime "created_at"
     t.datetime "updated_at"
   end
