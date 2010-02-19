@@ -1,8 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
   map.resources :bookings
 
-  map.resources :meeting_rooms
-
   map.resources :locations
 
   map.logout '/logout', :controller => 'sessions', :action => 'destroy'
